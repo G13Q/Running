@@ -1,0 +1,89 @@
+.cartContainer {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.301);
+  z-index: 5000;
+  padding: 0;
+  opacity: 0;
+
+  pointer-events: none;
+}
+.cart {
+  z-index: 5001;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 50%;
+  background-color: var(--nav-bg);
+  height: 100vh;
+  margin: 0;
+  padding-top: 5px;
+  transform: translateX(100%);
+
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.275);
+  .progress {
+    width: 80%;
+    height: 7px;
+    background-color: var(--main-bg-clr);
+    margin-inline: auto;
+    margin-block: 10px;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 10px;
+
+    align-items: center;
+
+    h2 {
+      font-size: 0.7rem;
+    }
+    .info {
+      font-size: 0.8rem;
+    }
+    .closeCart {
+      padding-inline: 10px;
+      cursor: pointer;
+      font-weight: bold;
+      svg {
+        font-size: 0.6rem;
+        width: 1.3rem;
+      }
+    }
+  }
+}
+
+.noItemsInCart {
+  width: 75%;
+
+  margin-inline: auto;
+  margin-top: 100px;
+
+  h1 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .btnGroup {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    button {
+      width: 100%;
+      height: 30px;
+      background-color: black;
+      color: var(--nav-bg);
+      border: none;
+      border-radius: 25px;
+      font-weight: 600;
+      font-size: 0.7rem;
+      transition: 0.2s ease-in-out;
+    }
+    button:hover {
+      background-color: rgba(0, 0, 0, 0.729);
+    }
+  }
+}

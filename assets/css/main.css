@@ -1,0 +1,52 @@
+@import "home/footer.css";
+@import "home/infoCardsSection.css";
+@import "home/header.css";
+@import "home/hero.css";
+@import "home/categoriesSection.css";
+@import "home/newArrivalsSection.css";
+@import "home/specialCollectionsection.css";
+@import "home/newarrivals2Section.css";
+@import "home/categories2Section.css";
+@import "home/headerMenu.css";
+@import "home/carousel1.css";
+@import "home/cart.css";
+@import "components/productCard.css";
+@import "components/infoFaq.css";
+@import "views/newArrivals.css";
+
+:root {
+  --main-bg-clr: #f0eee9;
+  --main-font: "satoshi", sans-serif;
+  --sec-bg-clr: #212121;
+  --nav-bg: #ffffff;
+  --badge-bg-clr: #e7e3da;
+}
+
+@font-face {
+  font-family: "satoshi";
+  src: url("../fonts/Satoshi.ttf") format("opentype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "chillax";
+  src: url("../fonts/Chillax.ttf") format("opentype");
+  font-display: swap;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: var(--main-font);
+}
+
+body {
+  background-color: var(--main-bg-clr);
+  height: 100vh;
+  position: relative;
+  scroll-behavior: smooth;
+  padding: 0;
+}
+
+.show {
+  display: block;
+}
