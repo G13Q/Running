@@ -1,3 +1,7 @@
+.tab-content {
+  display: contents;
+}
+
 .menu {
   overflow: hidden;
   height: 100vh;
@@ -8,8 +12,8 @@
   display: none;
 
   .menuContent {
-    padding: 25px;
-    padding-top: 180px;
+    padding: 20px;
+    padding-top: 115px;
     transition: 0.4s ease-in-out;
     background-color: var(--main-bg-clr);
     display: grid;
@@ -140,6 +144,30 @@
 }
 
 @keyframes showMenuItems {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.navTitle {
+  background-color: var(--menu-title-clr);
+  height: 50px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: 1 / -1;
+  margin-bottom: 20px;
+  font-family: "chillax", sans-serif;
+  font-weight: 500;
+
+  font-size: 0.8rem;
+  animation: fadeTitle 0.3s ease;
+}
+
+@keyframes fadeTitle {
   from {
     opacity: 0;
   }

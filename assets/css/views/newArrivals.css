@@ -29,14 +29,15 @@
 }
 
 .collection-toolbar {
-  top: 92px;
+  position: sticky;
+  top: 110px;
   z-index: 50;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 16px;
   min-height: 64px;
-  margin: 0 10px 10px;
+  margin: 20px 10px 10px;
   padding: 12px 16px;
   border-radius: 999px;
   background: var(--badge-bg-clr);
@@ -119,11 +120,137 @@
   background-repeat: no-repeat;
 }
 
+.chip-remove {
+  background: none;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  font-size: 1rem;
+  line-height: 1;
+  margin-left: 4px;
+  padding: 0;
+  vertical-align: middle;
+  opacity: 0.6;
+}
+.chip-remove:hover {
+  opacity: 1;
+}
+
 .collection-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 10px;
   padding: 0 10px 32px;
+
+  .collection-grid__empty {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 48px 16px;
+    font-size: 1rem;
+    opacity: 0.6;
+  }
+
+  .card {
+    min-width: 0;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 16px;
+    height: auto;
+    position: relative;
+    user-select: none;
+    cursor: pointer;
+
+    a {
+      text-decoration: none;
+      color: inherit;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+
+    img {
+      width: 100%;
+      aspect-ratio: 1;
+      object-fit: cover;
+      border-radius: 12px;
+    }
+
+    .info {
+      padding: 12px 0 0;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+
+      .name {
+        font-size: 1rem;
+        font-weight: 600;
+        color: var(--sec-bg-clr);
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .color {
+        font-size: 0.9rem;
+        opacity: 0.7;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .price {
+        font-size: 0.8rem;
+        font-weight: 700;
+      }
+      .swatches {
+        display: flex;
+        gap: 5px;
+        flex-wrap: wrap;
+        margin-top: 10px;
+      }
+      .hue {
+        width: 2vw;
+        height: 2vw;
+        cursor: pointer;
+        border-radius: 50%;
+        border: 1px solid transparent;
+        box-shadow: inset 0 0 0 2px rgb(255, 255, 255);
+      }
+      .hue--active {
+        border-color: var(--sec-bg-clr);
+      }
+    }
+
+    .badge {
+      position: absolute;
+      top: 18px;
+      left: 18px;
+      height: 22px;
+      padding-inline: 8px;
+      border-radius: 40px;
+      font-size: 0.6rem;
+      background-color: var(--badge-bg-clr);
+      text-align: center;
+      align-content: center;
+      font-weight: 700;
+      color: var(--sec-bg-clr);
+    }
+
+    .card__badge {
+      position: absolute;
+      top: 18px;
+      left: 18px;
+      margin: 0;
+      padding: 7px 13px;
+      border-radius: 40px;
+      font-size: 0.65rem;
+      background-color: var(--badge-bg-clr);
+      text-align: center;
+      font-weight: 700;
+      color: var(--sec-bg-clr);
+      z-index: 2;
+    }
+  }
 }
 
 .pagination {
@@ -400,24 +527,38 @@
   color: rgba(33, 33, 33, 0.4);
 }
 
-.filter-panel__apply {
-  display: none;
-  margin-left: auto;
+.filter-panel__apply,
+.filter-panel__clear {
   padding: 10px 24px;
   border: none;
   border-radius: 999px;
-  background: var(--sec-bg-clr);
-  color: var(--nav-bg);
   font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
   font-size: 13px;
   font-weight: 700;
   cursor: pointer;
   transition: opacity 0.15s;
 }
+.filter-panel__apply {
+  display: none;
+  margin-left: auto;
+  background: var(--sec-bg-clr);
+  color: var(--nav-bg);
+}
 .filter-panel__apply:hover {
   opacity: 0.85;
 }
-.filter-panel.has-selection .filter-panel__apply {
+.filter-panel__clear {
+  display: none;
+  background: transparent;
+  color: var(--sec-bg-clr);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.filter-panel__clear:hover {
+  opacity: 0.65;
+}
+.filter-panel.has-selection .filter-panel__apply,
+.filter-panel.has-selection .filter-panel__clear {
   display: inline-flex;
 }
 
@@ -502,12 +643,19 @@
   color: var(--nav-bg);
   border-color: var(--sec-bg-clr);
 }
+.filter-size--disabled {
+  opacity: 0.25;
+  cursor: not-allowed;
+  pointer-events: none;
+}
 
 /* ── Color swatches ── */
 .filter-colors {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px 20px;
+  overflow-y: auto;
+  padding-right: 4px;
 }
 
 .filter-color {
@@ -543,6 +691,13 @@
   box-shadow:
     0 0 0 2px var(--nav-bg),
     0 0 0 4px var(--sec-bg-clr);
+}
+.filter-color--disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+.filter-color--disabled .filter-color__swatch {
+  filter: grayscale(1);
 }
 
 /* ── Checkbox list ── */

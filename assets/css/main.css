@@ -13,6 +13,7 @@
 @import "components/productCard.css";
 @import "components/infoFaq.css";
 @import "views/newArrivals.css";
+@import "views/search.css";
 
 :root {
   --main-bg-clr: #f0eee9;
@@ -20,6 +21,7 @@
   --sec-bg-clr: #212121;
   --nav-bg: #ffffff;
   --badge-bg-clr: #e7e3da;
+  --menu-title-clr: #e8e3db;
 }
 
 @font-face {
@@ -49,4 +51,53 @@ body {
 
 .show {
   display: block;
+}
+
+.card__badge {
+  position: absolute;
+  z-index: 3;
+  top: 14px;
+  left: 14px;
+  padding: 8px 10px;
+  border-radius: 999px;
+  background: var(--main-bg-clr);
+  color: var(--sec-bg-clr);
+  font-size: 0.68rem;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+}
+
+.card__badge--last_few {
+  background: #d9534f;
+  color: #fff;
+}
+
+.card__badge--new {
+  background: #5cb85c;
+  color: #fff;
+}
+
+.card__badge--bestseller {
+  background: #f0ad4e;
+  color: #fff;
+}
+
+.card__badge {
+  position: absolute;
+  z-index: 3;
+  top: 14px;
+  left: 14px;
+  padding: 8px 10px;
+  border-radius: 999px;
+  background: var(--main-bg-clr);
+  color: var(--sec-bg-clr);
+  font-size: 0.68rem;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+}
+
+.card {
+  position: relative;
 }

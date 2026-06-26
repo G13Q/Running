@@ -1,6 +1,10 @@
  <header>
       <div class="menu">
-        <div class="menuContent"></div>
+        <div class="menuContent">
+          <div class="tab-content" data-tab="men"><?php require __DIR__ . "/../tabs/men.php" ?></div>
+          <div class="tab-content" data-tab="women"><?php require __DIR__ . "/../tabs/women.php" ?></div>
+          <div class="tab-content" data-tab="sale"><?php require __DIR__ . "/../tabs/sale.php" ?></div>
+        </div>
       </div>
       <div class="sale-announcement">
         <button class="ann-arrow ann-arrow--left" aria-label="Previous announcement">&#8249;</button>
@@ -13,30 +17,38 @@
       </div>
 
       <nav>
-        <h1>Logo</h1>
+        <a href="?route=home"><h1>Logo</h1></a>
 
+        <?php $navItems = [
+            ["label" => "NEW ARRIVALS", "route" => "new-arrivals"],
+            ["label" => "SHOP ALL",    "route" => "shop-all"],
+            ["label" => "MEN",         "route" => "mens",         "tab" => "men"],
+            ["label" => "WOMEN",       "route" => "womens",       "tab" => "women"],
+            ["label" => "SALE",        "route" => "sale",         "tab" => "sale"],
+        ]; ?>
         <ul>
-          <li  class="nav-item">NEW ARRIVALS</li>
-          <li  class="nav-item">SHOP ALL</li>
-          <li class="nav-item" data-index="0">MEN</li>
-          <li class="nav-item" data-index="1">WOMEN</li>
-          <li class="nav-item" data-index="2">SALE</li>
-          
+          <?php foreach ($navItems as $item): ?>
+            <li class="nav-item"<?= isset($item["tab"]) ? " data-tab=\"{$item["tab"]}\"" : "" ?>>
+              <a href="?route=<?= $item["route"] ?>"><?= $item["label"] ?></a>
+            </li>
+          <?php endforeach; ?>
         </ul>
 
         <div class="nav-right">
           
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            height="24px"
-            viewBox="0 -960 960 960"
-            width="24px"
-            fill="#1f1f1f"
-          >
-            <path
-              d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"
-            />
-          </svg>
+          <a href="?route=search" aria-label="Search">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="#1f1f1f"
+            >
+              <path
+                d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"
+              />
+            </svg>
+          </a>
 
           <svg class="cartOpen"
             xmlns="http://www.w3.org/2000/svg"
@@ -84,15 +96,12 @@
       <div class="noItemsInCart">
         <h1>Your cart is empty. Start shopping!</h1>
         <div class="btnGroup">
-          <a href=""><button>SHOP WOMENS</button></a>
-        <a href=""><button>SHOP MENS</button></a>
-        <a href=""><button>SHOP ALL</button></a>
-        <a href=""><button>SHOP WOMENS SALE</button></a>
-        <a href=""><button>SHOP MENS SALE</button></a>
+          <a href="?route=womens"><button>SHOP WOMENS</button></a>
+        <a href="?route=mens"><button>SHOP MENS</button></a>
+        <a href="?route=shop-all"><button>SHOP ALL</button></a>
+        <a href="?route=sale"><button>SHOP WOMENS SALE</button></a>
+        <a href="?route=sale"><button>SHOP MENS SALE</button></a>
         </div>
         
-      </div>
     </div>
-
-  </body>
-</html>
+  </div>

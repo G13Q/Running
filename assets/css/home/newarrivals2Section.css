@@ -26,7 +26,16 @@
       background-color: var(--nav-bg);
       min-width: 26vw;
       padding: 15px;
+      display: flex;
+      flex-direction: column;
+      img {
+        width: 100%;
+        aspect-ratio: 1;
+        object-fit: cover;
+        flex-shrink: 0;
+      }
       .info {
+        flex: 1;
         display: flex;
         flex-direction: column;
         gap: 5px;
@@ -35,23 +44,37 @@
           font-size: 1.1rem;
           font-weight: bold;
           color: var(--sec-bg-clr);
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
         }
-        .cName {
+        .color {
           font-size: 0.9rem;
           opacity: 0.9;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
         }
         .price {
           font-size: 0.9rem;
           font-weight: bold;
         }
-        .hue {
+        .swatches {
+          display: flex;
+          gap: 5px;
+          flex-wrap: wrap;
           margin-top: 10px;
+        }
+        .hue {
           width: 2vw;
           height: 2vw;
           cursor: pointer;
           border-radius: 50%;
-          border: 1px solid var(--sec-bg-clr);
+          border: 1px solid transparent;
           box-shadow: inset 0 0 0 2px rgb(255, 255, 255);
+        }
+        .hue--active {
+          border-color: var(--sec-bg-clr);
         }
       }
 
