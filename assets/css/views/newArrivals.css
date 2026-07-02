@@ -1,5 +1,5 @@
 .collection-page {
-  padding-top: 120px;
+  padding-top: 30px;
   background: var(--main-bg-clr);
   color: var(--sec-bg-clr);
 }
@@ -70,6 +70,11 @@
   padding: 5px;
   border: 1px solid var(--sec-bg-clr);
   border-radius: 50%;
+  transition: border-color 0.2s, color 0.2s;
+}
+.collection-toolbar__filter:hover svg {
+  border-color: var(--accent-clr);
+  color: var(--accent-clr);
 }
 
 .collection-toolbar__count {
@@ -171,7 +176,7 @@
     display: inline-block;
     margin-top: 8px;
     padding: 12px 32px;
-    background-color: #1a1a1a;
+    background-color: var(--accent-clr);
     color: #fff;
     text-decoration: none;
     border-radius: 999px;
@@ -181,7 +186,7 @@
   }
 
   .collection-grid__empty-link:hover {
-    background-color: #333;
+    background-color: var(--accent-hover);
   }
 
   .card {
@@ -313,8 +318,9 @@
 }
 
 .pagination__btn:hover:not(.pagination__btn--disabled) {
-  background: var(--sec-bg-clr);
+  background: var(--accent-clr);
   color: white;
+  border-color: var(--accent-clr);
 }
 
 .pagination__btn--disabled {
@@ -348,7 +354,7 @@
 }
 
 .pagination__page--active {
-  background: var(--sec-bg-clr);
+  background: var(--accent-clr);
   color: white;
   pointer-events: none;
 }
@@ -435,7 +441,7 @@
 
 @media (max-width: 720px) {
   .collection-page {
-    padding-top: 105px;
+    padding-top: 15px;
   }
 
   .collection-page__intro {
@@ -572,7 +578,7 @@
 .filter-panel__apply {
   display: none;
   margin-left: auto;
-  background: var(--sec-bg-clr);
+  background: var(--accent-clr);
   color: var(--nav-bg);
 }
 .filter-panel__apply:hover {
@@ -581,7 +587,7 @@
 .filter-panel__clear {
   display: none;
   background: transparent;
-  color: var(--sec-bg-clr);
+  color: var(--accent-clr);
   text-decoration: underline;
   text-underline-offset: 2px;
 }
@@ -667,9 +673,9 @@
   background: rgba(33, 33, 33, 0.06);
 }
 .filter-size.is-active {
-  background: var(--sec-bg-clr);
+  background: var(--accent-clr);
   color: var(--nav-bg);
-  border-color: var(--sec-bg-clr);
+  border-color: var(--accent-clr);
 }
 .filter-size--disabled {
   opacity: 0.25;
@@ -717,7 +723,7 @@
 .filter-color.is-active .filter-color__swatch {
   box-shadow:
     0 0 0 2px var(--nav-bg),
-    0 0 0 4px var(--sec-bg-clr);
+    0 0 0 4px var(--accent-clr);
 }
 .filter-color--disabled {
   opacity: 0.3;
@@ -780,8 +786,8 @@
 }
 
 .filter-checkbox.is-active .filter-checkbox__box {
-  background: var(--sec-bg-clr);
-  border-color: var(--sec-bg-clr);
+  background: var(--accent-clr);
+  border-color: var(--accent-clr);
 }
 .filter-checkbox.is-active .filter-checkbox__box svg {
   opacity: 1;
