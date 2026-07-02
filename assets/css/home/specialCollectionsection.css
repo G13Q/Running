@@ -42,8 +42,8 @@
       cursor: pointer;
     }
     button:hover {
-      background-color: var(--sec-bg-clr);
-      color: var(--main-bg-clr);
+      background-color: var(--accent-clr);
+      color: white;
     }
   }
   div:nth-child(2) {

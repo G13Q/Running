@@ -115,8 +115,9 @@
         cursor: pointer;
       }
       div:hover {
-        background-color: var(--sec-bg-clr);
-        color: var(--main-bg-clr);
+        background-color: var(--accent-clr);
+        color: white;
+        border-color: var(--accent-clr);
       }
     }
   }

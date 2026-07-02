@@ -138,7 +138,7 @@
 }
 
 .product-card__swatch--active {
-  border-color: var(--sec-bg-clr);
+  border-color: var(--accent-clr);
   transform: scale(1.15);
 }
 
@@ -188,8 +188,8 @@
 }
 
 .product-card__quick-add button:hover {
-  background: var(--sec-bg-clr);
-  border-color: var(--sec-bg-clr);
+  background: var(--accent-clr);
+  border-color: var(--accent-clr);
   color: white;
 }
 
