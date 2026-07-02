@@ -63,6 +63,16 @@ switch ($route) {
         (new AuthController())->index();
         break;
 
+    case "admin":
+        require_once __DIR__ . "/controllers/AdminController.php";
+        (new AdminController())->index();
+        break;
+
+    case "delivery":
+        require_once __DIR__ . "/controllers/DeliveryController.php";
+        (new DeliveryController())->index();
+        break;
+
     default:
         require_once __DIR__ . "/controllers/HomeController.php";
         (new HomeController())->index();

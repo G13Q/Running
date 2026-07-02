@@ -62,6 +62,7 @@ class HomeController
                 "color" => $swatches[0]["name"] ?? "",
                 "swatches" => $swatches,
                 "badge" => $badge,
+                "url" => "?route=product&id=" . $p["id"],
             ];
         }
 

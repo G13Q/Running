@@ -4,7 +4,6 @@ require_once __DIR__ . '/Model.php';
 
 class Collection extends Model {
 
-    // ── READ ────────────────────────────────────────────────────────────────
 
     public function findAll(): array {
         return $this->fetchAll(
@@ -25,9 +24,6 @@ class Collection extends Model {
         );
     }
 
-    /**
-     * All products belonging to a collection.
-     */
     public function getProducts(int $collectionId): array {
         return $this->fetchAll(
             'SELECT p.*, b.name AS brand_name
@@ -40,7 +36,6 @@ class Collection extends Model {
         );
     }
 
-    // ── CREATE ───────────────────────────────────────────────────────────────
 
     public function create(
         string  $name,
@@ -57,7 +52,6 @@ class Collection extends Model {
         );
     }
 
-    // ── UPDATE ───────────────────────────────────────────────────────────────
 
     public function update(
         int     $id,
@@ -75,7 +69,6 @@ class Collection extends Model {
         );
     }
 
-    // ── PIVOT : Product_collections ──────────────────────────────────────────
 
     public function addProduct(int $collectionId, int $productId): bool {
         return $this->execute(
@@ -91,7 +84,6 @@ class Collection extends Model {
         );
     }
 
-    // ── DELETE ───────────────────────────────────────────────────────────────
 
     public function delete(int $id): int {
         return $this->execute('DELETE FROM Collections WHERE id = ?', [$id]);

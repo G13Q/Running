@@ -1,27 +1,28 @@
-/* ── Allbirds Product Detail ────────────────────────────────── */
-
 function initProductGallery() {
   const gallery = document.querySelector("[data-gallery]");
   if (!gallery) return;
 
   const mainImg = document.getElementById("pdpMainImage");
-  const thumbs = gallery.querySelectorAll("[data-thumbs] .pdp-thumb");
+  const thumbsContainer = gallery.querySelector("[data-thumbs]");
+  if (!thumbsContainer || !mainImg) return;
 
-  thumbs.forEach((thumb) => {
-    thumb.addEventListener("click", () => {
-      const idx = thumb.dataset.index;
-      const img = thumb.querySelector("img");
-      if (!img || !mainImg) return;
+  thumbsContainer.addEventListener("click", (e) => {
+    const thumb = e.target.closest(".pdp-thumb");
+    if (!thumb) return;
+    const idx = thumb.dataset.index;
+    const img = thumb.querySelector("img");
+    if (!img) return;
 
-      thumbs.forEach((t) => t.classList.remove("active"));
-      thumb.classList.add("active");
+    thumbsContainer.querySelectorAll(".pdp-thumb").forEach((t) =>
+      t.classList.remove("active")
+    );
+    thumb.classList.add("active");
 
-      mainImg.style.opacity = "0";
-      setTimeout(() => {
-        mainImg.src = img.src;
-        mainImg.style.opacity = "1";
-      }, 150);
-    });
+    mainImg.style.opacity = "0";
+    setTimeout(() => {
+      mainImg.src = img.src;
+      mainImg.style.opacity = "1";
+    }, 150);
   });
 }
 
@@ -30,6 +31,31 @@ function initColorSwatches() {
   if (!swatches) return;
 
   const colorNameEl = document.querySelector(".pdp-color-name");
+  const mainImg = document.getElementById("pdpMainImage");
+  const thumbsContainer = document.querySelector("[data-thumbs]");
+
+  function swapGallery(images) {
+    if (!images || images.length === 0) return;
+
+    if (mainImg) {
+      mainImg.style.opacity = "0";
+      setTimeout(() => {
+        mainImg.src = images[0];
+        mainImg.style.opacity = "1";
+      }, 150);
+    }
+
+    if (thumbsContainer) {
+      thumbsContainer.innerHTML = images
+        .map(
+          (src, i) =>
+            `<button class="pdp-thumb${i === 0 ? " active" : ""}" data-index="${i}">
+              <img src="${src}" alt="" loading="lazy" />
+            </button>`
+        )
+        .join("");
+    }
+  }
 
   swatches.querySelectorAll(".pdp-swatch").forEach((swatch) => {
     swatch.addEventListener("click", () => {
@@ -43,6 +69,14 @@ function initColorSwatches() {
         const clean = raw.split("(")[0].trim();
         colorNameEl.textContent = clean;
       }
+
+      let images;
+      try {
+        images = JSON.parse(swatch.dataset.images || "[]");
+      } catch (e) {
+        images = [];
+      }
+      swapGallery(images);
     });
   });
 }
@@ -56,6 +90,7 @@ function initSizeSelector() {
 
   grid.querySelectorAll(".pdp-size-btn").forEach((btn) => {
     btn.addEventListener("click", () => {
+      if (btn.disabled) return;
       grid.querySelectorAll(".pdp-size-btn").forEach((b) =>
         b.classList.remove("selected")
       );
@@ -133,7 +168,7 @@ function initScrollAnimations() {
   if (!window.gsap) return;
 
   const sections = document.querySelectorAll(
-    ".pdp-features, .pdp-related, .pdp-reviews, .pdp-better"
+    ".pdp-tech, .pdp-related-new, .pdp-sustainability"
   );
 
   sections.forEach((section) => {

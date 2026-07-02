@@ -11,7 +11,7 @@ $pageUrl = "?" . http_build_query($queryParams);
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SEARCH</title>
-    <link rel="stylesheet" href="../assets/css/main.css" />
+    <link rel="stylesheet" href="../assets/css/main.css?v=2" />
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
     <script src="https://code.jquery.com/jquery-4.0.0.js" integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U=" crossorigin="anonymous"></script>
     <script type="module" src="../assets/js/shared/nav.js" defer></script>
@@ -72,9 +72,9 @@ $pageUrl = "?" . http_build_query($queryParams);
           </div>
         <?php else: ?>
           <?php foreach ($pageProducts as $item): ?>
-            <div class="card">
+            <a href="<?= $item["url"] ?>" class="card">
               <?php require __DIR__ . "/components/product-card-swatch.php"; ?>
-            </div>
+            </a>
           <?php endforeach; ?>
         <?php endif; ?>
       </section>
@@ -103,7 +103,8 @@ $pageUrl = "?" . http_build_query($queryParams);
     </main>
 
     <script>
-      $(".collection-grid").on("click", ".hue", function () {
+      $(".collection-grid").on("click", ".hue", function (e) {
+        e.preventDefault();
         const thumb = $(this).data("thumb");
         $(this).closest(".card").find("img").attr("src", thumb);
         $(this).closest(".swatches").find(".hue").removeClass("hue--active");

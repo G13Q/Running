@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Running Shoes</title>
 
-    <link rel="stylesheet" href="./assets/css/main.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Arizonia&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/main.css?v=2" />
+
     <link rel="stylesheet" href="<link rel=" preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -34,7 +34,7 @@
     <section class="hero-container">
         <div id="hero-section">
             <div class="hero-txt">
-                <h2>The New Canvas Cruiser Collection</h2>
+                <h2>The New Collection</h2>
                 <div class="hero-btns">
                     <button>SHOP MEN</button>
                     <button>SHOP WOMEN</button>
@@ -83,7 +83,7 @@
             </span>
             <div class="newAriv1content">
                 <?php foreach (array_slice($items, 0, 20) as $item): ?>
-                    <div><img src="<?= $item["image"] ?>" alt="<?= $item["name"] ?>"></div>
+                    <div data-name="<?= htmlspecialchars($item["name"]) ?>" data-price="<?= $item["price"] ?>"><img src="<?= $item["image"] ?>" alt="<?= $item["name"] ?>"></div>
                 <?php endforeach; ?>
             </div>
             <div class="info">
@@ -99,7 +99,7 @@
         <section class="specialCollectionSection">
             <div class="main">
                 <h1>Bold By Nature</h1>
-                <p>Show your true colors in eight exclusivePantone-curated shades.</p>
+                <p>Show your true colors .</p>
                 <button>SHOP NOW</button>
             </div>
             <div></div>
@@ -117,9 +117,9 @@
             </div>
             <div class="content">
                 <?php foreach (array_slice($items, 20) as $item): ?>
-                    <div class="card">
+                    <a href="<?= $item["url"] ?>" class="card">
                         <?php require __DIR__ . "/components/product-card-swatch.php"; ?>
-                    </div>
+                    </a>
                 <?php endforeach; ?>
             </div>
         </section>
@@ -155,6 +155,14 @@
     </main>
 
     <?php require_once __DIR__ . "/components/footer.php"; ?>
+    <script>
+      $(".newArrivals2 .content").on("click", ".hue", function (e) {
+        e.preventDefault();
+        const thumb = $(this).data("thumb");
+        $(this).closest(".card").find("img").attr("src", thumb);
+        $(this).closest(".swatches").find(".hue").removeClass("hue--active");
+        $(this).addClass("hue--active");
+      });
+    </script>
 </body>
-
 </html>

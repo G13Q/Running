@@ -4,7 +4,6 @@ require_once __DIR__ . '/Model.php';
 
 class Order extends Model {
 
-    // ── READ ────────────────────────────────────────────────────────────────
 
     public function findById(int $id): ?array {
         return $this->fetchOne(
@@ -62,9 +61,6 @@ class Order extends Model {
         );
     }
 
-    /**
-     * All line items for a given order.
-     */
     public function getItems(int $orderId): array {
         return $this->fetchAll(
             'SELECT oi.*,
@@ -80,12 +76,7 @@ class Order extends Model {
         );
     }
 
-    // ── CREATE ───────────────────────────────────────────────────────────────
 
-    /**
-     * Insert the order header and return the new order ID.
-     * Line items are inserted separately via addItem().
-     */
     public function create(
         int    $clientId,
         int    $cityId,
@@ -112,7 +103,6 @@ class Order extends Model {
         );
     }
 
-    // ── UPDATE ───────────────────────────────────────────────────────────────
 
     public function updateStatus(int $id, string $status): int {
         return $this->execute(
@@ -142,7 +132,6 @@ class Order extends Model {
         );
     }
 
-    // ── DELETE ───────────────────────────────────────────────────────────────
 
     public function delete(int $id): int {
         return $this->execute('DELETE FROM Orders WHERE id = ?', [$id]);

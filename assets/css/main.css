@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Arizonia&display=swap");
+
 @import "home/footer.css";
 @import "home/infoCardsSection.css";
 @import "home/header.css";
@@ -15,14 +17,15 @@
 @import "views/newArrivals.css";
 @import "views/search.css";
 @import "views/product-detail.css";
+@import "views/auth-checkout.css";
 
 :root {
-  --main-bg-clr: #f0eee9;
+  --main-bg-clr: #f5f3ef;
   --main-font: "satoshi", sans-serif;
-  --sec-bg-clr: #212121;
+  --sec-bg-clr: #1a1a1a;
   --nav-bg: #ffffff;
-  --badge-bg-clr: #e7e3da;
-  --menu-title-clr: #e8e3db;
+  --badge-bg-clr: #e3ddd4;
+  --menu-title-clr: #e3ddd4;
 }
 
 @font-face {
@@ -101,4 +104,11 @@ body {
 
 .card {
   position: relative;
+}
+
+a.card {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
 }

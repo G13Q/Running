@@ -1,5 +1,5 @@
 .info-faq {
-  background: #f5f5f3;
+  background: #f5f3ef;
 }
 
 .info-faq__inner {
@@ -16,7 +16,7 @@
   font-weight: 700;
   text-transform: uppercase;
 
-  color: #111111;
+  color: #1a1a1a;
   margin-bottom: 42px;
 }
 
@@ -58,7 +58,7 @@
   font-size: 18px;
   font-weight: 500;
   line-height: 1.4;
-  color: #111;
+  color: #1a1a1a;
 }
 
 .info-faq__icon {
@@ -67,7 +67,7 @@
   justify-content: center;
   width: 28px;
   height: 28px;
-  border: 1.5px solid #111;
+  border: 1.5px solid #1a1a1a;
   border-radius: 50%;
   flex-shrink: 0;
   transition: transform 0.2s ease;

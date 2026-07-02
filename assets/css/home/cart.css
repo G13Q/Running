@@ -22,6 +22,8 @@
   margin: 0;
   padding-top: 5px;
   transform: translateX(100%);
+  display: flex;
+  flex-direction: column;
 
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.275);
   .progress {
@@ -30,6 +32,14 @@
     background-color: var(--main-bg-clr);
     margin-inline: auto;
     margin-block: 10px;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  .progressFill {
+    height: 100%;
+    background-color: #000;
+    border-radius: 4px;
+    transition: width 0.3s ease;
   }
   .header {
     display: flex;
@@ -86,4 +96,113 @@
       background-color: rgba(0, 0, 0, 0.729);
     }
   }
+}
+
+.cartItems {
+  flex: 1;
+  overflow-y: auto;
+  padding: 0 15px;
+}
+
+.cartItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 12px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.cartItemImg {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+.cartItemImg--placeholder {
+  background-color: var(--main-bg-clr);
+}
+
+.cartItemInfo {
+  flex: 1;
+  min-width: 0;
+}
+
+.cartItemName {
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-bottom: 2px;
+  line-height: 1.3;
+}
+
+.cartItemMeta {
+  font-size: 0.7rem;
+  color: #666;
+  margin-bottom: 1px;
+}
+
+.cartItemPrice {
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-top: 4px;
+}
+
+.cartItemRemoveForm {
+  flex-shrink: 0;
+}
+
+.cartItemRemove {
+  background: none;
+  border: none;
+  font-size: 1.4rem;
+  cursor: pointer;
+  color: #999;
+  padding: 0;
+  line-height: 1;
+  transition: color 0.15s;
+}
+
+.cartItemRemove:hover {
+  color: #333;
+}
+
+.cartFooter {
+  padding: 15px;
+  border-top: 1px solid #eee;
+}
+
+.cartTotal {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.cartCheckout {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background-color: #e85d2c;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 0.8rem;
+  margin-bottom: 10px;
+  transition: background-color 0.2s;
+}
+
+.cartCheckout:hover {
+  background-color: #d64d1a;
+}
+
+.cartViewAll {
+  display: block;
+  text-align: center;
+  font-size: 0.75rem;
+  color: #666;
+  text-decoration: underline;
 }

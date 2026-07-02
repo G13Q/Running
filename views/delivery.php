@@ -1,129 +1,115 @@
 <!doctype html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Delivery Dashboard</title>
+    <link rel="stylesheet" href="../assets/css/main.css?v=2" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-4.0.0.js" integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U=" crossorigin="anonymous"></script>
+    <script type="module" src="../assets/js/shared/nav.js" defer></script>
+    <script type="module" src="../assets/js/shared/cart.js" defer></script>
     <style>
         .delivery-page {
-            padding-top: 120px;
-            min-height: 100vh;
-            background: #f0eee9;
-            color: #212121;
-            max-width: 1200px;
+            max-width: 1000px;
             margin: 0 auto;
-            padding-inline: 20px;
+            padding: 60px 20px 100px;
         }
-
         .delivery-page h1 {
-            font-size: 1.8rem;
+            font-size: 1.6rem;
             font-weight: 700;
             margin-bottom: 8px;
         }
-
         .delivery-page__subtitle {
-            color: rgba(33, 33, 33, 0.55);
-            font-size: 0.9rem;
+            color: rgba(33,33,33,0.5);
+            font-size: 0.88rem;
             margin-bottom: 32px;
         }
-
-        .cart-table {
+        .delivery-page .cart-table {
             width: 100%;
             border-collapse: collapse;
-            background: #fff;
+            background: var(--nav-bg);
             border-radius: 12px;
             overflow: hidden;
-            box-shadow: 0 1px 6px rgba(0, 0, 0, 0.06);
+            box-shadow: 0 1px 6px rgba(0,0,0,0.06);
         }
-
-        .cart-table th {
+        .delivery-page .cart-table th {
             text-align: left;
-            padding: 16px 20px;
-            font-size: 0.75rem;
+            padding: 14px 20px;
+            font-size: 0.72rem;
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 0.8px;
-            color: rgba(33, 33, 33, 0.5);
-            border-bottom: 1px solid rgba(33, 33, 33, 0.08);
+            color: rgba(33,33,33,0.45);
+            border-bottom: 1px solid rgba(33,33,33,0.08);
+            background: #fafaf8;
         }
-
-        .cart-table td {
-            padding: 16px 20px;
-            font-size: 0.9rem;
-            border-bottom: 1px solid rgba(33, 33, 33, 0.06);
+        .delivery-page .cart-table td {
+            padding: 14px 20px;
+            font-size: 0.88rem;
+            border-bottom: 1px solid rgba(33,33,33,0.06);
         }
-
-        .cart-table tbody tr:last-child td {
+        .delivery-page .cart-table tbody tr:last-child td {
             border-bottom: none;
         }
-
-        .cart-table tbody tr:hover {
-            background: rgba(240, 238, 233, 0.4);
+        .delivery-page .cart-table tbody tr:hover {
+            background: rgba(240,238,233,0.4);
         }
-
         .status-badge {
             display: inline-block;
             padding: 4px 12px;
             border-radius: 999px;
             font-size: 0.75rem;
             font-weight: 600;
-            text-transform: capitalize;
         }
-
         .status-badge--shipped {
             background: #dbeafe;
             color: #1e40af;
         }
-
         .btn-deliver {
             padding: 8px 20px;
             border: none;
-            border-radius: 999px;
-            background: #065f46;
+            border-radius: 25px;
+            background: #000;
             color: #fff;
-            font-size: 0.8rem;
-            font-weight: 600;
+            font-size: 0.78rem;
+            font-weight: 700;
+            font-family: var(--main-font);
             cursor: pointer;
-            transition: background 0.2s ease;
+            transition: background 0.2s;
         }
-
         .btn-deliver:hover {
-            background: #047857;
+            background: rgba(0,0,0,0.8);
         }
-
         .delivery-empty {
             text-align: center;
             padding: 80px 20px;
-            color: rgba(33, 33, 33, 0.45);
+            color: rgba(33,33,33,0.4);
         }
-
         .delivery-empty__title {
             font-size: 1.2rem;
             font-weight: 700;
             margin-bottom: 8px;
+            color: #222;
         }
-
         .delivery-empty__desc {
             font-size: 0.9rem;
         }
-
         @media (max-width: 720px) {
             .delivery-page {
-                padding-top: 105px;
-                padding-inline: 12px;
+                padding: 40px 16px 80px;
             }
-
-            .cart-table th,
-            .cart-table td {
+            .delivery-page .cart-table th,
+            .delivery-page .cart-table td {
                 padding: 12px 14px;
                 font-size: 0.8rem;
             }
         }
     </style>
 </head>
-
 <body>
+    <?php require_once __DIR__ . "/components/navbar.php"; ?>
+
     <main class="delivery-page">
         <h1>Delivery Dashboard</h1>
         <?php if (!empty($cityName)): ?>
@@ -153,7 +139,7 @@
                             <td>#<?= $order["id"] ?></td>
                             <td><?= e($order["client_name"] ?? "") ?></td>
                             <td><?= e($order["city_name"] ?? "") ?></td>
-                            <td>$<?= number_format($order["subtotal"]) ?></td>
+                            <td>$<?= number_format((float)$order["subtotal"], 2) ?></td>
                             <td><span class="status-badge status-badge--shipped">Shipped</span></td>
                             <td>
                                 <form method="POST" action="?route=delivery">
@@ -168,6 +154,7 @@
             </table>
         <?php endif; ?>
     </main>
-</body>
 
+    <?php require_once __DIR__ . "/components/footer.php"; ?>
+</body>
 </html>

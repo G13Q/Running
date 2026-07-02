@@ -6,7 +6,7 @@
       <img src="<?= e($category["image"]) ?>" alt="<?= e($category["title"]) ?>" loading="lazy" />
       <div class="collection-category__content">
         <h2><?= e($category["title"]) ?></h2>
-        <a href="?route=<?= e($category["route"] ?? "#") ?>"><?= e($category["cta"]) ?></a>
+        <a href="?route=<?= e($category["route"] ?? "shop-all") ?>"><?= e($category["cta"]) ?></a>
       </div>
     </article>
   <?php endforeach; ?>

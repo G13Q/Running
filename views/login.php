@@ -1,11 +1,10 @@
 <!doctype html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
-    <link rel="stylesheet" href="../assets/css/main.css" />
+    <link rel="stylesheet" href="../assets/css/main.css?v=2" />
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
     <script src="https://code.jquery.com/jquery-4.0.0.js" integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U=" crossorigin="anonymous"></script>
     <script type="module" src="../assets/js/shared/nav.js" defer></script>
@@ -101,7 +100,6 @@
         }
     </style>
 </head>
-
 <body>
     <?php require_once __DIR__ . "/components/navbar.php"; ?>
 
@@ -122,7 +120,7 @@
                     <label for="password">Password</label>
                     <input type="password" id="password" name="password" required />
                 </div>
-                <button type="submit">Login</button>
+                <button type="submit">LOGIN</button>
             </form>
 
             <p>Don't have an account? <a href="?route=register">Register here</a></p>
@@ -131,5 +129,4 @@
 
     <?php require_once __DIR__ . "/components/footer.php"; ?>
 </body>
-
 </html>

@@ -1,11 +1,11 @@
- <header>
-     <div class="menu">
-         <div class="menuContent">
-             <div class="tab-content" data-tab="men"><?php require __DIR__ . "/../tabs/men.php" ?></div>
-             <div class="tab-content" data-tab="women"><?php require __DIR__ . "/../tabs/women.php" ?></div>
-             <div class="tab-content" data-tab="sale"><?php require __DIR__ . "/../tabs/sale.php" ?></div>
-         </div>
-     </div>
+  <header>
+      <div class="menu">
+          <div class="menuContent">
+              <div class="tab-content" data-tab="men"><?php require __DIR__ . "/../tabs/men.php" ?></div>
+              <div class="tab-content" data-tab="women"><?php require __DIR__ . "/../tabs/women.php" ?></div>
+              <div class="tab-content" data-tab="sale"><?php require __DIR__ . "/../tabs/sale.php" ?></div>
+          </div>
+      </div>
      <div class="sale-announcement">
          <button class="ann-arrow ann-arrow--left" aria-label="Previous announcement">&#8249;</button>
          <div class="ann-track">
@@ -18,16 +18,6 @@
 
      <nav>
          <a href="?route=home">
-
-             <!-- <svg viewBox="0 0 512 512" height="40" xmlns="http://www.w3.org/2000/svg">
-                 <path class="hummingbird" fill="#c4a4a4" d="M139.7 23.52c-9.1 30.54-16.5 61.64-12.7 91.58 4.2 32.7 21 64.9 65.7 95.7-53.6 74.8-86.1 204.4-59.3 277.7 10.9-54 14.2-97.8 53.5-144.6 77.5-25.6 123.9-37.6 140.3-125.7 6.2-14.7 12.6-19.3 31.9-24.7 10.6-2.9 22.2-7.5 22.1-19.2-.2-49.3-28.3-68.4-57.6-67.9-29.4.5-60 20.6-65.4 49.8-6 1.8-11.9 4.5-17.7 8-62.9-43.7-82.1-85.86-100.8-140.68zM32.03 107c10.8 27.2 26.44 54.6 49.2 76.1 24.27 22.9 56.47 39.3 100.87 42.2-34.5-24.2-54.8-50.3-65.2-77.2-29.4-10.9-56.47-25-84.87-41.1zm300.07 26.3a12.24 12.24 0 0 1 12.2 12.2 12.24 12.24 0 0 1-12.2 12.2 12.24 12.24 0 0 1-12.2-12.2 12.24 12.24 0 0 1 12.2-12.2zm60 56.1c-3.5 5.1-7.1 10.2-16.1 13.2 33.9 25.3 79.1 76.5 104 105-11.2-33.2-55.8-88.6-87.9-118.2z" />
-             </svg> -->
-             <svg viewBox="-4.8 -4.8 57.60 57.60" height="50" xmlns="http://www.w3.org/2000/svg">
-                 <path fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" d="M29.6922,33.92l-8.7887-9.46V40.5627a1.1064,1.1064,0,0,0,1.917.7531Z" />
-                 <polygon fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" points="28.96 15.788 37.749 25.248 37.749 6.329 28.96 15.788" />
-                 <path fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" d="M20.9035,24.46,5.798,8.2015A1.1065,1.1065,0,0,1,6.6086,6.342H19.22a2.2126,2.2126,0,0,1,1.6211.7067L37.7491,25.2478,29.6922,33.92" />
-                 <path fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" d="M42.3369,10.9165,37.7491,6.3287v5.5322h4.1966A.5532.5532,0,0,0,42.3369,10.9165Z" />
-             </svg>
              <h1 class="logo">Tor1</h1>
          </a>
 
@@ -92,25 +82,53 @@
      </nav>
  </header>
  <!-- cart------ -->
- <div class="cartContainer">
-
- </div>
+ <?php
+ $navCart = $_SESSION["cart"] ?? [];
+ $navCartCount = 0;
+ $navCartTotal = 0;
+ foreach ($navCart as $pid => &$item) {
+     if (empty($item["name"])) {
+         require_once __DIR__ . "/../../config/database.php";
+         require_once __DIR__ . "/../../models/product.php";
+         require_once __DIR__ . "/../../models/product_variant.php";
+         $p = (new Product($pdo))->findById((int) $pid);
+         if ($p) {
+             $vs = (new ProductVariant($pdo))->findByProduct((int) $pid);
+             $fv = $vs[0] ?? [];
+             $item["name"] = $p["name"];
+             $item["price"] = $p["base_price"];
+             $item["image"] = $fv["thumbnail"] ?? "";
+         }
+     }
+     $navCartCount += $item["quantity"] ?? 1;
+     $navCartTotal += ($item["price"] ?? 0) * ($item["quantity"] ?? 1);
+ }
+ unset($item);
+ $_SESSION["cart"] = $navCart;
+ $freeShippingThreshold = 100;
+ $progressPercent = min(100, ($navCartTotal / $freeShippingThreshold) * 100);
+ $remaining = max(0, $freeShippingThreshold - $navCartTotal);
+ ?>
+ <div class="cartContainer"></div>
  <div class="cart">
      <div class="header">
-         <h2>CART (0)</h2>
-         <p class="info">Spend $100 more to earn free shipping!</p>
-
+         <h2>CART (<?= $navCartCount ?>)</h2>
+         <?php if ($remaining > 0): ?>
+              <p class="info">Spend $<?= number_format($remaining, 2) ?> more for free shipping!</p>
+         <?php else: ?>
+             <p class="info">You've earned free shipping!</p>
+         <?php endif; ?>
          <p class="closeCart">
-             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><!-- Icon from Mono Icons by Mono - https://github.com/mono-company/mono-icons/blob/master/LICENSE.md -->
+             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
                  <path fill="currentColor" d="M5.293 5.293a1 1 0 0 1 1.414 0L12 10.586l5.293-5.293a1 1 0 1 1 1.414 1.414L13.414 12l5.293 5.293a1 1 0 0 1-1.414 1.414L12 13.414l-5.293 5.293a1 1 0 0 1-1.414-1.414L10.586 12L5.293 6.707a1 1 0 0 1 0-1.414" />
              </svg>
          </p>
-
      </div>
      <div class="progress">
-
+         <div class="progressFill" style="width: <?= $progressPercent ?>%"></div>
      </div>
 
+     <?php if (empty($navCart)): ?>
      <div class="noItemsInCart">
          <h1>Your cart is empty. Start shopping!</h1>
          <div class="btnGroup">
@@ -120,6 +138,39 @@
              <a href="?route=sale"><button>SHOP WOMENS SALE</button></a>
              <a href="?route=sale"><button>SHOP MENS SALE</button></a>
          </div>
-
      </div>
+     <?php else: ?>
+     <div class="cartItems">
+         <?php foreach ($navCart as $pid => $item): ?>
+         <div class="cartItem">
+             <?php if (!empty($item["image"])): ?>
+             <img class="cartItemImg" src="<?= e($item["image"]) ?>" alt="<?= e($item["name"]) ?>" />
+             <?php else: ?>
+             <div class="cartItemImg cartItemImg--placeholder"></div>
+             <?php endif; ?>
+             <div class="cartItemInfo">
+                 <p class="cartItemName"><?= e($item["name"]) ?></p>
+                 <?php if (!empty($item["size"])): ?>
+                 <p class="cartItemMeta">Size: <?= e($item["size"]) ?></p>
+                 <?php endif; ?>
+                 <p class="cartItemMeta">Qty: <?= $item["quantity"] ?></p>
+                 <p class="cartItemPrice">$<?= number_format((float)$item["price"], 2) ?></p>
+             </div>
+             <form method="POST" action="?route=cart" class="cartItemRemoveForm">
+                 <input type="hidden" name="action" value="remove" />
+                 <input type="hidden" name="product_id" value="<?= $pid ?>" />
+                 <button type="submit" class="cartItemRemove" aria-label="Remove item">&times;</button>
+             </form>
+         </div>
+         <?php endforeach; ?>
+     </div>
+     <div class="cartFooter">
+         <div class="cartTotal">
+             <span>Total</span>
+             <span>$<?= number_format($navCartTotal, 2) ?></span>
+         </div>
+         <a href="?route=checkout" class="cartCheckout">CHECKOUT</a>
+         <a href="?route=cart" class="cartViewAll">VIEW CART</a>
+     </div>
+     <?php endif; ?>
  </div>

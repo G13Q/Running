@@ -14,7 +14,7 @@ class MensController
         $variantModel = new ProductVariant($pdo);
         $availableColors = getFilterColors($variantModel);
 
-        $all = $productModel->findByGender("mens");
+        $all = $productModel->findByGender("men");
 
         $products = [];
         foreach ($all as $p) {
@@ -66,6 +66,7 @@ class MensController
                 "id"    => $p["id"],
                 "name"  => $p["name"],
                 "price" => $p["base_price"],
+                "sales_count" => (int)($p["sales"] ?? 0),
                 "sales" => $discount,
                 "sale_price" => $discount["sale_price"] ?? null,
                 "total_stock" => $totalStock,
@@ -79,7 +80,9 @@ class MensController
         }
 
         $sort = $_GET["sort"] ?? "featured";
-        if ($sort === "price_asc") {
+        if ($sort === "bestsellers") {
+            usort($products, fn($a, $b) => $b["sales_count"] <=> $a["sales_count"]);
+        } elseif ($sort === "price_asc") {
             usort($products, fn($a, $b) => $a["price"] <=> $b["price"]);
         } elseif ($sort === "price_desc") {
             usort($products, fn($a, $b) => $b["price"] <=> $a["price"]);

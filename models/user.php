@@ -4,8 +4,6 @@ require_once __DIR__ . '/Model.php';
 
 class User extends Model {
 
-    // ── READ ────────────────────────────────────────────────────────────────
-
     public function findAll(): array {
         return $this->fetchAll(
             'SELECT u.id, u.first_name, u.last_name, u.email, u.role, u.created_at,
@@ -28,7 +26,6 @@ class User extends Model {
     }
 
     public function findByEmail(string $email): ?array {
-        // Includes password hash — used only for auth, never exposed to views.
         return $this->fetchOne(
             'SELECT * FROM Users WHERE email = ?',
             [$email]
@@ -47,16 +44,12 @@ class User extends Model {
         );
     }
 
-    // ── CREATE ───────────────────────────────────────────────────────────────
 
-    /**
-     * @param string $password  Must be a bcrypt hash — hash BEFORE calling this.
-     */
     public function create(
         string  $firstName,
         string  $lastName,
         string  $email,
-        string  $password,   // bcrypt hash
+        string  $password,
         string  $role = 'user',
         ?int    $cityId = null
     ): int {
@@ -67,7 +60,6 @@ class User extends Model {
         );
     }
 
-    // ── UPDATE ───────────────────────────────────────────────────────────────
 
     public function update(
         int     $id,
@@ -91,16 +83,11 @@ class User extends Model {
         );
     }
 
-    // ── AUTH HELPER ──────────────────────────────────────────────────────────
 
-    /**
-     * Verify a plain-text password against the stored hash.
-     */
     public function verifyPassword(string $plainPassword, string $hash): bool {
         return password_verify($plainPassword, $hash);
     }
 
-    // ── DELETE ───────────────────────────────────────────────────────────────
 
     public function delete(int $id): int {
         return $this->execute('DELETE FROM Users WHERE id = ?', [$id]);

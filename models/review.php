@@ -4,8 +4,6 @@ require_once __DIR__ . '/Model.php';
 
 class Review extends Model {
 
-    // ── READ ────────────────────────────────────────────────────────────────
-
     public function findByProduct(int $productId): array {
         return $this->fetchAll(
             'SELECT r.*, u.first_name, u.last_name
@@ -39,9 +37,6 @@ class Review extends Model {
         );
     }
 
-    /**
-     * Average rating and count for a product.
-     */
     public function getStats(int $productId): array {
         return $this->fetchOne(
             'SELECT AVG(rating) AS avg_rating, COUNT(*) AS total_reviews
@@ -50,9 +45,6 @@ class Review extends Model {
         ) ?? ['avg_rating' => null, 'total_reviews' => 0];
     }
 
-    /**
-     * Check whether a user already reviewed a specific product.
-     */
     public function userAlreadyReviewed(int $userId, int $productId): bool {
         $row = $this->fetchOne(
             'SELECT id FROM Reviews WHERE user_id = ? AND product_id = ?',
@@ -61,12 +53,11 @@ class Review extends Model {
         return $row !== null;
     }
 
-    // ── CREATE ───────────────────────────────────────────────────────────────
 
     public function create(
         int     $userId,
         int     $productId,
-        int     $rating,          // 1-5
+        int     $rating,
         string  $comment,
         bool    $verifiedPurchase = false
     ): int {
@@ -77,7 +68,6 @@ class Review extends Model {
         );
     }
 
-    // ── UPDATE ───────────────────────────────────────────────────────────────
 
     public function update(int $id, int $rating, string $comment): int {
         return $this->execute(
@@ -86,7 +76,6 @@ class Review extends Model {
         );
     }
 
-    // ── DELETE ───────────────────────────────────────────────────────────────
 
     public function delete(int $id): int {
         return $this->execute('DELETE FROM Reviews WHERE id = ?', [$id]);

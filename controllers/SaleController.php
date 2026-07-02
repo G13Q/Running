@@ -77,6 +77,7 @@ class SaleController
                 "badge" => $badge,
                 "material" => $p["category_material"] ?? "",
                 "sizes" => $sizes,
+                "url" => "?route=product&id=" . $p["id"],
             ];
         }
 

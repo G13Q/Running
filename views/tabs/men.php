@@ -1,26 +1,11 @@
-
-
-
-<div class="navTitle">SHOP MEN'S</div>
+<div class="navTitle">MEN</div>
 <div class="colsContainer">
   <div class="col">
-    <h3>MEN'S SHOES</h3>
     <ul>
       <li><a href="?route=mens">Shop All</a></li>
+      <li><a href="?route=new-arrivals">New Arrivals</a></li>
+      <li><a href="?route=mens&sort=bestsellers">Best Sellers</a></li>
+      <li><a href="?route=sale">Sale</a></li>
     </ul>
-  </div>
-</div>
-<div class="imgGrid">
-  <div class="gridItem">
-    <img src="./assets/images/c2.jpg" alt="">
-    <p>NAME</p>
-  </div>
-  <div class="gridItem">
-    <img src="./assets/images/c1.jpg" alt="">
-    <p>NAME</p>
-  </div>
-  <div class="gridItem">
-    <img src="./assets/images/grid3.jpg" alt="">
-    <p>NAME</p>
   </div>
 </div>

@@ -1,15 +1,27 @@
 let curr = 3;
 let tx = -300;
 const container = $(".newAriv1content");
+const slides = container.children();
+
+function updateInfo() {
+  const slide = slides.eq(curr);
+  $(".pName").text(`${slide.data("name")} - $${Number(slide.data("price")).toLocaleString()}`);
+}
 
 $(".leftControl").on("click", () => {
-  tx = tx === 0 ? 0 : tx + 100;
+  if (curr === 0) return;
+  curr--;
+  tx += 100;
   container.css("transform", `translateX(${tx}%)`);
+  updateInfo();
 });
 
 $(".rightControl").on("click", () => {
-  tx = tx === -1900 ? -1900 : tx - 100;
+  if (curr === slides.length - 1) return;
+  curr++;
+  tx -= 100;
   container.css("transform", `translateX(${tx}%)`);
+  updateInfo();
 });
 
 const arrow = $(".arrow");

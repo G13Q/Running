@@ -4,7 +4,6 @@ require_once __DIR__ . '/Model.php';
 
 class InventoryLog extends Model {
 
-    // ── READ ────────────────────────────────────────────────────────────────
 
     public function findAll(int $limit = 50): array {
         return $this->fetchAll(
@@ -48,11 +47,7 @@ class InventoryLog extends Model {
         );
     }
 
-    // ── CREATE ───────────────────────────────────────────────────────────────
 
-    /**
-     * Log a restock event and bump the variant's stock in one transaction.
-     */
     public function restock(
         int   $variantId,
         int   $adminId,
@@ -81,7 +76,6 @@ class InventoryLog extends Model {
         return $logId;
     }
 
-    // ── DELETE ───────────────────────────────────────────────────────────────
 
     public function delete(int $id): int {
         return $this->execute('DELETE FROM Inventory_logs WHERE id = ?', [$id]);

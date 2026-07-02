@@ -4,7 +4,6 @@ require_once __DIR__ . '/Model.php';
 
 class City extends Model {
 
-    // ── READ ────────────────────────────────────────────────────────────────
 
     public function findAll(): array {
         return $this->fetchAll(
@@ -34,7 +33,6 @@ class City extends Model {
         );
     }
 
-    // ── CREATE ───────────────────────────────────────────────────────────────
 
     public function create(string $name, ?int $shippingRuleId): int {
         return $this->insert(
@@ -43,7 +41,6 @@ class City extends Model {
         );
     }
 
-    // ── UPDATE ───────────────────────────────────────────────────────────────
 
     public function update(int $id, string $name, ?int $shippingRuleId): int {
         return $this->execute(
@@ -52,7 +49,6 @@ class City extends Model {
         );
     }
 
-    // ── DELETE ───────────────────────────────────────────────────────────────
 
     public function delete(int $id): int {
         return $this->execute('DELETE FROM Cities WHERE id = ?', [$id]);

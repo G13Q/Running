@@ -1,23 +1,16 @@
 <?php
-// admin.php — Single-file admin dashboard view for AdminController
-// Expects: $action, $pdo connection, and various model data based on route
-
-/** @var string $action - set by AdminController before require */
 $action ??= '';
 
-// Format price
 function formatPrice(float $price): string
 {
     return '$' . number_format($price, 2);
 }
 
-// Format datetime
 function formatDate(?string $date): string
 {
     return $date ? date('M j, Y g:i A', strtotime($date)) : 'N/A';
 }
 
-// Badge color for order status
 function statusBadge(string $status): string
 {
     return match ($status) {
@@ -142,9 +135,6 @@ function statusBadge(string $status): string
                 <?php endif; ?>
 
                 <?php
-                // ═══════════════════════════════════════════════════════════
-                // DASHBOARD
-                // ═══════════════════════════════════════════════════════════
                 if ($action === 'dashboard'): ?>
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6 mb-8">
                         <div class="bg-white rounded-xl shadow p-6 border-l-4 border-blue-500">
@@ -239,9 +229,6 @@ function statusBadge(string $status): string
                     </div>
 
                 <?php
-                // ═══════════════════════════════════════════════════════════
-                // PRODUCTS LIST
-                // ═══════════════════════════════════════════════════════════
                 elseif ($action === 'products'): ?>
                     <div class="flex justify-between items-center mb-6">
                         <div class="relative">
@@ -303,9 +290,6 @@ function statusBadge(string $status): string
                     </div>
 
                 <?php
-                // ═══════════════════════════════════════════════════════════
-                // PRODUCT CREATE / EDIT (shared form)
-                // ═══════════════════════════════════════════════════════════
                 elseif (in_array($action, ['product-create', 'product-edit'])):
                     $isEdit = $action === 'product-edit';
                     $p = $product ?? null;
@@ -387,9 +371,6 @@ function statusBadge(string $status): string
                     </div>
 
                 <?php
-                // ═══════════════════════════════════════════════════════════
-                // ORDERS
-                // ═══════════════════════════════════════════════════════════
                 elseif ($action === 'orders'): ?>
                     <div class="flex justify-between items-center mb-6">
                         <div class="flex gap-2">
@@ -475,9 +456,6 @@ function statusBadge(string $status): string
                     </div>
 
                 <?php
-                // ═══════════════════════════════════════════════════════════
-                // USERS
-                // ═══════════════════════════════════════════════════════════
                 elseif ($action === 'users'): ?>
                     <div class="bg-white rounded-xl shadow overflow-hidden">
                         <table class="w-full text-left">
@@ -530,9 +508,6 @@ function statusBadge(string $status): string
                     </div>
 
                 <?php
-                // ═══════════════════════════════════════════════════════════
-                // USER EDIT
-                // ═══════════════════════════════════════════════════════════
                 elseif ($action === 'user-edit'): ?>
                     <div class="max-w-2xl mx-auto">
                         <a href="?route=admin&action=users" class="text-gray-500 hover:text-gray-700 mb-4 inline-flex items-center gap-2">
@@ -595,9 +570,6 @@ function statusBadge(string $status): string
                     </div>
 
                 <?php
-                // ═══════════════════════════════════════════════════════════
-                // INVENTORY
-                // ═══════════════════════════════════════════════════════════
                 elseif ($action === 'inventory'): ?>
                     <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-8">
                         <!-- Restock Form -->
@@ -684,9 +656,6 @@ function statusBadge(string $status): string
                     </div>
 
                 <?php
-                // ═══════════════════════════════════════════════════════════
-                // BRANDS
-                // ═══════════════════════════════════════════════════════════
                 elseif ($action === 'brands'): ?>
                     <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
                         <div class="lg:col-span-1">
@@ -735,9 +704,6 @@ function statusBadge(string $status): string
                     </div>
 
                 <?php
-                // ═══════════════════════════════════════════════════════════
-                // CATEGORIES
-                // ═══════════════════════════════════════════════════════════
                 elseif ($action === 'categories'): ?>
                     <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
                         <div class="lg:col-span-1">
@@ -789,9 +755,6 @@ function statusBadge(string $status): string
                     </div>
 
                 <?php
-                // ═══════════════════════════════════════════════════════════
-                // DISCOUNTS
-                // ═══════════════════════════════════════════════════════════
                 elseif ($action === 'discounts'): ?>
                     <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
                         <div class="lg:col-span-1">
@@ -899,9 +862,6 @@ function statusBadge(string $status): string
                     </div>
 
                 <?php
-                // ═══════════════════════════════════════════════════════════
-                // DISCOUNT EDIT
-                // ═══════════════════════════════════════════════════════════
                 elseif ($action === 'discount-edit'): ?>
                     <div class="max-w-2xl mx-auto">
                         <a href="?route=admin&action=discounts" class="text-gray-500 hover:text-gray-700 mb-4 inline-flex items-center gap-2">
@@ -961,9 +921,6 @@ function statusBadge(string $status): string
                     </div>
 
                 <?php
-                // ═══════════════════════════════════════════════════════════
-                // COLLECTIONS
-                // ═══════════════════════════════════════════════════════════
                 elseif ($action === 'collections'): ?>
                     <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-8">
                         <div class="lg:col-span-1">
@@ -1062,9 +1019,6 @@ function statusBadge(string $status): string
                     </div>
 
                 <?php
-                // ═══════════════════════════════════════════════════════════
-                // CITIES
-                // ═══════════════════════════════════════════════════════════
                 elseif ($action === 'cities'): ?>
                     <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
                         <div class="lg:col-span-1">
@@ -1122,9 +1076,6 @@ function statusBadge(string $status): string
                     </div>
 
                 <?php
-                // ═══════════════════════════════════════════════════════════
-                // SHIPPING RULES
-                // ═══════════════════════════════════════════════════════════
                 elseif ($action === 'shipping-rules'): ?>
                     <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
                         <div class="lg:col-span-1">
@@ -1201,9 +1152,6 @@ function statusBadge(string $status): string
                     </div>
 
                 <?php
-                // ═══════════════════════════════════════════════════════════
-                // AUDIT LOGS
-                // ═══════════════════════════════════════════════════════════
                 elseif ($action === 'audit-logs'): ?>
                     <div class="bg-white rounded-xl shadow overflow-hidden">
                         <div class="px-6 py-4 border-b flex justify-between items-center">
@@ -1257,7 +1205,6 @@ function statusBadge(string $status): string
     </div>
 
     <script>
-        // Simple table filter
         function filterTable(inputId, tableId) {
             const input = document.getElementById(inputId);
             const filter = input.value.toLowerCase();

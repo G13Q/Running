@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title><?= e($product["name"] ?? "Product") ?> | Allbirds Clone</title>
-    <link rel="stylesheet" href="../assets/css/main.css" />
+    <link rel="stylesheet" href="../assets/css/main.css?v=2" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&display=swap" rel="stylesheet" />
@@ -76,7 +76,14 @@
         <nav class="pdp-breadcrumb">
           <a href="?route=home">Home</a>
           <span>/</span>
-          <a href="?route=womens">Womens</a>
+          <?php $gender = $product["gender"] ?? "unisex"; ?>
+          <?php if ($gender === "men"): ?>
+            <a href="?route=mens">Men</a>
+          <?php elseif ($gender === "women"): ?>
+            <a href="?route=womens">Women</a>
+          <?php else: ?>
+            <a href="?route=shop-all">Shop All</a>
+          <?php endif; ?>
           <span>/</span>
           <span class="pdp-breadcrumb__current"><?= e($product["name"]) ?></span>
         </nav>
@@ -84,7 +91,9 @@
         <div class="pdp-layout">
           <!-- LEFT: Gallery -->
           <div class="pdp-gallery" data-gallery>
-            <span class="pdp-badge">NEW</span>
+            <?php if ($badge): ?>
+            <span class="card__badge card__badge--<?= str_replace(' ', '_', strtolower($badge)) ?>"><?= $badge ?></span>
+            <?php endif; ?>
             <div class="pdp-gallery__main">
               <img
                 id="pdpMainImage"
@@ -110,7 +119,8 @@
           </div>
 
           <!-- RIGHT: Info -->
-          <div class="pdp-info" data-product-id="<?= (int)($product["id"] ?? 0) ?>">
+          <div class="pdp-info" data-product-id="<?= (int)($product["id"] ?? 0) ?>"
+               data-color-images='<?= e(json_encode($colorImagesMap)) ?>'>
             <h1 class="pdp-title"><?= e($product["name"]) ?></h1>
             <div class="pdp-price">$<?= $displayPrice ?></div>
 
@@ -120,7 +130,6 @@
                 COLOR
                 <span class="pdp-color-name">
                   <?php
-                  // Use the first unique color, strip parenthetical suffixes
                   $cleanColor = stripColorSole($colorName);
                   echo e($cleanColor);
                   ?>
@@ -131,12 +140,16 @@
                   <?php
                   $hex = filterColorHex($c);
                   $clean = stripColorSole($c);
+                  $colorDisabled = empty($colorInStock[$c]);
                   ?>
+                  <?php $colorImgList = $colorImagesMap[$c] ?? $galleryImages; ?>
                   <button
-                    class="pdp-swatch<?= $c === $uniqueColors[0] ? " active" : "" ?>"
+                    class="pdp-swatch<?= $c === $uniqueColors[0] && !$colorDisabled ? " active" : "" ?><?= $colorDisabled ? " pdp-swatch--oos" : "" ?>"
                     style="background-color: <?= $hex ?>"
-                    title="<?= e($clean) ?>"
+                    title="<?= $colorDisabled ? "Out of stock" : e($clean) ?>"
                     data-color="<?= e($c) ?>"
+                    data-images='<?= e(json_encode($colorImgList)) ?>'
+                    <?= $colorDisabled ? "disabled" : "" ?>
                     <?php if (strtolower($clean) === "white" || strtolower($clean) === "blizzard" || strtolower($clean) === "warm white"): ?>
                       data-white="true"
                     <?php endif; ?>
@@ -150,16 +163,16 @@
             <!-- Sizes -->
             <div class="pdp-size-section">
               <div class="pdp-size-header">
-                <span>WOMEN'S SIZES</span>
-                <a href="#" class="pdp-size-convert">MEN'S SIZES</a>
+                <span>EU SIZES</span>
               </div>
               <div class="pdp-size-grid" data-sizes>
                 <?php foreach ($uniqueSizes as $s): ?>
-                  <button class="pdp-size-btn" data-size="<?= e($s) ?>"><?= e($s) ?></button>
+                  <?php $sizeDisabled = empty($sizeInStock[$s]); ?>
+                  <button class="pdp-size-btn<?= $sizeDisabled ? " pdp-size-btn--oos" : "" ?>" data-size="<?= e($s) ?>" <?= $sizeDisabled ? "disabled" : "" ?>><?= e($s) ?></button>
                 <?php endforeach; ?>
               </div>
-              <p class="pdp-size-guide">The Cruiser Slip On Canvas fits true-to-size for most customers.
-                <a href="#" class="pdp-fit-link">Fit Guide</a>
+              <p class="pdp-size-guide">These fit true-to-size for most customers.
+                <a href="?route=shop-all" class="pdp-fit-link">Shop All</a>
               </p>
             </div>
 
@@ -167,190 +180,122 @@
             <button class="pdp-atb" data-atb disabled>SELECT A SIZE</button>
             <p class="pdp-shipping">Free Shipping on Orders over $100</p>
 
-            <!-- Accordion / Details -->
-            <div class="pdp-accordion">
-              <details class="pdp-details" open>
-                <summary>THE DETAILS</summary>
-                <div class="pdp-details__content">
-                  <p><?= e($product["description"] ?? "Slip in and go. A breathable blend of premium materials makes it light, comfortable, and ready for warm-weather days on repeat.") ?></p>
-                </div>
-              </details>
-
-              <details class="pdp-details">
-                <summary>MATERIALLY BETTER</summary>
-                <div class="pdp-details__content">
-                  <p>An ultra-soft blend of premium materials keeps things light and breathable. Inside, our dual-density insole adds plush memory foam cushioning—so comfort stays with you from morning to whenever.</p>
-                </div>
-              </details>
-
-              <details class="pdp-details">
-                <summary>WASH &amp; CARE</summary>
-                <div class="pdp-details__content">
-                  <p>Yes, they're machine washable. Remove the insoles, hand wash those separately, and let everything air dry. Fresh again.</p>
-                </div>
-              </details>
-            </div>
           </div>
         </div>
 
-        <!-- Feature Cards -->
-        <section class="pdp-features">
-          <?php $features = [
-            [
-              "title" => "Breathable By Nature",
-              "text" => "Canvas upper made from a breathable blend of premium materials—light, airy, and easy to wear all day.",
-              "icon" => "wind",
-            ],
-            [
-              "title" => "Lightweight Comfort",
-              "text" => "Light, airy, and easy to wear all day with plush cushioning that doesn't quit.",
-              "icon" => "feather",
-            ],
-            [
-              "title" => "Responsibly Sourced",
-              "text" => "Materials sourced to meet high standards of animal welfare, environmental care, and social responsibility.",
-              "icon" => "leaf",
-            ],
-            [
-              "title" => "Plush Featherbed™",
-              "text" => "Dual-density memory foam insole adds extra softness and comfort that doesn't quit.",
-              "icon" => "cloud",
-            ],
-            [
-              "title" => "Built to Bounce Back",
-              "text" => "SweetFoam® cushioning delivers comfort and energy return with every step.",
-              "icon" => "zap",
-            ],
-          ]; ?>
-          <?php foreach ($features as $i => $f): ?>
-            <div class="pdp-feature-card">
-              <div class="pdp-feature-icon">
-                <?php if ($f["icon"] === "wind"): ?>
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9.59 4.59A2 2 0 1111 8H2m10.59 11.41A2 2 0 1014 16H2m15.73-8.27A2.5 2.5 0 1119.5 12H2"/></svg>
-                <?php elseif ($f["icon"] === "feather"): ?>
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.24 12.24a6 6 0 00-8.49-8.49L5 10.5V19h8.5l6.74-6.76z"/><path d="M16 8L2 22"/><path d="M17.5 15H9"/></svg>
-                <?php elseif ($f["icon"] === "leaf"): ?>
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M11 20A7 7 0 019.8 6.9C15.5 4.9 17 3.5 19 2c1 2 2 4.5 2 8 0 5.5-4.78 10-10 10z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg>
-                <?php elseif ($f["icon"] === "cloud"): ?>
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17.5 19H9a7 7 0 116.65-9.6A5.5 5.5 0 1117.5 19z"/></svg>
-                <?php elseif ($f["icon"] === "zap"): ?>
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
-                <?php endif; ?>
-              </div>
-              <h3 class="pdp-feature-title"><?= $f["title"] ?></h3>
-              <p class="pdp-feature-text"><?= $f["text"] ?></p>
+        <!-- ── BREATHABLE BY NATURE ─────────────────────────────── -->
+        <section class="pdp-tech-section">
+          <h2 class="pdp-tech-section__heading">Breathable By Nature</h2>
+          <div class="pdp-tech">
+            <svg class="pdp-tech__circles" viewBox="0 0 800 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="400" cy="400" r="396" stroke="rgba(0,0,0,0.15)" stroke-width="0.8" />
+              <circle cx="400" cy="400" r="350" stroke="rgba(0,0,0,0.15)" stroke-width="0.8" />
+              <circle cx="400" cy="400" r="300" stroke="rgba(0,0,0,0.15)" stroke-width="1" />
+              <circle cx="400" cy="400" r="250" stroke="rgba(0,0,0,0.15)" stroke-width="0.8" />
+              <circle cx="400" cy="400" r="200" stroke="rgba(0,0,0,0.15)" stroke-width="0.8" />
+              <circle cx="400" cy="400" r="150" stroke="rgba(0,0,0,0.15)" stroke-width="0.8" />
+            </svg>
+            <div class="pdp-tech__shoe">
+              <img src="<?= $showLocalGallery ? $allbirdsLocal[0] : e(imageUrl($mainImage)) ?>" alt="Shoe" loading="lazy" />
             </div>
-          <?php endforeach; ?>
+            <div class="pdp-tech__labels">
+              <div class="pdp-tech__label" style="top: 60px; left: 60px;">
+                <span class="pdp-tech__label-title">BREATHABLE</span>
+                <p class="pdp-tech__label-desc">A lightweight natural fiber that keeps you cool and comfortable all day.</p>
+              </div>
+              <div class="pdp-tech__label" style="top: 60px; right: 60px;">
+                <span class="pdp-tech__label-title">LIGHTWEIGHT</span>
+                <p class="pdp-tech__label-desc">Engineered for all-day comfort without the extra weight on your feet.</p>
+              </div>
+              <div class="pdp-tech__label" style="bottom: 60px; left: 60px;">
+                <span class="pdp-tech__label-title">RESPONSIBLY SOURCED</span>
+                <p class="pdp-tech__label-desc">Made with renewable materials from farms committed to sustainability.</p>
+              </div>
+              <div class="pdp-tech__label" style="bottom: 60px; right: 60px;">
+                <span class="pdp-tech__label-title">PLUSH FEATHERBED&trade;</span>
+                <p class="pdp-tech__label-desc">Dual-density insole with memory foam that molds to your foot for lasting comfort.</p>
+              </div>
+            </div>
+          </div>
         </section>
 
-        <!-- Editorial Image -->
-        <section class="pdp-editorial">
-          <img src="../assets/images/heroBg.webp" alt="Lifestyle" loading="lazy" />
-        </section>
-
-        <!-- You May Also Like -->
-        <section class="pdp-related">
-          <h2 class="pdp-section-title">You May Also Like</h2>
-          <div class="pdp-related-grid">
-            <?php
-            $relatedProducts = [];
-            if (class_exists('Product') && isset($pdo)) {
-              try {
-                $rp = (new Product($pdo))->getTopSellers(4);
-                foreach ($rp as $r) {
-                  if ((int)($r["id"] ?? 0) !== (int)($product["id"] ?? 0)) {
-                    $relatedProducts[] = $r;
-                  }
-                }
-              } catch (\Throwable $e) {}
-            }
-            // Fallback cards if no related
-            $fallback = [
-              ["name" => "Women's Runner Luxe",  "price" => "100.00", "img" => "../assets/images/c1.jpg"],
-              ["name" => "Women's Trail Runner",  "price" => "120.00", "img" => "../assets/images/c2.jpg"],
-              ["name" => "Women's Cloud sneaker", "price" => "95.00",  "img" => "../assets/images/c3.jpg"],
-              ["name" => "Women's Pace Knit",     "price" => "110.00", "img" => "../assets/images/grid4.jpg"],
-            ];
-            $displayRelated = !empty($relatedProducts) ? $relatedProducts : $fallback;
-            foreach ($displayRelated as $i => $rp):
-              $rpName = $rp["name"] ?? "Product";
-              $rpPrice = $rp["base_price"] ?? $rp["price"] ?? "0";
-              $rpPrice = number_format((float)$rpPrice, 2);
-              $rpImg = $rp["img"] ?? $fallback[$i % 4]["img"] ?? "../assets/images/c1.jpg";
-            ?>
-              <a href="?route=product&id=<?= $rp["id"] ?? $i + 1 ?>" class="pdp-related-card">
-                <div class="pdp-related-img">
-                  <img src="<?= e($rpImg) ?>" alt="<?= e($rpName) ?>" loading="lazy" />
-                </div>
-                <div class="pdp-related-info">
-                  <p class="pdp-related-name"><?= e($rpName) ?></p>
-                  <p class="pdp-related-price">$<?= $rpPrice ?></p>
-                </div>
+        <!-- ── YOU MAY ALSO LIKE ────────────────────────────────── -->
+        <section class="pdp-related-new">
+          <h3 class="pdp-related-new__heading">You May Also Like</h3>
+          <div class="collection-grid">
+            <?php foreach ($relatedCardProducts as $item): ?>
+              <a href="<?= $item["url"] ?>" class="card">
+                <?php require __DIR__ . "/components/product-card-swatch.php"; ?>
               </a>
             <?php endforeach; ?>
           </div>
         </section>
 
-        <!-- Reviews -->
-        <section class="pdp-reviews">
-          <h2 class="pdp-section-title">Reviews</h2>
-          <div class="pdp-reviews-summary">
-            <div class="pdp-reviews-stars" data-stars="4.5">
-              <span class="star" data-score="1">★</span>
-              <span class="star" data-score="2">★</span>
-              <span class="star" data-score="3">★</span>
-              <span class="star" data-score="4">★</span>
-              <span class="star" data-score="5">★</span>
-            </div>
-            <span class="pdp-reviews-count">4.5 out of 5 (128 reviews)</span>
+        <!-- ── TESTIMONIALS ──────────────────────────────────── -->
+        <section class="pdp-testimonials">
+          <h2 class="pdp-testimonials__heading">What Our Customers Say</h2>
+          <div class="pdp-testimonials__grid">
+            <?php if (empty($reviews)): ?>
+              <p class="pdp-testimonials__empty">No reviews yet. Be the first to review this product!</p>
+            <?php else: ?>
+              <?php foreach (array_slice($reviews, 0, 6) as $review): ?>
+                <div class="pdp-testimonial-card">
+                  <div class="pdp-testimonial-card__stars">
+                    <?php for ($i = 0; $i < 5; $i++): ?>
+                      <span class="pdp-testimonial-card__star <?= $i < $review["rating"] ? "filled" : "" ?>">★</span>
+                    <?php endfor; ?>
+                  </div>
+                  <p class="pdp-testimonial-card__text"><?= e($review["comment"]) ?></p>
+                  <div class="pdp-testimonial-card__author">
+                    <span>— <?= e($review["first_name"] ?? "Verified Customer") ?></span>
+                    <?php if ($review["verified_purchase"]): ?>
+                      <span class="pdp-testimonial-card__verified">Verified Purchase</span>
+                    <?php endif; ?>
+                  </div>
+                </div>
+              <?php endforeach; ?>
+            <?php endif; ?>
           </div>
-          <div class="pdp-reviews-list">
-            <div class="pdp-review">
-              <div class="pdp-review-stars">★★★★★</div>
-              <p class="pdp-review-title">So comfortable!</p>
-              <p class="pdp-review-text">These are the most comfortable slip-ons I've ever worn. Lightweight, breathable, and perfect for summer.</p>
-              <p class="pdp-review-author">– Sarah M.</p>
+        </section>
+
+        <!-- ── SUSTAINABILITY BANNER ────────────────────────────── -->
+        <section class="pdp-sustainability">
+          <div class="pdp-sus__banner">
+            <div class="pdp-sus__image">
+              <img src="../assets/images/c1.jpg" alt="Sustainability" loading="lazy" />
             </div>
-            <div class="pdp-review">
-              <div class="pdp-review-stars">★★★★☆</div>
-              <p class="pdp-review-title">Great fit, nice style</p>
-              <p class="pdp-review-text">Really like the look and feel. Went true to size and they fit perfectly. Would recommend.</p>
-              <p class="pdp-review-author">– Jessica K.</p>
+            <div class="pdp-sus__overlay"></div>
+            <svg class="pdp-sus__contours" viewBox="0 0 800 450" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="60" y="30" width="680" height="390" rx="40" stroke="rgba(255,255,255,0.4)" stroke-width="1" />
+              <rect x="90" y="55" width="620" height="340" rx="34" stroke="rgba(255,255,255,0.3)" stroke-width="1" />
+              <rect x="120" y="80" width="560" height="290" rx="28" stroke="rgba(255,255,255,0.2)" stroke-width="1" />
+              <rect x="150" y="105" width="500" height="240" rx="22" stroke="rgba(255,255,255,0.15)" stroke-width="1" />
+            </svg>
+            <div class="pdp-sus__content">
+              <h2>Better Things in a Better Way</h2>
+              <p>Looking to the world's greatest innovator — Nature</p>
+              <a href="?route=shop-all" class="pdp-sus__cta">SHOP NOW</a>
             </div>
-            <div class="pdp-review">
-              <div class="pdp-review-stars">★★★★★</div>
-              <p class="pdp-review-title">Perfect everyday shoe</p>
-              <p class="pdp-review-text">I wear them everywhere. Great for walking, running errands, or just lounging around.</p>
-              <p class="pdp-review-author">– Amanda R.</p>
+            <div class="pdp-sus__labels">
+              <span class="pdp-sus__pill" style="top: 12%; left: 11%;">Responsible Energy</span>
+              <span class="pdp-sus__pill" style="top: 8%; right: 7%;">Renewable Materials</span>
+              <span class="pdp-sus__pill" style="bottom: 30%; left: 15%;">Regenerative Agriculture</span>
             </div>
           </div>
         </section>
 
-        <!-- Better Things -->
-        <section class="pdp-better">
-          <div class="pdp-better-content">
-            <h2>Better Things in a Better Way</h2>
-            <p>Looking to the world's greatest innovator — Nature</p>
-            <a href="?route=home" class="pdp-better-cta">LEARN MORE</a>
-            <div class="pdp-better-grid">
-              <div class="pdp-better-item">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
-                <span>Responsible Energy</span>
-              </div>
-              <div class="pdp-better-item">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
-                <span>Renewable Materials</span>
-              </div>
-              <div class="pdp-better-item">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
-                <span>Regenerative Agriculture</span>
-              </div>
-            </div>
-          </div>
-        </section>
       </div>
     </main>
 
     <?php require_once __DIR__ . "/components/footer.php"; ?>
+    <script>
+      $(".pdp-related-new .collection-grid").on("click", ".hue", function (e) {
+        e.preventDefault();
+        const thumb = $(this).data("thumb");
+        $(this).closest(".card").find("img").attr("src", thumb);
+        $(this).closest(".swatches").find(".hue").removeClass("hue--active");
+        $(this).addClass("hue--active");
+      });
+    </script>
   </body>
 </html>

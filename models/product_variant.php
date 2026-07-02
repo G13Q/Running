@@ -4,7 +4,6 @@ require_once __DIR__ . '/Model.php';
 
 class ProductVariant extends Model {
 
-    // ── READ ────────────────────────────────────────────────────────────────
 
     public function findById(int $id): ?array {
         return $this->fetchOne(
@@ -44,9 +43,6 @@ class ProductVariant extends Model {
         );
     }
 
-    /**
-     * Variants that are at or below their reorder_level (low stock alert).
-     */
     public function findLowStock(): array {
         return $this->fetchAll(
             'SELECT pv.*, p.name AS product_name
@@ -57,9 +53,6 @@ class ProductVariant extends Model {
         );
     }
 
-    /**
-     * Return all women's variants linked to a given men's variant.
-     */
     public function findWomensVariant(int $womensVariantId): ?array {
         return $this->fetchOne(
             'SELECT * FROM Product_variants WHERE id = ?',
@@ -69,7 +62,6 @@ class ProductVariant extends Model {
 
     
 
-    // ── CREATE ───────────────────────────────────────────────────────────────
 
     public function create(
         int     $productId,
@@ -95,7 +87,6 @@ class ProductVariant extends Model {
         );
     }
 
-    // ── UPDATE ───────────────────────────────────────────────────────────────
 
     public function update(
         int     $id,
@@ -123,10 +114,6 @@ class ProductVariant extends Model {
         );
     }
 
-    /**
-     * Reduce stock when an order is placed.
-     * Returns false if not enough stock was available.
-     */
     public function decrementStock(int $id, int $qty): bool {
         $affected = $this->execute(
             'UPDATE Product_variants
@@ -137,9 +124,6 @@ class ProductVariant extends Model {
         return $affected > 0;
     }
 
-    /**
-     * Increase stock (used by inventory restock / refund).
-     */
     public function incrementStock(int $id, int $qty): int {
         return $this->execute(
             'UPDATE Product_variants SET stock_quantity = stock_quantity + ? WHERE id = ?',
@@ -147,7 +131,6 @@ class ProductVariant extends Model {
         );
     }
 
-    // ── DELETE ───────────────────────────────────────────────────────────────
 
     public function delete(int $id): int {
         return $this->execute('DELETE FROM Product_variants WHERE id = ?', [$id]);

@@ -4,8 +4,6 @@ require_once __DIR__ . '/Model.php';
 
 class Product extends Model {
 
-    // ── READ ────────────────────────────────────────────────────────────────
-
     public function findAll(): array {
         return $this->fetchAll(
             'SELECT p.*, b.name AS brand_name, c.material AS category_material
@@ -61,9 +59,6 @@ class Product extends Model {
         );
     }
 
-    /**
-     * Simple name-based search (LIKE %term%).
-     */
     public function search(string $term): array {
         return $this->fetchAll(
             'SELECT p.*, b.name AS brand_name, c.material AS category_material
@@ -90,6 +85,19 @@ class Product extends Model {
         );
     }
 
+    public function findRandom(int $excludeId, int $limit = 5): array {
+        return $this->fetchAll(
+            'SELECT p.*, b.name AS brand_name, c.material AS category_material
+             FROM Products p
+             JOIN Brands b     ON b.id = p.brand_id
+             JOIN Categories c ON c.id = p.category_id
+             WHERE p.id != ?
+             ORDER BY RAND()
+             LIMIT ?',
+            [$excludeId, $limit]
+        );
+    }
+
     public function getTopSellers(int $limit = 10): array {
         return $this->fetchAll(
             'SELECT p.*, b.name AS brand_name
@@ -101,7 +109,6 @@ class Product extends Model {
         );
     }
 
-    // ── CREATE ───────────────────────────────────────────────────────────────
 
     public function create(
         string $name,
@@ -118,7 +125,6 @@ class Product extends Model {
         );
     }
 
-    // ── UPDATE ───────────────────────────────────────────────────────────────
 
     public function update(
         int    $id,
@@ -137,7 +143,6 @@ class Product extends Model {
         );
     }
 
-    // ── DELETE ───────────────────────────────────────────────────────────────
 
     public function delete(int $id): int {
         return $this->execute('DELETE FROM Products WHERE id = ?', [$id]);

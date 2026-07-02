@@ -11,7 +11,7 @@ $pageUrl = "?" . http_build_query($queryParams);
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MEN'S SHOP ALL</title>
-    <link rel="stylesheet" href="../assets/css/main.css" />
+    <link rel="stylesheet" href="../assets/css/main.css?v=2" />
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
     <script src="https://code.jquery.com/jquery-4.0.0.js" integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U=" crossorigin="anonymous"></script>
     <script type="module" src="../assets/js/shared/nav.js" defer></script>
@@ -45,8 +45,17 @@ $pageUrl = "?" . http_build_query($queryParams);
       <?php require_once __DIR__ . "/components/filter-panel.php"; ?>
 
       <section class="collection-grid" aria-label="Men's products">
-        <?php if (empty($pageProducts)): ?>
-          <p class="collection-grid__empty">No products match your criteria.</p>
+        <?php if (empty($products)): ?>
+          <div class="collection-grid__empty">
+            <p class="collection-grid__empty-title">No products found</p>
+            <p class="collection-grid__empty-desc">We couldn't find any products in this category. Check back soon or explore our other collections.</p>
+            <a href="?route=shop-all" class="collection-grid__empty-link">Browse All Products</a>
+          </div>
+        <?php elseif (empty($pageProducts)): ?>
+          <div class="collection-grid__empty">
+            <p class="collection-grid__empty-title">No products match your filters</p>
+            <p class="collection-grid__empty-desc">Try adjusting your filter criteria to see more results.</p>
+          </div>
         <?php else: ?>
         <?php foreach ($pageProducts as $item): ?>
           <div class="card"

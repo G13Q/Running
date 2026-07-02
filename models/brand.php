@@ -4,7 +4,6 @@ require_once __DIR__ . '/Model.php';
 
 class Brand extends Model {
 
-    // ── READ ────────────────────────────────────────────────────────────────
 
     public function findAll(): array {
         return $this->fetchAll('SELECT * FROM Brands ORDER BY name');
@@ -18,7 +17,6 @@ class Brand extends Model {
         return $this->fetchOne('SELECT * FROM Brands WHERE name = ?', [$name]);
     }
 
-    // ── CREATE ───────────────────────────────────────────────────────────────
 
     public function create(string $name): int {
         return $this->insert(
@@ -27,7 +25,6 @@ class Brand extends Model {
         );
     }
 
-    // ── UPDATE ───────────────────────────────────────────────────────────────
 
     public function update(int $id, string $name): int {
         return $this->execute(
@@ -36,7 +33,6 @@ class Brand extends Model {
         );
     }
 
-    // ── DELETE ───────────────────────────────────────────────────────────────
 
     public function delete(int $id): int {
         return $this->execute('DELETE FROM Brands WHERE id = ?', [$id]);

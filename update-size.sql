@@ -1,6 +1,7 @@
 USE runningdb;
 -- ============================================
--- Fix all 85 variants with size = 0.0
+-- NOTE: Seed data now includes EU sizes directly.
+-- This file is kept for reference only.
 -- ============================================
 
 -- Product 39 | Dark Grey | US Men's 3-14 (U030-U140) → EU 36-47

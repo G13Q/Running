@@ -8,7 +8,6 @@ class AdminController
             session_start();
         }
 
-        // ── Auth guard ─────────────────────────────────────────────────────
         if (!isset($_SESSION["user_id"]) || ($_SESSION["user_role"] ?? "") !== "admin") {
             header("Location: ?route=login");
             exit;
@@ -30,7 +29,6 @@ class AdminController
 
         $adminId = (int) $_SESSION["user_id"];
 
-        // ── Route sub-actions ──────────────────────────────────────────────
         $action = $_GET["action"] ?? "dashboard";
 
         switch ($action) {
@@ -106,9 +104,6 @@ class AdminController
         }
     }
 
-    // ═══════════════════════════════════════════════════════════════════════
-    //  DASHBOARD
-    // ═══════════════════════════════════════════════════════════════════════
     private function dashboard(PDO $pdo): void
     {
         $productModel  = new Product($pdo);
@@ -139,9 +134,6 @@ class AdminController
         require __DIR__ . "/../views/admin.php";
     }
 
-    // ═══════════════════════════════════════════════════════════════════════
-    //  PRODUCTS
-    // ═══════════════════════════════════════════════════════════════════════
     private function products(PDO $pdo): void
     {
         $productModel = new Product($pdo);
@@ -230,9 +222,6 @@ class AdminController
         exit;
     }
 
-    // ═══════════════════════════════════════════════════════════════════════
-    //  ORDERS
-    // ═══════════════════════════════════════════════════════════════════════
     private function orders(PDO $pdo): void
     {
         $orderModel = new Order($pdo);
@@ -292,9 +281,6 @@ class AdminController
         exit;
     }
 
-    // ═══════════════════════════════════════════════════════════════════════
-    //  USERS
-    // ═══════════════════════════════════════════════════════════════════════
     private function users(PDO $pdo): void
     {
         $userModel = new User($pdo);
@@ -350,9 +336,6 @@ class AdminController
         exit;
     }
 
-    // ═══════════════════════════════════════════════════════════════════════
-    //  INVENTORY
-    // ═══════════════════════════════════════════════════════════════════════
     private function inventory(PDO $pdo): void
     {
         $variantModel = new ProductVariant($pdo);
@@ -390,9 +373,6 @@ class AdminController
         exit;
     }
 
-    // ═══════════════════════════════════════════════════════════════════════
-    //  BRANDS
-    // ═══════════════════════════════════════════════════════════════════════
     private function brands(PDO $pdo): void
     {
         $brandModel = new Brand($pdo);
@@ -413,9 +393,6 @@ class AdminController
         require __DIR__ . "/../views/admin.php";
     }
 
-    // ═══════════════════════════════════════════════════════════════════════
-    //  CATEGORIES
-    // ═══════════════════════════════════════════════════════════════════════
     private function categories(PDO $pdo): void
     {
         $categoryModel = new Category($pdo);
@@ -437,9 +414,6 @@ class AdminController
         require __DIR__ . "/../views/admin.php";
     }
 
-    // ═══════════════════════════════════════════════════════════════════════
-    //  DISCOUNTS
-    // ═══════════════════════════════════════════════════════════════════════
     private function discounts(PDO $pdo): void
     {
         $discountModel = new Discount($pdo);
@@ -510,9 +484,6 @@ class AdminController
         exit;
     }
 
-    // ═══════════════════════════════════════════════════════════════════════
-    //  COLLECTIONS
-    // ═══════════════════════════════════════════════════════════════════════
     private function collections(PDO $pdo): void
     {
         $collectionModel = new Collection($pdo);
@@ -553,9 +524,6 @@ class AdminController
         require __DIR__ . "/../views/admin.php";
     }
 
-    // ═══════════════════════════════════════════════════════════════════════
-    //  CITIES
-    // ═══════════════════════════════════════════════════════════════════════
     private function cities(PDO $pdo): void
     {
         $cityModel = new City($pdo);
@@ -580,9 +548,6 @@ class AdminController
         require __DIR__ . "/../views/admin.php";
     }
 
-    // ═══════════════════════════════════════════════════════════════════════
-    //  SHIPPING RULES
-    // ═══════════════════════════════════════════════════════════════════════
     private function shippingRules(PDO $pdo): void
     {
         $shippingRuleModel = new ShippingRule($pdo);
@@ -607,9 +572,6 @@ class AdminController
         require __DIR__ . "/../views/admin.php";
     }
 
-    // ═══════════════════════════════════════════════════════════════════════
-    //  AUDIT LOGS
-    // ═══════════════════════════════════════════════════════════════════════
     private function auditLogs(PDO $pdo): void
     {
         $auditLogModel = new AuditLog($pdo);

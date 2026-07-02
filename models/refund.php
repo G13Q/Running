@@ -4,7 +4,6 @@ require_once __DIR__ . '/Model.php';
 
 class Refund extends Model {
 
-    // ── READ ────────────────────────────────────────────────────────────────
 
     public function findById(int $id): ?array {
         return $this->fetchOne(
@@ -36,9 +35,6 @@ class Refund extends Model {
         );
     }
 
-    /**
-     * Line items included in a refund.
-     */
     public function getItems(int $refundId): array {
         return $this->fetchAll(
             'SELECT ri.*,
@@ -52,7 +48,6 @@ class Refund extends Model {
         );
     }
 
-    // ── CREATE ───────────────────────────────────────────────────────────────
 
     public function create(int $orderId, float $amount, string $reason): int {
         return $this->insert(
@@ -75,7 +70,6 @@ class Refund extends Model {
         );
     }
 
-    // ── UPDATE ───────────────────────────────────────────────────────────────
 
     public function updateStatus(int $id, string $status): int {
         return $this->execute(
@@ -84,7 +78,6 @@ class Refund extends Model {
         );
     }
 
-    // ── DELETE ───────────────────────────────────────────────────────────────
 
     public function delete(int $id): int {
         return $this->execute('DELETE FROM Refunds WHERE id = ?', [$id]);

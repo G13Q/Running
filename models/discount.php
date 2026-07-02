@@ -4,7 +4,6 @@ require_once __DIR__ . '/Model.php';
 
 class Discount extends Model {
 
-    // ── READ ────────────────────────────────────────────────────────────────
 
     public function findAll(): array {
         return $this->fetchAll('SELECT * FROM Discounts ORDER BY start_date DESC');
@@ -21,9 +20,6 @@ class Discount extends Model {
         );
     }
 
-    /**
-     * Return only currently active, valid discounts.
-     */
     public function findActive(): array {
         return $this->fetchAll(
             'SELECT * FROM Discounts
@@ -34,9 +30,6 @@ class Discount extends Model {
         );
     }
 
-    /**
-     * Validate a coupon code and return it if usable, null otherwise.
-     */
     public function validateCode(string $code): ?array {
         return $this->fetchOne(
             'SELECT * FROM Discounts
@@ -49,11 +42,10 @@ class Discount extends Model {
         );
     }
 
-    // ── CREATE ───────────────────────────────────────────────────────────────
 
     public function create(
         ?string $code,
-        string  $discountType,   // 'fixed' or '%'
+        string  $discountType,
         float   $value,
         ?string $startDate,
         ?string $endDate,
@@ -67,7 +59,6 @@ class Discount extends Model {
         );
     }
 
-    // ── UPDATE ───────────────────────────────────────────────────────────────
 
     public function update(
         int     $id,
@@ -88,9 +79,6 @@ class Discount extends Model {
         );
     }
 
-    /**
-     * Decrement remaining uses by 1 when a code is applied to an order.
-     */
     public function decrementUses(int $id): int {
         return $this->execute(
             'UPDATE Discounts SET n_uses = n_uses - 1 WHERE id = ? AND n_uses > 0',
@@ -105,7 +93,6 @@ class Discount extends Model {
         );
     }
 
-    // ── DELETE ───────────────────────────────────────────────────────────────
 
     public function delete(int $id): int {
         return $this->execute('DELETE FROM Discounts WHERE id = ?', [$id]);

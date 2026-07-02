@@ -4,7 +4,6 @@ require_once __DIR__ . '/Model.php';
 
 class AuditLog extends Model {
 
-    // ── READ ────────────────────────────────────────────────────────────────
 
     public function findAll(int $limit = 100): array {
         return $this->fetchAll(
@@ -48,15 +47,7 @@ class AuditLog extends Model {
         );
     }
 
-    // ── CREATE ───────────────────────────────────────────────────────────────
 
-    /**
-     * Record any admin action. Call this after every sensitive operation.
-     *
-     * @param string $action      e.g. 'DELETE', 'UPDATE_PRICE', 'CANCEL_ORDER'
-     * @param string $targetTable e.g. 'Products', 'Orders'
-     * @param string $targetId    The affected row's primary key (stored as string)
-     */
     public function log(
         int    $adminId,
         string $action,
@@ -70,5 +61,4 @@ class AuditLog extends Model {
         );
     }
 
-    // Audit logs are append-only; no update or delete methods.
 }

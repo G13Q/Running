@@ -4,8 +4,6 @@ require_once __DIR__ . '/Model.php';
 
 class ShippingRule extends Model {
 
-    // ── READ ────────────────────────────────────────────────────────────────
-
     public function findAll(): array {
         return $this->fetchAll('SELECT * FROM Shipping_rules ORDER BY name');
     }
@@ -14,9 +12,6 @@ class ShippingRule extends Model {
         return $this->fetchOne('SELECT * FROM Shipping_rules WHERE id = ?', [$id]);
     }
 
-    /**
-     * Get the shipping rule for a given city.
-     */
     public function findByCity(int $cityId): ?array {
         return $this->fetchOne(
             'SELECT sr.*
@@ -27,7 +22,6 @@ class ShippingRule extends Model {
         );
     }
 
-    // ── CREATE ───────────────────────────────────────────────────────────────
 
     public function create(
         string $name,
@@ -42,7 +36,6 @@ class ShippingRule extends Model {
         );
     }
 
-    // ── UPDATE ───────────────────────────────────────────────────────────────
 
     public function update(
         int    $id,
@@ -59,7 +52,6 @@ class ShippingRule extends Model {
         );
     }
 
-    // ── DELETE ───────────────────────────────────────────────────────────────
 
     public function delete(int $id): int {
         return $this->execute('DELETE FROM Shipping_rules WHERE id = ?', [$id]);

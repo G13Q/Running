@@ -4,7 +4,6 @@ require_once __DIR__ . '/Model.php';
 
 class ProductImg extends Model {
 
-    // ── READ ────────────────────────────────────────────────────────────────
 
     public function findById(int $id): ?array {
         return $this->fetchOne(
@@ -23,15 +22,7 @@ class ProductImg extends Model {
         );
     }
 
-    // ── CREATE ───────────────────────────────────────────────────────────────
 
-    /**
-     * @param string      $thumbnail  Required thumbnail URL.
-     * @param string|null $topView
-     * @param string|null $bottomView
-     * @param string|null $sideView
-     * @param string|null $pairView
-     */
     public function create(
         string  $thumbnail,
         ?string $topView    = null,
@@ -46,7 +37,6 @@ class ProductImg extends Model {
         );
     }
 
-    // ── UPDATE ───────────────────────────────────────────────────────────────
 
     public function update(
         int     $id,
@@ -64,7 +54,6 @@ class ProductImg extends Model {
         );
     }
 
-    // ── DELETE ───────────────────────────────────────────────────────────────
 
     public function delete(int $id): int {
         return $this->execute('DELETE FROM Product_img WHERE id = ?', [$id]);
