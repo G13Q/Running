@@ -8,7 +8,7 @@
 @import "home/newArrivalsSection.css";
 @import "home/specialCollectionsection.css";
 @import "home/newarrivals2Section.css";
-@import "home/categories2Section.css";
+
 @import "home/headerMenu.css";
 @import "home/carousel1.css";
 @import "home/cart.css";
@@ -18,14 +18,18 @@
 @import "views/search.css";
 @import "views/product-detail.css";
 @import "views/auth-checkout.css";
+@import "responsive.css";
 
 :root {
-  --main-bg-clr: #f5f3ef;
+  --main-bg-clr: #f5f5f5;
   --main-font: "satoshi", sans-serif;
   --sec-bg-clr: #1a1a1a;
   --nav-bg: #ffffff;
   --badge-bg-clr: #e3ddd4;
   --menu-title-clr: #e3ddd4;
+  --accent-clr: #e63946;
+  --accent-hover: #c1121f;
+  --accent-orange: #ff6b35;
 }
 
 @font-face {
@@ -45,12 +49,18 @@
   font-family: var(--main-font);
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 body {
   background-color: var(--main-bg-clr);
   height: 100vh;
   position: relative;
   scroll-behavior: smooth;
   padding: 0;
+  padding-top: 90px;
 }
 
 .show {
