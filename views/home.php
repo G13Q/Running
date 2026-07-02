@@ -36,8 +36,8 @@
             <div class="hero-txt">
                 <h2>The New Collection</h2>
                 <div class="hero-btns">
-                    <button>SHOP MEN</button>
-                    <button>SHOP WOMEN</button>
+                    <a href="?route=mens"><button>SHOP MEN</button></a>
+                    <a href="?route=womens"><button>SHOP WOMEN</button></a>
                 </div>
             </div>
         </div>
@@ -48,27 +48,25 @@
             <div>
                 <span>
                     <h2>NEW ARRIVALS</h2>
-                    <button>SHOP MEN</button>
-                    <button>SHOP WOMEN</button>
+                    <a href="?route=new-arrivals"><button>SHOP NEW ARRIVALS</button></a>
                 </span>
             </div>
             <div>
                 <span>
                     <h2>MENS</h2>
-                    <button>SHOP MEN</button>
+                    <a href="?route=mens"><button>SHOP MEN</button></a>
                 </span>
             </div>
             <div>
                 <span>
                     <h2>WOMENS</h2>
-                    <button>SHOP WOMEN</button>
+                    <a href="?route=womens"><button>SHOP WOMEN</button></a>
                 </span>
             </div>
             <div>
                 <span>
                     <h2>BEST SELLERS</h2>
-                    <button>SHOP MEN</button>
-                    <button>SHOP WOMEN</button>
+                    <a href="?route=shop-all"><button>SHOP ALL</button></a>
                 </span>
             </div>
         </section>
@@ -90,8 +88,7 @@
                 <h2 class="collName">June's Collection</h2>
                 <p class="pName"><?= $items[0]["name"] ?? "Product" ?> - $<?= number_format($items[0]["price"] ?? 0) ?></p>
                 <div>
-                    <button>SHOP MEN</button>
-                    <button>SHOP WOMEN</button>
+                    <a href="?route=new-arrivals"><button>SHOP NEW ARRIVALS</button></a>
                 </div>
             </div>
         </section>
@@ -100,7 +97,7 @@
             <div class="main">
                 <h1>Bold By Nature</h1>
                 <p>Show your true colors .</p>
-                <button>SHOP NOW</button>
+                <a href="?route=shop-all"><button>SHOP NOW</button></a>
             </div>
             <div></div>
             <div></div>
@@ -124,31 +121,28 @@
             </div>
         </section>
 
-        <section id="categories2">
-            <div class="category">
-                <img class="img1" src="assets/images/c3.jpg" alt="" />
-                <h1>Road Running</h1>
-                <div class="btns">
-                    <button>SHOP MEN</button>
-                    <button>SHOP WOMEN</button>
+        <section class="collection-categories" aria-label="Shop by category">
+            <article class="collection-category">
+                <img src="assets/images/c3.jpg" alt="Road Running" loading="lazy" />
+                <div class="collection-category__content">
+                    <h2>Road Running</h2>
+                    <a href="?route=mens">SHOP MEN</a>
                 </div>
-            </div>
-            <div class="category">
-                <img class="img2" src="assets/images/c1.jpg" alt="" />
-                <h1>Trail Running</h1>
-                <div class="btns">
-                    <button>SHOP MEN</button>
-                    <button>SHOP WOMEN</button>
+            </article>
+            <article class="collection-category">
+                <img src="assets/images/c1.jpg" alt="Trail Running" loading="lazy" />
+                <div class="collection-category__content">
+                    <h2>Trail Running</h2>
+                    <a href="?route=shop-all">EXPLORE</a>
                 </div>
-            </div>
-            <div class="category">
-                <img class="img3" src="assets/images/c2.jpg" alt="" />
-                <h1>Marathon</h1>
-                <div class="btns">
-                    <button>SHOP MEN</button>
-                    <button>SHOP WOMEN</button>
+            </article>
+            <article class="collection-category">
+                <img src="assets/images/c2.jpg" alt="Marathon" loading="lazy" />
+                <div class="collection-category__content">
+                    <h2>Marathon</h2>
+                    <a href="?route=womens">SHOP WOMEN</a>
                 </div>
-            </div>
+            </article>
         </section>
 
         <?php require_once __DIR__ . "/components/trust-cards.php"; ?>
