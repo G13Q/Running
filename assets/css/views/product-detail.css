@@ -1,5 +1,5 @@
 .pdp-page {
-  padding-top: 130px;
+  padding-top: 40px;
   background: var(--main-bg-clr);
   color: var(--sec-bg-clr);
   min-height: 100vh;
@@ -30,7 +30,7 @@
 }
 
 .pdp-breadcrumb a:hover {
-  color: var(--sec-bg-clr);
+  color: var(--accent-clr);
 }
 
 .pdp-breadcrumb__current {
@@ -88,7 +88,7 @@
 }
 
 .pdp-thumb.active {
-  border-color: var(--sec-bg-clr);
+  border-color: var(--accent-clr);
 }
 
 .pdp-thumb img {
@@ -164,7 +164,7 @@
 }
 
 .pdp-swatch.active .pdp-swatch__ring {
-  border-color: var(--sec-bg-clr);
+  border-color: var(--accent-clr);
 }
 
 .pdp-swatch[data-white="true"] .pdp-swatch__ring {
@@ -172,7 +172,7 @@
 }
 
 .pdp-swatch[data-white="true"].active .pdp-swatch__ring {
-  border-color: var(--sec-bg-clr);
+  border-color: var(--accent-clr);
 }
 
 .pdp-swatch--oos {
@@ -247,12 +247,12 @@
 }
 
 .pdp-size-btn:hover {
-  border-color: var(--sec-bg-clr);
+  border-color: var(--accent-clr);
 }
 
 .pdp-size-btn.selected {
-  border-color: var(--sec-bg-clr);
-  background: var(--sec-bg-clr);
+  border-color: var(--accent-clr);
+  background: var(--accent-clr);
   color: #fff;
 }
 
@@ -273,6 +273,10 @@
   color: var(--sec-bg-clr);
   text-decoration: underline;
   text-underline-offset: 2px;
+  transition: color 0.2s;
+}
+.pdp-fit-link:hover {
+  color: var(--accent-clr);
 }
 
 .pdp-atb {
@@ -280,7 +284,7 @@
   padding: 16px 24px;
   border: none;
   border-radius: 999px;
-  background: #e85d2c;
+  background: var(--accent-clr);
   color: #fff;
   font-size: 0.85rem;
   font-weight: 600;
@@ -293,7 +297,7 @@
 }
 
 .pdp-atb:hover:not(:disabled) {
-  background: #d64d1a;
+  background: var(--accent-hover);
 }
 
 .pdp-atb:disabled {
@@ -413,6 +417,8 @@
   text-transform: uppercase;
   margin-bottom: 28px;
   color: #888;
+  border-left: 3px solid var(--accent-clr);
+  padding-left: 12px;
 }
 
 .pdp-related-new .collection-grid {
@@ -508,8 +514,9 @@
 }
 
 .pdp-sus__cta:hover {
-  background: #fff;
-  color: var(--sec-bg-clr);
+  background: var(--accent-clr);
+  color: #fff;
+  border-color: var(--accent-clr);
 }
 
 .pdp-sus__labels {
@@ -593,7 +600,7 @@
 
 @media (max-width: 600px) {
   .pdp-page {
-    padding-top: 105px;
+    padding-top: 15px;
   }
 
   .pdp-container {
