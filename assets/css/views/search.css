@@ -1,5 +1,5 @@
 .search-page {
-  padding-top: 120px;
+  padding-top: 30px;
   background: var(--main-bg-clr);
   color: var(--sec-bg-clr);
   min-height: 100vh;
@@ -35,7 +35,7 @@
 }
 
 .search-field__input:focus {
-  border-bottom-color: var(--sec-bg-clr);
+  border-bottom-color: var(--accent-clr);
 }
 
 .search-field__icon {
@@ -62,7 +62,7 @@
 }
 
 .search-field__input:focus ~ .search-field__icon {
-  color: var(--sec-bg-clr);
+  color: var(--accent-clr);
 }
 
 .search-results-info {
@@ -142,7 +142,7 @@
 
 @media (max-width: 720px) {
   .search-page {
-    padding-top: 105px;
+    padding-top: 15px;
   }
 
   .search-area {
