@@ -1,5 +1,5 @@
 .info-faq {
-  background: #f5f3ef;
+  background: var(--main-bg-clr);
 }
 
 .info-faq__inner {
@@ -16,7 +16,7 @@
   font-weight: 700;
   text-transform: uppercase;
 
-  color: #1a1a1a;
+  color: var(--sec-bg-clr);
   margin-bottom: 42px;
 }
 
@@ -61,16 +61,25 @@
   color: #1a1a1a;
 }
 
+.info-faq__question:hover {
+  color: var(--accent-clr);
+}
+
 .info-faq__icon {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 28px;
   height: 28px;
-  border: 1.5px solid #1a1a1a;
+  border: 1.5px solid var(--sec-bg-clr);
   border-radius: 50%;
   flex-shrink: 0;
-  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.info-faq__question:hover .info-faq__icon {
+  border-color: var(--accent-clr);
+  color: var(--accent-clr);
 }
 
 .info-faq__item.is-open .info-faq__icon {
