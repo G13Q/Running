@@ -14,6 +14,7 @@
 @import "components/infoFaq.css";
 @import "views/newArrivals.css";
 @import "views/search.css";
+@import "views/product-detail.css";
 
 :root {
   --main-bg-clr: #f0eee9;
