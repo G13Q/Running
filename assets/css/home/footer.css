@@ -70,12 +70,14 @@
 }
 
 .subscribe-form button:hover {
-  background: #e3ddd4;
+  background: var(--accent-clr);
+  color: white;
+  border-color: var(--accent-clr);
 }
 
 .footer-links {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 15px;
 }
 
@@ -103,7 +105,7 @@
 }
 
 .footer-col ul li a:hover {
-  color: white;
+  color: var(--accent-clr);
 }
 
 .footer-social {
@@ -142,8 +144,9 @@
 }
 
 .social-icon:hover {
-  background: white;
-  color: var(--sec-bg-clr);
+  background: var(--accent-clr);
+  color: white;
+  border-color: var(--accent-clr);
 }
 
 .social-icon svg {
