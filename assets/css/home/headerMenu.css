@@ -9,11 +9,12 @@
   width: 100%;
   z-index: -3;
   position: absolute;
+  top: 106px;
   display: none;
 
   .menuContent {
     padding: 20px;
-    padding-top: 115px;
+    padding-top: 25px;
     transition: 0.4s ease-in-out;
     background-color: var(--main-bg-clr);
     box-shadow: 0 0 10px black;
