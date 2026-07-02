@@ -21,22 +21,35 @@
              <h1 class="logo">Tor1</h1>
          </a>
 
-         <?php $navItems = [
-                ["label" => "NEW ARRIVALS", "route" => "new-arrivals"],
-                ["label" => "SHOP ALL",    "route" => "shop-all"],
-                ["label" => "MEN",         "route" => "mens",         "tab" => "men"],
-                ["label" => "WOMEN",       "route" => "womens",       "tab" => "women"],
-                ["label" => "SALE",        "route" => "sale",         "tab" => "sale"],
-            ]; ?>
-         <ul>
-             <?php foreach ($navItems as $item): ?>
-                 <li class="nav-item" <?= isset($item["tab"]) ? " data-tab=\"{$item["tab"]}\"" : "" ?>>
-                     <a href="?route=<?= $item["route"] ?>"><?= $item["label"] ?></a>
-                 </li>
-             <?php endforeach; ?>
-         </ul>
+<?php $navItems = [
+        ["label" => "NEW ARRIVALS", "route" => "new-arrivals"],
+        ["label" => "SHOP ALL",    "route" => "shop-all"],
+        ["label" => "MEN",         "route" => "mens",         "tab" => "men"],
+        ["label" => "WOMEN",       "route" => "womens",       "tab" => "women"],
+        ["label" => "SALE",        "route" => "sale",         "tab" => "sale"],
+    ];
+    $currentRoute = $_GET["route"] ?? "home";
+    ?>
+          <ul>
+              <?php foreach ($navItems as $item):
+                  $isSale = $item["label"] === "SALE";
+                  $isActive = $currentRoute === $item["route"];
+                  $classes = "nav-item";
+                  if ($isSale) $classes .= " nav-item--sale";
+                  if ($isActive) $classes .= " nav-item--active";
+              ?>
+                  <li class="<?= $classes ?>" <?= isset($item["tab"]) ? " data-tab=\"{$item["tab"]}\"" : "" ?>>
+                      <a href="?route=<?= $item["route"] ?>"><?= $item["label"] ?></a>
+                  </li>
+              <?php endforeach; ?>
+          </ul>
 
          <div class="nav-right">
+             <button class="nav-hamburger" aria-label="Menu">
+                 <svg xmlns="http://www.w3.org/2000/svg" height="22" viewBox="0 -960 960 960" width="22" fill="#1f1f1f">
+                     <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
+                 </svg>
+             </button>
 
              <a href="?route=search" aria-label="Search">
                  <svg
