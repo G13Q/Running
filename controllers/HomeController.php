@@ -55,7 +55,7 @@ class HomeController
             $items[] = [
                 "name" => $p["name"],
                 "price" => $p["base_price"],
-                "sales" => $discount,
+                "sales" => $discount["sale_price"] ?? null,
                 "sale_price" => $discount["sale_price"] ?? null,
                 "total_stock" => $totalStock,
                 "image" => $thumb,

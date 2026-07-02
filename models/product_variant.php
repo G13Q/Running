@@ -67,6 +67,8 @@ class ProductVariant extends Model {
         );
     }
 
+    
+
     // ── CREATE ───────────────────────────────────────────────────────────────
 
     public function create(

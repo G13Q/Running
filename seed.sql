@@ -799,7 +799,8 @@ CREATE TABLE `Product_variants` (
 SET @OLD_AUTOCOMMIT=@@AUTOCOMMIT, @@AUTOCOMMIT=0;
 LOCK TABLES `Product_variants` WRITE;
 /*!40000 ALTER TABLE `Product_variants` DISABLE KEYS */;
-INSERT INTO `Product_variants` (`id`, `product_id`, `womens_variant_id`, `size`, `color`, `sku`, `stock_quantity`, `product_img_id`, `variant_price`, `reorder_level`, `discount_id`) VALUES (59,39,NULL,0.0,'Dark Grey','A11582U030',17,36,37.00,5,NULL),
+INSERT INTO `Product_variants` (`id`, `product_id`, `womens_variant_id`, `size`, `color`, `sku`, `stock_quantity`, `product_img_id`, `variant_price`, `reorder_level`, `discount_id`) VALUES 
+(59,39,NULL,0.0,'Dark Grey','A11582U030',17,36,37.00,5,NULL),
 (60,39,NULL,0.0,'Dark Grey','A11582U040',19,36,37.00,5,NULL),
 (61,39,NULL,0.0,'Dark Grey','A11582U050',30,36,37.00,5,NULL),
 (62,39,NULL,0.0,'Dark Grey','A11582U060',30,36,37.00,5,NULL),
@@ -3419,7 +3420,8 @@ CREATE TABLE `Users` (
 SET @OLD_AUTOCOMMIT=@@AUTOCOMMIT, @@AUTOCOMMIT=0;
 LOCK TABLES `Users` WRITE;
 /*!40000 ALTER TABLE `Users` DISABLE KEYS */;
-INSERT INTO `Users` (`id`, `first_name`, `last_name`, `email`, `password`, `role`, `city_id`, `created_at`) VALUES (1,'Admin','User','admin@runningshoes.ma','$2y$10$$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi','admin',1,'2026-06-25 22:26:56'),
+INSERT INTO `Users` (`id`, `first_name`, `last_name`, `email`, `password`, `role`, `city_id`, `created_at`) VALUES 
+(1,'Admin','User','admin@runningshoes.ma','$2y$10$$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi','admin',1,'2026-06-25 22:26:56'),
 (2,'Hassan','El Amrani','hassan@delivery.ma','$2y$10$$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi','delivery_guy',1,'2026-06-25 22:26:56'),
 (3,'Karim','Benali','karim@delivery.ma','$2y$10$$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi','delivery_guy',2,'2026-06-25 22:26:56'),
 (4,'Fatima','Zahra','fatima@delivery.ma','$2y$10$$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi','delivery_guy',3,'2026-06-25 22:26:56'),
