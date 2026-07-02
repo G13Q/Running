@@ -5,6 +5,7 @@ const menuContent = $(".menuContent");
 let selected = 0;
 
 navItem.on("mouseenter", (e) => {
+  if (window.innerWidth <= 768) return;
   const tab = $(e.currentTarget).data("tab");
   if (!tab) return;
   menu.addClass("show");
@@ -24,6 +25,18 @@ const refreshMenu = () => {
 $(".tab-content").hide();
 refreshMenu();
 
+// Hamburger toggle
+$(".nav-hamburger").on("click", () => {
+  $("header nav ul").toggleClass("nav-open");
+});
+
+$(document).on("click", (e) => {
+  if (!$(e.target).closest("header nav").length) {
+    $("header nav ul").removeClass("nav-open");
+  }
+});
+
+// Announcement slider
 const annSlides = $(".ann-slide");
 const annLeft = $(".ann-arrow--left");
 const annRight = $(".ann-arrow--right");
