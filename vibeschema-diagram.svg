@@ -1,0 +1,762 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="4184" height="1470" viewBox="-2279 -506 4184 1470">
+<defs>
+  <clipPath id="clip0"><path d="M -1513 322 L -1276 322 Q -1268 322 -1268 330 L -1268 442 Q -1268 450 -1276 450 L -1513 450 Q -1521 450 -1521 442 L -1521 330 Q -1521 322 -1513 322 Z"/></clipPath>
+  <clipPath id="clip1"><path d="M -1357 482 L -1113 482 Q -1105 482 -1105 490 L -1105 602 Q -1105 610 -1113 610 L -1357 610 Q -1365 610 -1365 602 L -1365 490 Q -1365 482 -1357 482 Z"/></clipPath>
+  <clipPath id="clip2"><path d="M -1061 43 L -769 43 Q -761 43 -761 51 L -761 401 Q -761 409 -769 409 L -1061 409 Q -1069 409 -1069 401 L -1069 51 Q -1069 43 -1061 43 Z"/></clipPath>
+  <clipPath id="clip3"><path d="M -806 494 L -544 494 Q -536 494 -536 502 L -536 750 Q -536 758 -544 758 L -806 758 Q -814 758 -814 750 L -814 502 Q -814 494 -806 494 Z"/></clipPath>
+  <clipPath id="clip4"><path d="M 1166 380 L 1483 380 Q 1491 380 1491 388 L 1491 704 Q 1491 712 1483 712 L 1166 712 Q 1158 712 1158 704 L 1158 388 Q 1158 380 1166 380 Z"/></clipPath>
+  <clipPath id="clip5"><path d="M -507 9 L -204 9 Q -196 9 -196 17 L -196 435 Q -196 443 -204 443 L -507 443 Q -515 443 -515 435 L -515 17 Q -515 9 -507 9 Z"/></clipPath>
+  <clipPath id="clip6"><path d="M -2151 157 L -1918 157 Q -1910 157 -1910 165 L -1910 447 Q -1910 455 -1918 455 L -2151 455 Q -2159 455 -2159 447 L -2159 165 Q -2159 157 -2151 157 Z"/></clipPath>
+  <clipPath id="clip7"><path d="M -1552.0454 -289.0232 L -1242.0454 -289.0232 Q -1234.0454 -289.0232 -1234.0454 -281.0232 L -1234.0454 -169.0232 Q -1234.0454 -161.0232 -1242.0454 -161.0232 L -1552.0454 -161.0232 Q -1560.0454 -161.0232 -1560.0454 -169.0232 L -1560.0454 -281.0232 Q -1560.0454 -289.0232 -1552.0454 -289.0232 Z"/></clipPath>
+  <clipPath id="clip8"><path d="M 675 511 L 1095 511 Q 1103 511 1103 519 L 1103 733 Q 1103 741 1095 741 L 675 741 Q 667 741 667 733 L 667 519 Q 667 511 675 511 Z"/></clipPath>
+  <clipPath id="clip9"><path d="M 266 465 L 543 465 Q 551 465 551 473 L 551 619 Q 551 627 543 627 L 266 627 Q 258 627 258 619 L 258 473 Q 258 465 266 465 Z"/></clipPath>
+  <clipPath id="clip10"><path d="M 68 60 L 340 60 Q 348 60 348 68 L 348 384 Q 348 392 340 392 L 68 392 Q 60 392 60 384 L 60 68 Q 60 60 68 60 Z"/></clipPath>
+  <clipPath id="clip11"><path d="M 591 26 L 937 26 Q 945 26 945 34 L 945 418 Q 945 426 937 426 L 591 426 Q 583 426 583 418 L 583 34 Q 583 26 591 26 Z"/></clipPath>
+  <clipPath id="clip12"><path d="M 32 -209 L 377 -209 Q 385 -209 385 -201 L 385 13 Q 385 21 377 21 L 32 21 Q 24 21 24 13 L 24 -201 Q 24 -209 32 -209 Z"/></clipPath>
+  <clipPath id="clip13"><path d="M -518 -323 L -193 -323 Q -185 -323 -185 -315 L -185 -33 Q -185 -25 -193 -25 L -518 -25 Q -526 -25 -526 -33 L -526 -315 Q -526 -323 -518 -323 Z"/></clipPath>
+  <clipPath id="clip14"><path d="M 1200 14 L 1449 14 Q 1457 14 1457 22 L 1457 270 Q 1457 278 1449 278 L 1200 278 Q 1192 278 1192 270 L 1192 22 Q 1192 14 1200 14 Z"/></clipPath>
+  <clipPath id="clip15"><path d="M 1432 -249 L 1777 -249 Q 1785 -249 1785 -241 L 1785 -27 Q 1785 -19 1777 -19 L 1432 -19 Q 1424 -19 1424 -27 L 1424 -241 Q 1424 -249 1432 -249 Z"/></clipPath>
+  <clipPath id="clip16"><path d="M 514 -386 L 854 -386 Q 862 -386 862 -378 L 862 -130 Q 862 -122 854 -122 L 514 -122 Q 506 -122 506 -130 L 506 -378 Q 506 -386 514 -386 Z"/></clipPath>
+  <clipPath id="clip17"><path d="M -316 494 L 4 494 Q 12 494 12 502 L 12 750 Q 12 758 4 758 L -316 758 Q -324 758 -324 750 L -324 502 Q -324 494 -316 494 Z"/></clipPath>
+  <clipPath id="clip18"><path d="M -1597 660 L -1501 660 Q -1493 660 -1493 668 L -1493 805 Q -1493 813 -1501 813 L -1597 813 Q -1605 813 -1605 805 L -1605 668 Q -1605 660 -1597 660 Z"/></clipPath>
+  <clipPath id="clip19"><path d="M -1792 660 L -1633 660 Q -1625 660 -1625 668 L -1625 774 Q -1625 782 -1633 782 L -1792 782 Q -1800 782 -1800 774 L -1800 668 Q -1800 660 -1792 660 Z"/></clipPath>
+  <clipPath id="clip20"><path d="M -1262 660 L -1083 660 Q -1075 660 -1075 668 L -1075 836 Q -1075 844 -1083 844 L -1262 844 Q -1270 844 -1270 836 L -1270 668 Q -1270 660 -1262 660 Z"/></clipPath>
+  <clipPath id="clip21"><path d="M -1047 660 L -925 660 Q -917 660 -917 668 L -917 805 Q -917 813 -925 813 L -1047 813 Q -1055 813 -1055 805 L -1055 668 Q -1055 660 -1047 660 Z"/></clipPath>
+  <clipPath id="clip22"><path d="M -1465 660 L -1298 660 Q -1290 660 -1290 668 L -1290 805 Q -1290 813 -1298 813 L -1465 813 Q -1473 813 -1473 805 L -1473 668 Q -1473 660 -1465 660 Z"/></clipPath>
+</defs>
+<rect x="-2279" y="-506" width="4184" height="1470" fill="#0E0E0E"/>
+<path d="M -1083 180 C -1157 180 -1194 391 -1268 391" fill="none" stroke="#4A6FF5" stroke-width="2.25" opacity="0.75"/>
+<path d="M -1083 180 L -1069 172 M -1083 180 L -1069 180 M -1083 180 L -1069 188" fill="none" stroke="#4A6FF5" stroke-width="2.25" opacity="0.75"/>
+<path d="M -1083 214 C -1123 214 -1065 551 -1105 551" fill="none" stroke="#4A6FF5" stroke-width="2.25" opacity="0.75"/>
+<path d="M -1083 214 L -1069 206 M -1083 214 L -1069 214 M -1083 214 L -1069 222" fill="none" stroke="#4A6FF5" stroke-width="2.25" opacity="0.75"/>
+<path d="M -529 112 C -608.2 112 -647.8 112 -727 112" fill="none" stroke="#4A6FF5" stroke-width="2.25" opacity="0.75"/>
+<path d="M -529 112 L -515 104 M -529 112 L -515 112 M -529 112 L -515 120" fill="none" stroke="#4A6FF5" stroke-width="2.25" opacity="0.75"/>
+<path d="M -182 146 C -132 146 -112 78 -162 78" fill="none" stroke="#4A6FF5" stroke-width="2.25" opacity="0.75"/>
+<path d="M -182 146 L -196 138 M -182 146 L -196 146 M -182 146 L -196 154" fill="none" stroke="#4A6FF5" stroke-width="2.25" opacity="0.75"/>
+<path d="M -529 316 C -569 316 -496 563 -536 563" fill="none" stroke="#4A6FF5" stroke-width="2.25" opacity="0.75"/>
+<path d="M -529 316 L -515 308 M -529 316 L -515 316 M -529 316 L -515 324" fill="none" stroke="#4A6FF5" stroke-width="2.25" opacity="0.75"/>
+<path d="M -182 418 C 340.4 418 601.6 449 1124 449" fill="none" stroke="#4A6FF5" stroke-width="2.25" opacity="0.75"/>
+<path d="M -182 418 L -196 410 M -182 418 L -196 418 M -182 418 L -196 426" fill="none" stroke="#4A6FF5" stroke-width="2.25" opacity="0.75"/>
+<path d="M -1220.0454 -220.0232 C -1159.6272 -220.0232 -1129.4181 112 -1069 112" fill="none" stroke="#4A6FF5" stroke-width="2.25" opacity="0.75"/>
+<path d="M -1220.0454 -220.0232 L -1234.0454 -228.0232 M -1220.0454 -220.0232 L -1234.0454 -220.0232 M -1220.0454 -220.0232 L -1234.0454 -212.0232" fill="none" stroke="#4A6FF5" stroke-width="2.25" opacity="0.75"/>
+<path d="M -1574.0454 -186.0232 C -1708.4272 -186.0232 -1775.6181 226 -1910 226" fill="none" stroke="#4A6FF5" stroke-width="2.25" opacity="0.75"/>
+<path d="M -1574.0454 -186.0232 L -1560.0454 -194.0232 M -1574.0454 -186.0232 L -1560.0454 -186.0232 M -1574.0454 -186.0232 L -1560.0454 -178.0232" fill="none" stroke="#4A6FF5" stroke-width="2.25" opacity="0.75"/>
+<path d="M 565 602 C 605.8 602 626.2 580 667 580" fill="none" stroke="#4A6FF5" stroke-width="2.25" opacity="0.75"/>
+<path d="M 565 602 L 551 594 M 565 602 L 551 602 M 565 602 L 551 610" fill="none" stroke="#4A6FF5" stroke-width="2.25" opacity="0.75"/>
+<path d="M 362 333 C 507.6 428.5 112.4 428.5 258 534" fill="none" stroke="#4A6FF5" stroke-width="2.25" opacity="0.75"/>
+<path d="M 362 333 L 348 325 M 362 333 L 348 333 M 362 333 L 348 341" fill="none" stroke="#4A6FF5" stroke-width="2.25" opacity="0.75"/>
+<path d="M 569 129 C 494.2 129 456.8 129 382 129" fill="none" stroke="#4A6FF5" stroke-width="2.25" opacity="0.75"/>
+<path d="M 569 129 L 583 121 M 569 129 L 583 129 M 569 129 L 583 137" fill="none" stroke="#4A6FF5" stroke-width="2.25" opacity="0.75"/>
+<path d="M 569 163 C 529 163 591 534 551 534" fill="none" stroke="#4A6FF5" stroke-width="2.25" opacity="0.75"/>
+<path d="M 569 163 L 583 155 M 569 163 L 583 163 M 569 163 L 583 171" fill="none" stroke="#4A6FF5" stroke-width="2.25" opacity="0.75"/>
+<path d="M 959 231 C 1025 231 1058 449 1124 449" fill="none" stroke="#4A6FF5" stroke-width="2.25" opacity="0.75"/>
+<path d="M 959 231 L 945 223 M 959 231 L 945 231 M 959 231 L 945 239" fill="none" stroke="#4A6FF5" stroke-width="2.25" opacity="0.75"/>
+<path d="M 569 299 C 494.2 299 456.8 129 382 129" fill="none" stroke="#4A6FF5" stroke-width="2.25" opacity="0.75"/>
+<path d="M 569 299 L 583 291 M 569 299 L 583 299 M 569 299 L 583 307" fill="none" stroke="#4A6FF5" stroke-width="2.25" opacity="0.75"/>
+<path d="M 399 -106 C 472.6 -106 509.4 95 583 95" fill="none" stroke="#4A6FF5" stroke-width="2.25" opacity="0.75"/>
+<path d="M 399 -106 L 385 -114 M 399 -106 L 385 -106 M 399 -106 L 385 -98" fill="none" stroke="#4A6FF5" stroke-width="2.25" opacity="0.75"/>
+<path d="M 10 -72 C -58.8 -72 -93.2 78 -162 78" fill="none" stroke="#4A6FF5" stroke-width="2.25" opacity="0.75"/>
+<path d="M 10 -72 L 24 -80 M 10 -72 L 24 -72 M 10 -72 L 24 -64" fill="none" stroke="#4A6FF5" stroke-width="2.25" opacity="0.75"/>
+<path d="M -171 -220 C -92.2 -220 -52.8 129 26 129" fill="none" stroke="#4A6FF5" stroke-width="2.25" opacity="0.75"/>
+<path d="M -171 -220 L -185 -228 M -171 -220 L -185 -220 M -171 -220 L -185 -212" fill="none" stroke="#4A6FF5" stroke-width="2.25" opacity="0.75"/>
+<path d="M -540 -186 C -614.8 -186 -652.2 112 -727 112" fill="none" stroke="#4A6FF5" stroke-width="2.25" opacity="0.75"/>
+<path d="M -540 -186 L -526 -194 M -540 -186 L -526 -186 M -540 -186 L -526 -178" fill="none" stroke="#4A6FF5" stroke-width="2.25" opacity="0.75"/>
+<path d="M 1178 117 C 1084.8 117 1038.2 95 945 95" fill="none" stroke="#4A6FF5" stroke-width="2.25" opacity="0.75"/>
+<path d="M 1178 117 L 1192 109 M 1178 117 L 1192 117 M 1178 117 L 1192 125" fill="none" stroke="#4A6FF5" stroke-width="2.25" opacity="0.75"/>
+<path d="M 1410 -146 C 1323 -5 1544 -2.5 1457 83" fill="none" stroke="#4A6FF5" stroke-width="2.25" opacity="0.75"/>
+<path d="M 1410 -146 L 1424 -154 M 1410 -146 L 1424 -146 M 1410 -146 L 1424 -138" fill="none" stroke="#4A6FF5" stroke-width="2.25" opacity="0.75"/>
+<path d="M 1410 -112 C 781.2 -112 466.8 78 -162 78" fill="none" stroke="#4A6FF5" stroke-width="2.25" opacity="0.75"/>
+<path d="M 1410 -112 L 1424 -120 M 1410 -112 L 1424 -112 M 1410 -112 L 1424 -104" fill="none" stroke="#4A6FF5" stroke-width="2.25" opacity="0.75"/>
+<path d="M 492 -283 C 448 -283 426 129 382 129" fill="none" stroke="#4A6FF5" stroke-width="2.25" opacity="0.75"/>
+<path d="M 492 -283 L 506 -291 M 492 -283 L 506 -283 M 492 -283 L 506 -275" fill="none" stroke="#4A6FF5" stroke-width="2.25" opacity="0.75"/>
+<path d="M -338 597 C -547.44 487.775 -95.648 471.3913 -106.7184 229.1179 C -108.672 186.3637 -125.04 78 -162 78" fill="none" stroke="#4A6FF5" stroke-width="2.25" opacity="0.75"/>
+<path d="M -338 597 L -324 589 M -338 597 L -324 597 M -338 597 L -324 605" fill="none" stroke="#4A6FF5" stroke-width="2.25" opacity="0.75"/>
+<path d="M 26 631 C 66 631 -14 129 26 129" fill="none" stroke="#4A6FF5" stroke-width="2.25" opacity="0.75"/>
+<path d="M 26 631 L 12 623 M 26 631 L 12 631 M 26 631 L 12 639" fill="none" stroke="#4A6FF5" stroke-width="2.25" opacity="0.75"/>
+<path d="M -735 112 L -761 112" fill="none" stroke="#4A6FF5" stroke-width="2.25" opacity="0.75"/>
+<path d="M -735 112 A 4 4 0 1 0 -727 112 A 4 4 0 1 0 -735 112" fill="#4A6FF5" opacity="0.75"/>
+<path d="M -735 112 L -761 112" fill="none" stroke="#4A6FF5" stroke-width="2.25" opacity="0.75"/>
+<path d="M -735 112 A 4 4 0 1 0 -727 112 A 4 4 0 1 0 -735 112" fill="#4A6FF5" opacity="0.75"/>
+<path d="M -170 78 L -196 78" fill="none" stroke="#4A6FF5" stroke-width="2.25" opacity="0.75"/>
+<path d="M -170 78 A 4 4 0 1 0 -162 78 A 4 4 0 1 0 -170 78" fill="#4A6FF5" opacity="0.75"/>
+<path d="M -170 78 L -196 78" fill="none" stroke="#4A6FF5" stroke-width="2.25" opacity="0.75"/>
+<path d="M -170 78 A 4 4 0 1 0 -162 78 A 4 4 0 1 0 -170 78" fill="#4A6FF5" opacity="0.75"/>
+<path d="M -170 78 L -196 78" fill="none" stroke="#4A6FF5" stroke-width="2.25" opacity="0.75"/>
+<path d="M -170 78 A 4 4 0 1 0 -162 78 A 4 4 0 1 0 -170 78" fill="#4A6FF5" opacity="0.75"/>
+<path d="M -170 78 L -196 78" fill="none" stroke="#4A6FF5" stroke-width="2.25" opacity="0.75"/>
+<path d="M -170 78 A 4 4 0 1 0 -162 78 A 4 4 0 1 0 -170 78" fill="#4A6FF5" opacity="0.75"/>
+<path d="M 1132 449 L 1158 449" fill="none" stroke="#4A6FF5" stroke-width="2.25" opacity="0.75"/>
+<path d="M 1124 449 A 4 4 0 1 0 1132 449 A 4 4 0 1 0 1124 449" fill="#4A6FF5" opacity="0.75"/>
+<path d="M 1132 449 L 1158 449" fill="none" stroke="#4A6FF5" stroke-width="2.25" opacity="0.75"/>
+<path d="M 1124 449 A 4 4 0 1 0 1132 449 A 4 4 0 1 0 1124 449" fill="#4A6FF5" opacity="0.75"/>
+<path d="M 374 129 L 348 129" fill="none" stroke="#4A6FF5" stroke-width="2.25" opacity="0.75"/>
+<path d="M 374 129 A 4 4 0 1 0 382 129 A 4 4 0 1 0 374 129" fill="#4A6FF5" opacity="0.75"/>
+<path d="M 374 129 L 348 129" fill="none" stroke="#4A6FF5" stroke-width="2.25" opacity="0.75"/>
+<path d="M 374 129 A 4 4 0 1 0 382 129 A 4 4 0 1 0 374 129" fill="#4A6FF5" opacity="0.75"/>
+<path d="M 374 129 L 348 129" fill="none" stroke="#4A6FF5" stroke-width="2.25" opacity="0.75"/>
+<path d="M 374 129 A 4 4 0 1 0 382 129 A 4 4 0 1 0 374 129" fill="#4A6FF5" opacity="0.75"/>
+<path d="M 34 129 L 60 129" fill="none" stroke="#4A6FF5" stroke-width="2.25" opacity="0.75"/>
+<path d="M 26 129 A 4 4 0 1 0 34 129 A 4 4 0 1 0 26 129" fill="#4A6FF5" opacity="0.75"/>
+<path d="M 34 129 L 60 129" fill="none" stroke="#4A6FF5" stroke-width="2.25" opacity="0.75"/>
+<path d="M 26 129 A 4 4 0 1 0 34 129 A 4 4 0 1 0 26 129" fill="#4A6FF5" opacity="0.75"/>
+<path d="M -1511 324 L -1274 324 Q -1266 324 -1266 332 L -1266 444 Q -1266 452 -1274 452 L -1511 452 Q -1519 452 -1519 444 L -1519 332 Q -1519 324 -1511 324 Z" fill="rgba(0,0,0,0.4)"/>
+<g clip-path="url(#clip0)">
+<rect x="-1521" y="322" width="253" height="128" fill="#282828"/>
+<rect x="-1521" y="322" width="253" height="44" fill="#141414"/>
+<rect x="-1521" y="365" width="253" height="1" fill="#000000" opacity="0.4"/>
+</g>
+<text x="-1507" y="345" font-family="'DM Sans', sans-serif" font-size="27" font-weight="600" fill="#E8ECF4" dominant-baseline="middle" text-anchor="start">Brands</text>
+<path d="M -1505.5 393 A 3.5 3.5 0 1 0 -1498.5 393 A 3.5 3.5 0 1 0 -1505.5 393" fill="none" stroke="#C9A227" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M -1499.5251 390.5251 L -1494.5754 385.5754 M -1496.6967 387.6967 L -1494.9289 389.4645 M -1494.5754 385.5754 L -1492.8076 387.3431" fill="none" stroke="#C9A227" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M -1482.5 386 L -1479.5 386 L -1479.5 389.5 L -1476 389.5 L -1476 392.5 L -1479.5 392.5 L -1479.5 396 L -1482.5 396 L -1482.5 392.5 L -1486 392.5 L -1486 389.5 L -1482.5 389.5 Z" fill="#7AAF7E"/>
+<text x="-1467" y="391" font-family="'DM Sans', sans-serif" font-size="19" font-weight="500" fill="#FFFFFF" dominant-baseline="middle" text-anchor="start" letter-spacing="0.3px">id</text>
+<text x="-1280" y="391" font-family="'DM Sans', sans-serif" font-size="15" font-weight="400" fill="#AAAAAA" dominant-baseline="middle" text-anchor="end" letter-spacing="0.3px">integer</text>
+<path d="M -1501 418.5 L -1499.5858 423.5858 L -1494.5 425 L -1499.5858 426.4142 L -1501 431.5 L -1502.4142 426.4142 L -1507.5 425 L -1502.4142 423.5858 Z" fill="#4A9FBF"/>
+<path d="M -1481 419.5 L -1475.5 425 L -1481 430.5 L -1486.5 425 Z" fill="#6B6B84"/>
+<text x="-1467" y="425" font-family="'DM Sans', sans-serif" font-size="19" font-weight="500" fill="#FFFFFF" dominant-baseline="middle" text-anchor="start" letter-spacing="0.3px">name</text>
+<text x="-1280" y="425" font-family="'DM Sans', sans-serif" font-size="15" font-weight="400" fill="#AAAAAA" dominant-baseline="middle" text-anchor="end" letter-spacing="0.3px">varchar(100)</text>
+<path d="M -1512.5 322.5 L -1276.5 322.5 Q -1268.5 322.5 -1268.5 330.5 L -1268.5 441.5 Q -1268.5 449.5 -1276.5 449.5 L -1512.5 449.5 Q -1520.5 449.5 -1520.5 441.5 L -1520.5 330.5 Q -1520.5 322.5 -1512.5 322.5 Z" fill="none" stroke="#333333" stroke-width="1"/>
+<path d="M -1355 484 L -1111 484 Q -1103 484 -1103 492 L -1103 604 Q -1103 612 -1111 612 L -1355 612 Q -1363 612 -1363 604 L -1363 492 Q -1363 484 -1355 484 Z" fill="rgba(0,0,0,0.4)"/>
+<g clip-path="url(#clip1)">
+<rect x="-1365" y="482" width="260" height="128" fill="#282828"/>
+<rect x="-1365" y="482" width="260" height="44" fill="#141414"/>
+<rect x="-1365" y="525" width="260" height="1" fill="#000000" opacity="0.4"/>
+</g>
+<text x="-1351" y="505" font-family="'DM Sans', sans-serif" font-size="27" font-weight="600" fill="#E8ECF4" dominant-baseline="middle" text-anchor="start">Categories</text>
+<path d="M -1349.5 553 A 3.5 3.5 0 1 0 -1342.5 553 A 3.5 3.5 0 1 0 -1349.5 553" fill="none" stroke="#C9A227" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M -1343.5251 550.5251 L -1338.5754 545.5754 M -1340.6967 547.6967 L -1338.9289 549.4645 M -1338.5754 545.5754 L -1336.8076 547.3431" fill="none" stroke="#C9A227" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="-1331" y="551" font-family="'DM Sans', sans-serif" font-size="19" font-weight="500" fill="#FFFFFF" dominant-baseline="middle" text-anchor="start" letter-spacing="0.3px">id</text>
+<text x="-1117" y="551" font-family="'DM Sans', sans-serif" font-size="15" font-weight="400" fill="#AAAAAA" dominant-baseline="middle" text-anchor="end" letter-spacing="0.3px">integer</text>
+<path d="M -1345 579.5 L -1339.5 585 L -1345 590.5 L -1350.5 585 Z" fill="#6B6B84"/>
+<text x="-1331" y="585" font-family="'DM Sans', sans-serif" font-size="19" font-weight="500" fill="#FFFFFF" dominant-baseline="middle" text-anchor="start" letter-spacing="0.3px">material</text>
+<text x="-1117" y="585" font-family="'DM Sans', sans-serif" font-size="15" font-weight="400" fill="#AAAAAA" dominant-baseline="middle" text-anchor="end" letter-spacing="0.3px">varchar(100)</text>
+<path d="M -1356.5 482.5 L -1113.5 482.5 Q -1105.5 482.5 -1105.5 490.5 L -1105.5 601.5 Q -1105.5 609.5 -1113.5 609.5 L -1356.5 609.5 Q -1364.5 609.5 -1364.5 601.5 L -1364.5 490.5 Q -1364.5 482.5 -1356.5 482.5 Z" fill="none" stroke="#333333" stroke-width="1"/>
+<path d="M -1059 45 L -767 45 Q -759 45 -759 53 L -759 403 Q -759 411 -767 411 L -1059 411 Q -1067 411 -1067 403 L -1067 53 Q -1067 45 -1059 45 Z" fill="rgba(0,0,0,0.4)"/>
+<g clip-path="url(#clip2)">
+<rect x="-1069" y="43" width="308" height="366" fill="#282828"/>
+<rect x="-1069" y="43" width="308" height="44" fill="#141414"/>
+<rect x="-1069" y="86" width="308" height="1" fill="#000000" opacity="0.4"/>
+</g>
+<text x="-1055" y="66" font-family="'DM Sans', sans-serif" font-size="27" font-weight="600" fill="#E8ECF4" dominant-baseline="middle" text-anchor="start">Products</text>
+<path d="M -1053.5 114 A 3.5 3.5 0 1 0 -1046.5 114 A 3.5 3.5 0 1 0 -1053.5 114" fill="none" stroke="#C9A227" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M -1047.5251 111.5251 L -1042.5754 106.5754 M -1044.6967 108.6967 L -1042.9289 110.4645 M -1042.5754 106.5754 L -1040.8076 108.3431" fill="none" stroke="#C9A227" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M -1030.5 107 L -1027.5 107 L -1027.5 110.5 L -1024 110.5 L -1024 113.5 L -1027.5 113.5 L -1027.5 117 L -1030.5 117 L -1030.5 113.5 L -1034 113.5 L -1034 110.5 L -1030.5 110.5 Z" fill="#7AAF7E"/>
+<text x="-1015" y="112" font-family="'DM Sans', sans-serif" font-size="19" font-weight="500" fill="#FFFFFF" dominant-baseline="middle" text-anchor="start" letter-spacing="0.3px">id</text>
+<text x="-773" y="112" font-family="'DM Sans', sans-serif" font-size="15" font-weight="400" fill="#AAAAAA" dominant-baseline="middle" text-anchor="end" letter-spacing="0.3px">integer</text>
+<path d="M -1049 140.5 L -1043.5 146 L -1049 151.5 L -1054.5 146 Z" fill="#6B6B84"/>
+<text x="-1035" y="146" font-family="'DM Sans', sans-serif" font-size="19" font-weight="500" fill="#FFFFFF" dominant-baseline="middle" text-anchor="start" letter-spacing="0.3px">name</text>
+<text x="-773" y="146" font-family="'DM Sans', sans-serif" font-size="15" font-weight="400" fill="#AAAAAA" dominant-baseline="middle" text-anchor="end" letter-spacing="0.3px">varchar(255)</text>
+<path d="M -1053.5 182 A 3.5 3.5 0 1 0 -1046.5 182 A 3.5 3.5 0 1 0 -1053.5 182" fill="none" stroke="#9B4733" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M -1047.5251 179.5251 L -1042.5754 174.5754 M -1044.6967 176.6967 L -1042.9289 178.4645 M -1042.5754 174.5754 L -1040.8076 176.3431" fill="none" stroke="#9B4733" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M -1029 174.5 L -1023.5 180 L -1029 185.5 L -1034.5 180 Z" fill="#6B6B84"/>
+<text x="-1015" y="180" font-family="'DM Sans', sans-serif" font-size="19" font-weight="500" fill="#FFFFFF" dominant-baseline="middle" text-anchor="start" letter-spacing="0.3px">brand_id</text>
+<text x="-773" y="180" font-family="'DM Sans', sans-serif" font-size="15" font-weight="400" fill="#AAAAAA" dominant-baseline="middle" text-anchor="end" letter-spacing="0.3px">integer</text>
+<path d="M -1053.5 216 A 3.5 3.5 0 1 0 -1046.5 216 A 3.5 3.5 0 1 0 -1053.5 216" fill="none" stroke="#9B4733" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M -1047.5251 213.5251 L -1042.5754 208.5754 M -1044.6967 210.6967 L -1042.9289 212.4645 M -1042.5754 208.5754 L -1040.8076 210.3431" fill="none" stroke="#9B4733" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M -1029 208.5 L -1023.5 214 L -1029 219.5 L -1034.5 214 Z" fill="#6B6B84"/>
+<text x="-1015" y="214" font-family="'DM Sans', sans-serif" font-size="19" font-weight="500" fill="#FFFFFF" dominant-baseline="middle" text-anchor="start" letter-spacing="0.3px">category_id</text>
+<text x="-773" y="214" font-family="'DM Sans', sans-serif" font-size="15" font-weight="400" fill="#AAAAAA" dominant-baseline="middle" text-anchor="end" letter-spacing="0.3px">integer</text>
+<text x="-1055" y="248" font-family="'DM Sans', sans-serif" font-size="19" font-weight="500" fill="#FFFFFF" dominant-baseline="middle" text-anchor="start" letter-spacing="0.3px">description</text>
+<text x="-773" y="248" font-family="'DM Sans', sans-serif" font-size="15" font-weight="400" fill="#AAAAAA" dominant-baseline="middle" text-anchor="end" letter-spacing="0.3px">text</text>
+<path d="M -1049 276.5 L -1043.5 282 L -1049 287.5 L -1054.5 282 Z" fill="#6B6B84"/>
+<path d="M -1029.284 277.428 L -1032.05 280.195 L -1033.632 280.195 L -1029.284 275.838 L -1023.122 282 L -1029.284 288.162 L -1033.65 283.796 L -1032.059 283.796 L -1029.284 286.572 L -1024.712 282 L -1029.284 277.428" fill="#B8B2AE"/>
+<path d="M -1034.878 283.109 L -1034.878 280.882 L -1030.134 280.882 L -1030.134 278.812 L -1026.929 282 L -1030.134 285.171 L -1030.134 283.109 L -1034.878 283.109" fill="#B8B2AE"/>
+<path d="M -1034.32 281.432 L -1034.32 282.559 L -1029.575 282.559 L -1029.575 283.796 L -1027.78 282.018 L -1027.78 281.982 L -1029.575 280.178 L -1029.575 281.432 L -1034.32 281.432" fill="#B8B2AE"/>
+<text x="-1015" y="282" font-family="'DM Sans', sans-serif" font-size="19" font-weight="500" fill="#FFFFFF" dominant-baseline="middle" text-anchor="start" letter-spacing="0.3px">base_price</text>
+<text x="-773" y="282" font-family="'DM Sans', sans-serif" font-size="15" font-weight="400" fill="#AAAAAA" dominant-baseline="middle" text-anchor="end" letter-spacing="0.3px">decimal(10,2)</text>
+<path d="M -1049 310.5 L -1043.5 316 L -1049 321.5 L -1054.5 316 Z" fill="#6B6B84"/>
+<path d="M -1029.284 311.428 L -1032.05 314.195 L -1033.632 314.195 L -1029.284 309.838 L -1023.122 316 L -1029.284 322.162 L -1033.65 317.796 L -1032.059 317.796 L -1029.284 320.572 L -1024.712 316 L -1029.284 311.428" fill="#B8B2AE"/>
+<path d="M -1034.878 317.109 L -1034.878 314.882 L -1030.134 314.882 L -1030.134 312.812 L -1026.929 316 L -1030.134 319.171 L -1030.134 317.109 L -1034.878 317.109" fill="#B8B2AE"/>
+<path d="M -1034.32 315.432 L -1034.32 316.559 L -1029.575 316.559 L -1029.575 317.796 L -1027.78 316.018 L -1027.78 315.982 L -1029.575 314.178 L -1029.575 315.432 L -1034.32 315.432" fill="#B8B2AE"/>
+<text x="-1015" y="316" font-family="'DM Sans', sans-serif" font-size="19" font-weight="500" fill="#FFFFFF" dominant-baseline="middle" text-anchor="start" letter-spacing="0.3px">sale</text>
+<text x="-773" y="316" font-family="'DM Sans', sans-serif" font-size="15" font-weight="400" fill="#AAAAAA" dominant-baseline="middle" text-anchor="end" letter-spacing="0.3px">decimal(5,2)</text>
+<path d="M -1049 344.5 L -1043.5 350 L -1049 355.5 L -1054.5 350 Z" fill="#6B6B84"/>
+<path d="M -1029.284 345.428 L -1032.05 348.195 L -1033.632 348.195 L -1029.284 343.838 L -1023.122 350 L -1029.284 356.162 L -1033.65 351.796 L -1032.059 351.796 L -1029.284 354.572 L -1024.712 350 L -1029.284 345.428" fill="#B8B2AE"/>
+<path d="M -1034.878 351.109 L -1034.878 348.882 L -1030.134 348.882 L -1030.134 346.812 L -1026.929 350 L -1030.134 353.171 L -1030.134 351.109 L -1034.878 351.109" fill="#B8B2AE"/>
+<path d="M -1034.32 349.432 L -1034.32 350.559 L -1029.575 350.559 L -1029.575 351.796 L -1027.78 350.018 L -1027.78 349.982 L -1029.575 348.178 L -1029.575 349.432 L -1034.32 349.432" fill="#B8B2AE"/>
+<text x="-1015" y="350" font-family="'DM Sans', sans-serif" font-size="19" font-weight="500" fill="#FFFFFF" dominant-baseline="middle" text-anchor="start" letter-spacing="0.3px">gender</text>
+<text x="-773" y="350" font-family="'DM Sans', sans-serif" font-size="15" font-weight="400" fill="#AAAAAA" dominant-baseline="middle" text-anchor="end" letter-spacing="0.3px">gender</text>
+<path d="M -1049.284 379.428 L -1052.05 382.195 L -1053.632 382.195 L -1049.284 377.838 L -1043.122 384 L -1049.284 390.162 L -1053.65 385.796 L -1052.059 385.796 L -1049.284 388.572 L -1044.712 384 L -1049.284 379.428" fill="#B8B2AE"/>
+<path d="M -1054.878 385.109 L -1054.878 382.882 L -1050.134 382.882 L -1050.134 380.812 L -1046.929 384 L -1050.134 387.171 L -1050.134 385.109 L -1054.878 385.109" fill="#B8B2AE"/>
+<path d="M -1054.32 383.432 L -1054.32 384.559 L -1049.575 384.559 L -1049.575 385.796 L -1047.78 384.018 L -1047.78 383.982 L -1049.575 382.178 L -1049.575 383.432 L -1054.32 383.432" fill="#B8B2AE"/>
+<text x="-1035" y="384" font-family="'DM Sans', sans-serif" font-size="19" font-weight="500" fill="#FFFFFF" dominant-baseline="middle" text-anchor="start" letter-spacing="0.3px">created_at</text>
+<text x="-773" y="384" font-family="'DM Sans', sans-serif" font-size="15" font-weight="400" fill="#AAAAAA" dominant-baseline="middle" text-anchor="end" letter-spacing="0.3px">timestamp</text>
+<path d="M -1060.5 43.5 L -769.5 43.5 Q -761.5 43.5 -761.5 51.5 L -761.5 400.5 Q -761.5 408.5 -769.5 408.5 L -1060.5 408.5 Q -1068.5 408.5 -1068.5 400.5 L -1068.5 51.5 Q -1068.5 43.5 -1060.5 43.5 Z" fill="none" stroke="#333333" stroke-width="1"/>
+<path d="M -804 496 L -542 496 Q -534 496 -534 504 L -534 752 Q -534 760 -542 760 L -804 760 Q -812 760 -812 752 L -812 504 Q -812 496 -804 496 Z" fill="rgba(0,0,0,0.4)"/>
+<g clip-path="url(#clip3)">
+<rect x="-814" y="494" width="278" height="264" fill="#282828"/>
+<rect x="-814" y="494" width="278" height="44" fill="#141414"/>
+<rect x="-814" y="537" width="278" height="1" fill="#000000" opacity="0.4"/>
+</g>
+<text x="-800" y="517" font-family="'DM Sans', sans-serif" font-size="27" font-weight="600" fill="#E8ECF4" dominant-baseline="middle" text-anchor="start">Product_img</text>
+<path d="M -798.5 565 A 3.5 3.5 0 1 0 -791.5 565 A 3.5 3.5 0 1 0 -798.5 565" fill="none" stroke="#C9A227" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M -792.5251 562.5251 L -787.5754 557.5754 M -789.6967 559.6967 L -787.9289 561.4645 M -787.5754 557.5754 L -785.8076 559.3431" fill="none" stroke="#C9A227" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M -775.5 558 L -772.5 558 L -772.5 561.5 L -769 561.5 L -769 564.5 L -772.5 564.5 L -772.5 568 L -775.5 568 L -775.5 564.5 L -779 564.5 L -779 561.5 L -775.5 561.5 Z" fill="#7AAF7E"/>
+<text x="-760" y="563" font-family="'DM Sans', sans-serif" font-size="19" font-weight="500" fill="#FFFFFF" dominant-baseline="middle" text-anchor="start" letter-spacing="0.3px">id</text>
+<text x="-548" y="563" font-family="'DM Sans', sans-serif" font-size="15" font-weight="400" fill="#AAAAAA" dominant-baseline="middle" text-anchor="end" letter-spacing="0.3px">integer</text>
+<text x="-800" y="597" font-family="'DM Sans', sans-serif" font-size="19" font-weight="500" fill="#FFFFFF" dominant-baseline="middle" text-anchor="start" letter-spacing="0.3px">thumbnail</text>
+<text x="-548" y="597" font-family="'DM Sans', sans-serif" font-size="15" font-weight="400" fill="#AAAAAA" dominant-baseline="middle" text-anchor="end" letter-spacing="0.3px">varchar(500)</text>
+<text x="-800" y="631" font-family="'DM Sans', sans-serif" font-size="19" font-weight="500" fill="#FFFFFF" dominant-baseline="middle" text-anchor="start" letter-spacing="0.3px">top_view</text>
+<text x="-548" y="631" font-family="'DM Sans', sans-serif" font-size="15" font-weight="400" fill="#AAAAAA" dominant-baseline="middle" text-anchor="end" letter-spacing="0.3px">varchar(500)</text>
+<text x="-800" y="665" font-family="'DM Sans', sans-serif" font-size="19" font-weight="500" fill="#FFFFFF" dominant-baseline="middle" text-anchor="start" letter-spacing="0.3px">bottom_view</text>
+<text x="-548" y="665" font-family="'DM Sans', sans-serif" font-size="15" font-weight="400" fill="#AAAAAA" dominant-baseline="middle" text-anchor="end" letter-spacing="0.3px">varchar(500)</text>
+<text x="-800" y="699" font-family="'DM Sans', sans-serif" font-size="19" font-weight="500" fill="#FFFFFF" dominant-baseline="middle" text-anchor="start" letter-spacing="0.3px">side_view</text>
+<text x="-548" y="699" font-family="'DM Sans', sans-serif" font-size="15" font-weight="400" fill="#AAAAAA" dominant-baseline="middle" text-anchor="end" letter-spacing="0.3px">varchar(500)</text>
+<text x="-800" y="733" font-family="'DM Sans', sans-serif" font-size="19" font-weight="500" fill="#FFFFFF" dominant-baseline="middle" text-anchor="start" letter-spacing="0.3px">pair_view</text>
+<text x="-548" y="733" font-family="'DM Sans', sans-serif" font-size="15" font-weight="400" fill="#AAAAAA" dominant-baseline="middle" text-anchor="end" letter-spacing="0.3px">varchar(500)</text>
+<path d="M -805.5 494.5 L -544.5 494.5 Q -536.5 494.5 -536.5 502.5 L -536.5 749.5 Q -536.5 757.5 -544.5 757.5 L -805.5 757.5 Q -813.5 757.5 -813.5 749.5 L -813.5 502.5 Q -813.5 494.5 -805.5 494.5 Z" fill="none" stroke="#333333" stroke-width="1"/>
+<path d="M 1168 382 L 1485 382 Q 1493 382 1493 390 L 1493 706 Q 1493 714 1485 714 L 1168 714 Q 1160 714 1160 706 L 1160 390 Q 1160 382 1168 382 Z" fill="rgba(0,0,0,0.4)"/>
+<g clip-path="url(#clip4)">
+<rect x="1158" y="380" width="333" height="332" fill="#282828"/>
+<rect x="1158" y="380" width="333" height="44" fill="#141414"/>
+<rect x="1158" y="423" width="333" height="1" fill="#000000" opacity="0.4"/>
+</g>
+<text x="1172" y="403" font-family="'DM Sans', sans-serif" font-size="27" font-weight="600" fill="#E8ECF4" dominant-baseline="middle" text-anchor="start">Discounts</text>
+<path d="M 1173.5 451 A 3.5 3.5 0 1 0 1180.5 451 A 3.5 3.5 0 1 0 1173.5 451" fill="none" stroke="#C9A227" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 1179.4749 448.5251 L 1184.4246 443.5754 M 1182.3033 445.6967 L 1184.0711 447.4645 M 1184.4246 443.5754 L 1186.1924 445.3431" fill="none" stroke="#C9A227" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 1196.5 444 L 1199.5 444 L 1199.5 447.5 L 1203 447.5 L 1203 450.5 L 1199.5 450.5 L 1199.5 454 L 1196.5 454 L 1196.5 450.5 L 1193 450.5 L 1193 447.5 L 1196.5 447.5 Z" fill="#7AAF7E"/>
+<text x="1212" y="449" font-family="'DM Sans', sans-serif" font-size="19" font-weight="500" fill="#FFFFFF" dominant-baseline="middle" text-anchor="start" letter-spacing="0.3px">id</text>
+<text x="1479" y="449" font-family="'DM Sans', sans-serif" font-size="15" font-weight="400" fill="#AAAAAA" dominant-baseline="middle" text-anchor="end" letter-spacing="0.3px">integer</text>
+<path d="M 1178 476.5 L 1179.4142 481.5858 L 1184.5 483 L 1179.4142 484.4142 L 1178 489.5 L 1176.5858 484.4142 L 1171.5 483 L 1176.5858 481.5858 Z" fill="#4A9FBF"/>
+<text x="1192" y="483" font-family="'DM Sans', sans-serif" font-size="19" font-weight="500" fill="#FFFFFF" dominant-baseline="middle" text-anchor="start" letter-spacing="0.3px">code</text>
+<text x="1479" y="483" font-family="'DM Sans', sans-serif" font-size="15" font-weight="400" fill="#AAAAAA" dominant-baseline="middle" text-anchor="end" letter-spacing="0.3px">varchar(50)</text>
+<path d="M 1178 511.5 L 1183.5 517 L 1178 522.5 L 1172.5 517 Z" fill="#6B6B84"/>
+<path d="M 1197.716 512.428 L 1194.95 515.195 L 1193.368 515.195 L 1197.716 510.838 L 1203.878 517 L 1197.716 523.162 L 1193.35 518.796 L 1194.941 518.796 L 1197.716 521.572 L 1202.288 517 L 1197.716 512.428" fill="#B8B2AE"/>
+<path d="M 1192.122 518.109 L 1192.122 515.882 L 1196.866 515.882 L 1196.866 513.812 L 1200.071 517 L 1196.866 520.171 L 1196.866 518.109 L 1192.122 518.109" fill="#B8B2AE"/>
+<path d="M 1192.68 516.432 L 1192.68 517.559 L 1197.425 517.559 L 1197.425 518.796 L 1199.22 517.018 L 1199.22 516.982 L 1197.425 515.178 L 1197.425 516.432 L 1192.68 516.432" fill="#B8B2AE"/>
+<text x="1212" y="517" font-family="'DM Sans', sans-serif" font-size="19" font-weight="500" fill="#FFFFFF" dominant-baseline="middle" text-anchor="start" letter-spacing="0.3px">discount_type</text>
+<text x="1479" y="517" font-family="'DM Sans', sans-serif" font-size="15" font-weight="400" fill="#AAAAAA" dominant-baseline="middle" text-anchor="end" letter-spacing="0.3px">discount_type</text>
+<path d="M 1178 545.5 L 1183.5 551 L 1178 556.5 L 1172.5 551 Z" fill="#6B6B84"/>
+<text x="1192" y="551" font-family="'DM Sans', sans-serif" font-size="19" font-weight="500" fill="#FFFFFF" dominant-baseline="middle" text-anchor="start" letter-spacing="0.3px">value</text>
+<text x="1479" y="551" font-family="'DM Sans', sans-serif" font-size="15" font-weight="400" fill="#AAAAAA" dominant-baseline="middle" text-anchor="end" letter-spacing="0.3px">decimal(10,2)</text>
+<text x="1172" y="585" font-family="'DM Sans', sans-serif" font-size="19" font-weight="500" fill="#FFFFFF" dominant-baseline="middle" text-anchor="start" letter-spacing="0.3px">start_date</text>
+<text x="1479" y="585" font-family="'DM Sans', sans-serif" font-size="15" font-weight="400" fill="#AAAAAA" dominant-baseline="middle" text-anchor="end" letter-spacing="0.3px">datetime</text>
+<text x="1172" y="619" font-family="'DM Sans', sans-serif" font-size="19" font-weight="500" fill="#FFFFFF" dominant-baseline="middle" text-anchor="start" letter-spacing="0.3px">end_date</text>
+<text x="1479" y="619" font-family="'DM Sans', sans-serif" font-size="15" font-weight="400" fill="#AAAAAA" dominant-baseline="middle" text-anchor="end" letter-spacing="0.3px">datetime</text>
+<text x="1172" y="653" font-family="'DM Sans', sans-serif" font-size="19" font-weight="500" fill="#FFFFFF" dominant-baseline="middle" text-anchor="start" letter-spacing="0.3px">n_uses</text>
+<text x="1479" y="653" font-family="'DM Sans', sans-serif" font-size="15" font-weight="400" fill="#AAAAAA" dominant-baseline="middle" text-anchor="end" letter-spacing="0.3px">integer</text>
+<path d="M 1178 681.5 L 1183.5 687 L 1178 692.5 L 1172.5 687 Z" fill="#6B6B84"/>
+<path d="M 1197.716 682.428 L 1194.95 685.195 L 1193.368 685.195 L 1197.716 680.838 L 1203.878 687 L 1197.716 693.162 L 1193.35 688.796 L 1194.941 688.796 L 1197.716 691.572 L 1202.288 687 L 1197.716 682.428" fill="#B8B2AE"/>
+<path d="M 1192.122 688.109 L 1192.122 685.882 L 1196.866 685.882 L 1196.866 683.812 L 1200.071 687 L 1196.866 690.171 L 1196.866 688.109 L 1192.122 688.109" fill="#B8B2AE"/>
+<path d="M 1192.68 686.432 L 1192.68 687.559 L 1197.425 687.559 L 1197.425 688.796 L 1199.22 687.018 L 1199.22 686.982 L 1197.425 685.178 L 1197.425 686.432 L 1192.68 686.432" fill="#B8B2AE"/>
+<text x="1212" y="687" font-family="'DM Sans', sans-serif" font-size="19" font-weight="500" fill="#FFFFFF" dominant-baseline="middle" text-anchor="start" letter-spacing="0.3px">is_active</text>
+<text x="1479" y="687" font-family="'DM Sans', sans-serif" font-size="15" font-weight="400" fill="#AAAAAA" dominant-baseline="middle" text-anchor="end" letter-spacing="0.3px">boolean</text>
+<path d="M 1166.5 380.5 L 1482.5 380.5 Q 1490.5 380.5 1490.5 388.5 L 1490.5 703.5 Q 1490.5 711.5 1482.5 711.5 L 1166.5 711.5 Q 1158.5 711.5 1158.5 703.5 L 1158.5 388.5 Q 1158.5 380.5 1166.5 380.5 Z" fill="none" stroke="#333333" stroke-width="1"/>
+<path d="M -505 11 L -202 11 Q -194 11 -194 19 L -194 437 Q -194 445 -202 445 L -505 445 Q -513 445 -513 437 L -513 19 Q -513 11 -505 11 Z" fill="rgba(0,0,0,0.4)"/>
+<g clip-path="url(#clip5)">
+<rect x="-515" y="9" width="319" height="434" fill="#282828"/>
+<rect x="-515" y="9" width="319" height="44" fill="#141414"/>
+<rect x="-515" y="52" width="319" height="1" fill="#000000" opacity="0.4"/>
+</g>
+<text x="-501" y="32" font-family="'DM Sans', sans-serif" font-size="27" font-weight="600" fill="#E8ECF4" dominant-baseline="middle" text-anchor="start">Product_variants</text>
+<path d="M -499.5 80 A 3.5 3.5 0 1 0 -492.5 80 A 3.5 3.5 0 1 0 -499.5 80" fill="none" stroke="#C9A227" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M -493.5251 77.5251 L -488.5754 72.5754 M -490.6967 74.6967 L -488.9289 76.4645 M -488.5754 72.5754 L -486.8076 74.3431" fill="none" stroke="#C9A227" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M -476.5 73 L -473.5 73 L -473.5 76.5 L -470 76.5 L -470 79.5 L -473.5 79.5 L -473.5 83 L -476.5 83 L -476.5 79.5 L -480 79.5 L -480 76.5 L -476.5 76.5 Z" fill="#7AAF7E"/>
+<text x="-461" y="78" font-family="'DM Sans', sans-serif" font-size="19" font-weight="500" fill="#FFFFFF" dominant-baseline="middle" text-anchor="start" letter-spacing="0.3px">id</text>
+<text x="-208" y="78" font-family="'DM Sans', sans-serif" font-size="15" font-weight="400" fill="#AAAAAA" dominant-baseline="middle" text-anchor="end" letter-spacing="0.3px">integer</text>
+<path d="M -499.5 114 A 3.5 3.5 0 1 0 -492.5 114 A 3.5 3.5 0 1 0 -499.5 114" fill="none" stroke="#9B4733" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M -493.5251 111.5251 L -488.5754 106.5754 M -490.6967 108.6967 L -488.9289 110.4645 M -488.5754 106.5754 L -486.8076 108.3431" fill="none" stroke="#9B4733" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M -475 106.5 L -469.5 112 L -475 117.5 L -480.5 112 Z" fill="#6B6B84"/>
+<text x="-461" y="112" font-family="'DM Sans', sans-serif" font-size="19" font-weight="500" fill="#FFFFFF" dominant-baseline="middle" text-anchor="start" letter-spacing="0.3px">product_id</text>
+<text x="-208" y="112" font-family="'DM Sans', sans-serif" font-size="15" font-weight="400" fill="#AAAAAA" dominant-baseline="middle" text-anchor="end" letter-spacing="0.3px">integer</text>
+<path d="M -499.5 148 A 3.5 3.5 0 1 0 -492.5 148 A 3.5 3.5 0 1 0 -499.5 148" fill="none" stroke="#9B4733" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M -493.5251 145.5251 L -488.5754 140.5754 M -490.6967 142.6967 L -488.9289 144.4645 M -488.5754 140.5754 L -486.8076 142.3431" fill="none" stroke="#9B4733" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="-481" y="146" font-family="'DM Sans', sans-serif" font-size="19" font-weight="500" fill="#FFFFFF" dominant-baseline="middle" text-anchor="start" letter-spacing="0.3px">womens_variant_id</text>
+<text x="-208" y="146" font-family="'DM Sans', sans-serif" font-size="15" font-weight="400" fill="#AAAAAA" dominant-baseline="middle" text-anchor="end" letter-spacing="0.3px">integer</text>
+<path d="M -495 174.5 L -489.5 180 L -495 185.5 L -500.5 180 Z" fill="#6B6B84"/>
+<text x="-481" y="180" font-family="'DM Sans', sans-serif" font-size="19" font-weight="500" fill="#FFFFFF" dominant-baseline="middle" text-anchor="start" letter-spacing="0.3px">size</text>
+<text x="-208" y="180" font-family="'DM Sans', sans-serif" font-size="15" font-weight="400" fill="#AAAAAA" dominant-baseline="middle" text-anchor="end" letter-spacing="0.3px">decimal(4,1)</text>
+<path d="M -495 208.5 L -489.5 214 L -495 219.5 L -500.5 214 Z" fill="#6B6B84"/>
+<text x="-481" y="214" font-family="'DM Sans', sans-serif" font-size="19" font-weight="500" fill="#FFFFFF" dominant-baseline="middle" text-anchor="start" letter-spacing="0.3px">color</text>
+<text x="-208" y="214" font-family="'DM Sans', sans-serif" font-size="15" font-weight="400" fill="#AAAAAA" dominant-baseline="middle" text-anchor="end" letter-spacing="0.3px">varchar(100)</text>
+<path d="M -495 241.5 L -493.5858 246.5858 L -488.5 248 L -493.5858 249.4142 L -495 254.5 L -496.4142 249.4142 L -501.5 248 L -496.4142 246.5858 Z" fill="#4A9FBF"/>
+<path d="M -475 242.5 L -469.5 248 L -475 253.5 L -480.5 248 Z" fill="#6B6B84"/>
+<text x="-461" y="248" font-family="'DM Sans', sans-serif" font-size="19" font-weight="500" fill="#FFFFFF" dominant-baseline="middle" text-anchor="start" letter-spacing="0.3px">sku</text>
+<text x="-208" y="248" font-family="'DM Sans', sans-serif" font-size="15" font-weight="400" fill="#AAAAAA" dominant-baseline="middle" text-anchor="end" letter-spacing="0.3px">varchar(100)</text>
+<path d="M -495 276.5 L -489.5 282 L -495 287.5 L -500.5 282 Z" fill="#6B6B84"/>
+<path d="M -475.284 277.428 L -478.05 280.195 L -479.632 280.195 L -475.284 275.838 L -469.122 282 L -475.284 288.162 L -479.65 283.796 L -478.059 283.796 L -475.284 286.572 L -470.712 282 L -475.284 277.428" fill="#B8B2AE"/>
+<path d="M -480.878 283.109 L -480.878 280.882 L -476.134 280.882 L -476.134 278.812 L -472.929 282 L -476.134 285.171 L -476.134 283.109 L -480.878 283.109" fill="#B8B2AE"/>
+<path d="M -480.32 281.432 L -480.32 282.559 L -475.575 282.559 L -475.575 283.796 L -473.78 282.018 L -473.78 281.982 L -475.575 280.178 L -475.575 281.432 L -480.32 281.432" fill="#B8B2AE"/>
+<text x="-461" y="282" font-family="'DM Sans', sans-serif" font-size="19" font-weight="500" fill="#FFFFFF" dominant-baseline="middle" text-anchor="start" letter-spacing="0.3px">stock_quantity</text>
+<text x="-208" y="282" font-family="'DM Sans', sans-serif" font-size="15" font-weight="400" fill="#AAAAAA" dominant-baseline="middle" text-anchor="end" letter-spacing="0.3px">integer</text>
+<path d="M -499.5 318 A 3.5 3.5 0 1 0 -492.5 318 A 3.5 3.5 0 1 0 -499.5 318" fill="none" stroke="#9B4733" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M -493.5251 315.5251 L -488.5754 310.5754 M -490.6967 312.6967 L -488.9289 314.4645 M -488.5754 310.5754 L -486.8076 312.3431" fill="none" stroke="#9B4733" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="-481" y="316" font-family="'DM Sans', sans-serif" font-size="19" font-weight="500" fill="#FFFFFF" dominant-baseline="middle" text-anchor="start" letter-spacing="0.3px">product_img_id</text>
+<text x="-208" y="316" font-family="'DM Sans', sans-serif" font-size="15" font-weight="400" fill="#AAAAAA" dominant-baseline="middle" text-anchor="end" letter-spacing="0.3px">integer</text>
+<path d="M -495 344.5 L -489.5 350 L -495 355.5 L -500.5 350 Z" fill="#6B6B84"/>
+<text x="-481" y="350" font-family="'DM Sans', sans-serif" font-size="19" font-weight="500" fill="#FFFFFF" dominant-baseline="middle" text-anchor="start" letter-spacing="0.3px">variant_price</text>
+<text x="-208" y="350" font-family="'DM Sans', sans-serif" font-size="15" font-weight="400" fill="#AAAAAA" dominant-baseline="middle" text-anchor="end" letter-spacing="0.3px">decimal(10,2)</text>
+<path d="M -495 378.5 L -489.5 384 L -495 389.5 L -500.5 384 Z" fill="#6B6B84"/>
+<path d="M -475.284 379.428 L -478.05 382.195 L -479.632 382.195 L -475.284 377.838 L -469.122 384 L -475.284 390.162 L -479.65 385.796 L -478.059 385.796 L -475.284 388.572 L -470.712 384 L -475.284 379.428" fill="#B8B2AE"/>
+<path d="M -480.878 385.109 L -480.878 382.882 L -476.134 382.882 L -476.134 380.812 L -472.929 384 L -476.134 387.171 L -476.134 385.109 L -480.878 385.109" fill="#B8B2AE"/>
+<path d="M -480.32 383.432 L -480.32 384.559 L -475.575 384.559 L -475.575 385.796 L -473.78 384.018 L -473.78 383.982 L -475.575 382.178 L -475.575 383.432 L -480.32 383.432" fill="#B8B2AE"/>
+<text x="-461" y="384" font-family="'DM Sans', sans-serif" font-size="19" font-weight="500" fill="#FFFFFF" dominant-baseline="middle" text-anchor="start" letter-spacing="0.3px">reorder_level</text>
+<text x="-208" y="384" font-family="'DM Sans', sans-serif" font-size="15" font-weight="400" fill="#AAAAAA" dominant-baseline="middle" text-anchor="end" letter-spacing="0.3px">integer</text>
+<path d="M -499.5 420 A 3.5 3.5 0 1 0 -492.5 420 A 3.5 3.5 0 1 0 -499.5 420" fill="none" stroke="#9B4733" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M -493.5251 417.5251 L -488.5754 412.5754 M -490.6967 414.6967 L -488.9289 416.4645 M -488.5754 412.5754 L -486.8076 414.3431" fill="none" stroke="#9B4733" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="-481" y="418" font-family="'DM Sans', sans-serif" font-size="19" font-weight="500" fill="#FFFFFF" dominant-baseline="middle" text-anchor="start" letter-spacing="0.3px">discount_id</text>
+<text x="-208" y="418" font-family="'DM Sans', sans-serif" font-size="15" font-weight="400" fill="#AAAAAA" dominant-baseline="middle" text-anchor="end" letter-spacing="0.3px">integer</text>
+<path d="M -506.5 9.5 L -204.5 9.5 Q -196.5 9.5 -196.5 17.5 L -196.5 434.5 Q -196.5 442.5 -204.5 442.5 L -506.5 442.5 Q -514.5 442.5 -514.5 434.5 L -514.5 17.5 Q -514.5 9.5 -506.5 9.5 Z" fill="none" stroke="#333333" stroke-width="1"/>
+<path d="M -2149 159 L -1916 159 Q -1908 159 -1908 167 L -1908 449 Q -1908 457 -1916 457 L -2149 457 Q -2157 457 -2157 449 L -2157 167 Q -2157 159 -2149 159 Z" fill="rgba(0,0,0,0.4)"/>
+<g clip-path="url(#clip6)">
+<rect x="-2159" y="157" width="249" height="298" fill="#282828"/>
+<rect x="-2159" y="157" width="249" height="44" fill="#141414"/>
+<rect x="-2159" y="200" width="249" height="1" fill="#000000" opacity="0.4"/>
+</g>
+<text x="-2145" y="180" font-family="'DM Sans', sans-serif" font-size="27" font-weight="600" fill="#E8ECF4" dominant-baseline="middle" text-anchor="start">Collections</text>
+<path d="M -2143.5 228 A 3.5 3.5 0 1 0 -2136.5 228 A 3.5 3.5 0 1 0 -2143.5 228" fill="none" stroke="#C9A227" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M -2137.5251 225.5251 L -2132.5754 220.5754 M -2134.6967 222.6967 L -2132.9289 224.4645 M -2132.5754 220.5754 L -2130.8076 222.3431" fill="none" stroke="#C9A227" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M -2120.5 221 L -2117.5 221 L -2117.5 224.5 L -2114 224.5 L -2114 227.5 L -2117.5 227.5 L -2117.5 231 L -2120.5 231 L -2120.5 227.5 L -2124 227.5 L -2124 224.5 L -2120.5 224.5 Z" fill="#7AAF7E"/>
+<text x="-2105" y="226" font-family="'DM Sans', sans-serif" font-size="19" font-weight="500" fill="#FFFFFF" dominant-baseline="middle" text-anchor="start" letter-spacing="0.3px">id</text>
+<text x="-1922" y="226" font-family="'DM Sans', sans-serif" font-size="15" font-weight="400" fill="#AAAAAA" dominant-baseline="middle" text-anchor="end" letter-spacing="0.3px">integer</text>
+<path d="M -2139 254.5 L -2133.5 260 L -2139 265.5 L -2144.5 260 Z" fill="#6B6B84"/>
+<text x="-2125" y="260" font-family="'DM Sans', sans-serif" font-size="19" font-weight="500" fill="#FFFFFF" dominant-baseline="middle" text-anchor="start" letter-spacing="0.3px">name</text>
+<text x="-1922" y="260" font-family="'DM Sans', sans-serif" font-size="15" font-weight="400" fill="#AAAAAA" dominant-baseline="middle" text-anchor="end" letter-spacing="0.3px">varchar(200)</text>
+<text x="-2145" y="294" font-family="'DM Sans', sans-serif" font-size="19" font-weight="500" fill="#FFFFFF" dominant-baseline="middle" text-anchor="start" letter-spacing="0.3px">description</text>
+<text x="-1922" y="294" font-family="'DM Sans', sans-serif" font-size="15" font-weight="400" fill="#AAAAAA" dominant-baseline="middle" text-anchor="end" letter-spacing="0.3px">text</text>
+<text x="-2145" y="328" font-family="'DM Sans', sans-serif" font-size="19" font-weight="500" fill="#FFFFFF" dominant-baseline="middle" text-anchor="start" letter-spacing="0.3px">img</text>
+<text x="-1922" y="328" font-family="'DM Sans', sans-serif" font-size="15" font-weight="400" fill="#AAAAAA" dominant-baseline="middle" text-anchor="end" letter-spacing="0.3px">varchar(500)</text>
+<path d="M -2139 356.5 L -2133.5 362 L -2139 367.5 L -2144.5 362 Z" fill="#6B6B84"/>
+<path d="M -2119.284 357.428 L -2122.05 360.195 L -2123.632 360.195 L -2119.284 355.838 L -2113.122 362 L -2119.284 368.162 L -2123.65 363.796 L -2122.059 363.796 L -2119.284 366.572 L -2114.712 362 L -2119.284 357.428" fill="#B8B2AE"/>
+<path d="M -2124.878 363.109 L -2124.878 360.882 L -2120.134 360.882 L -2120.134 358.812 L -2116.929 362 L -2120.134 365.171 L -2120.134 363.109 L -2124.878 363.109" fill="#B8B2AE"/>
+<path d="M -2124.32 361.432 L -2124.32 362.559 L -2119.575 362.559 L -2119.575 363.796 L -2117.78 362.018 L -2117.78 361.982 L -2119.575 360.178 L -2119.575 361.432 L -2124.32 361.432" fill="#B8B2AE"/>
+<text x="-2105" y="362" font-family="'DM Sans', sans-serif" font-size="19" font-weight="500" fill="#FFFFFF" dominant-baseline="middle" text-anchor="start" letter-spacing="0.3px">is_active</text>
+<text x="-1922" y="362" font-family="'DM Sans', sans-serif" font-size="15" font-weight="400" fill="#AAAAAA" dominant-baseline="middle" text-anchor="end" letter-spacing="0.3px">boolean</text>
+<path d="M -2139 390.5 L -2133.5 396 L -2139 401.5 L -2144.5 396 Z" fill="#6B6B84"/>
+<path d="M -2119.284 391.428 L -2122.05 394.195 L -2123.632 394.195 L -2119.284 389.838 L -2113.122 396 L -2119.284 402.162 L -2123.65 397.796 L -2122.059 397.796 L -2119.284 400.572 L -2114.712 396 L -2119.284 391.428" fill="#B8B2AE"/>
+<path d="M -2124.878 397.109 L -2124.878 394.882 L -2120.134 394.882 L -2120.134 392.812 L -2116.929 396 L -2120.134 399.171 L -2120.134 397.109 L -2124.878 397.109" fill="#B8B2AE"/>
+<path d="M -2124.32 395.432 L -2124.32 396.559 L -2119.575 396.559 L -2119.575 397.796 L -2117.78 396.018 L -2117.78 395.982 L -2119.575 394.178 L -2119.575 395.432 L -2124.32 395.432" fill="#B8B2AE"/>
+<text x="-2105" y="396" font-family="'DM Sans', sans-serif" font-size="19" font-weight="500" fill="#FFFFFF" dominant-baseline="middle" text-anchor="start" letter-spacing="0.3px">is_limited</text>
+<text x="-1922" y="396" font-family="'DM Sans', sans-serif" font-size="15" font-weight="400" fill="#AAAAAA" dominant-baseline="middle" text-anchor="end" letter-spacing="0.3px">boolean</text>
+<text x="-2145" y="430" font-family="'DM Sans', sans-serif" font-size="19" font-weight="500" fill="#FFFFFF" dominant-baseline="middle" text-anchor="start" letter-spacing="0.3px">release_date</text>
+<text x="-1922" y="430" font-family="'DM Sans', sans-serif" font-size="15" font-weight="400" fill="#AAAAAA" dominant-baseline="middle" text-anchor="end" letter-spacing="0.3px">date</text>
+<path d="M -2150.5 157.5 L -1918.5 157.5 Q -1910.5 157.5 -1910.5 165.5 L -1910.5 446.5 Q -1910.5 454.5 -1918.5 454.5 L -2150.5 454.5 Q -2158.5 454.5 -2158.5 446.5 L -2158.5 165.5 Q -2158.5 157.5 -2150.5 157.5 Z" fill="none" stroke="#333333" stroke-width="1"/>
+<path d="M -1550.0454 -287.0232 L -1240.0454 -287.0232 Q -1232.0454 -287.0232 -1232.0454 -279.0232 L -1232.0454 -167.0232 Q -1232.0454 -159.0232 -1240.0454 -159.0232 L -1550.0454 -159.0232 Q -1558.0454 -159.0232 -1558.0454 -167.0232 L -1558.0454 -279.0232 Q -1558.0454 -287.0232 -1550.0454 -287.0232 Z" fill="rgba(0,0,0,0.4)"/>
+<g clip-path="url(#clip7)">
+<rect x="-1560.0454" y="-289.0232" width="326" height="128" fill="#282828"/>
+<rect x="-1560.0454" y="-289.0232" width="326" height="44" fill="#141414"/>
+<rect x="-1560.0454" y="-246.0232" width="326" height="1" fill="#000000" opacity="0.4"/>
+</g>
+<text x="-1546.0454" y="-266.0232" font-family="'DM Sans', sans-serif" font-size="27" font-weight="600" fill="#E8ECF4" dominant-baseline="middle" text-anchor="start">Product_collections</text>
+<path d="M -1250.0454 -273.0232 L -1250.0454 -267.0232 M -1250.0454 -267.0232 L -1254.5454 -261.0232 M -1250.0454 -267.0232 L -1245.5454 -261.0232" fill="none" stroke="#8B7DC4" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M -1248.5454 -273.5232 A 5.5 5.5 0 1 0 -1237.5454 -273.5232 A 5.5 5.5 0 1 0 -1248.5454 -273.5232" fill="#1A1A1A"/>
+<text x="-1243.0454" y="-273.5232" font-family="'DM Sans', sans-serif" font-size="9" font-weight="700" fill="#fff" dominant-baseline="middle" text-anchor="middle">1</text>
+<path d="M -1544.5454 -218.0232 A 3.5 3.5 0 1 0 -1537.5454 -218.0232 A 3.5 3.5 0 1 0 -1544.5454 -218.0232" fill="none" stroke="#C9A227" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M -1538.5705 -220.4981 L -1533.6207 -225.4479 M -1535.7421 -223.3265 L -1533.9743 -221.5588 M -1533.6207 -225.4479 L -1531.853 -223.6801" fill="none" stroke="#C9A227" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M -1524.5454 -218.0232 A 3.5 3.5 0 1 0 -1517.5454 -218.0232 A 3.5 3.5 0 1 0 -1524.5454 -218.0232" fill="none" stroke="#9B4733" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M -1518.5705 -220.4981 L -1513.6207 -225.4479 M -1515.7421 -223.3265 L -1513.9743 -221.5588 M -1513.6207 -225.4479 L -1511.853 -223.6801" fill="none" stroke="#9B4733" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="-1506.0454" y="-220.0232" font-family="'DM Sans', sans-serif" font-size="19" font-weight="500" fill="#FFFFFF" dominant-baseline="middle" text-anchor="start" letter-spacing="0.3px">product_id</text>
+<text x="-1246.0454" y="-220.0232" font-family="'DM Sans', sans-serif" font-size="15" font-weight="400" fill="#AAAAAA" dominant-baseline="middle" text-anchor="end" letter-spacing="0.3px">integer</text>
+<path d="M -1544.5454 -184.0232 A 3.5 3.5 0 1 0 -1537.5454 -184.0232 A 3.5 3.5 0 1 0 -1544.5454 -184.0232" fill="none" stroke="#C9A227" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M -1538.5705 -186.4981 L -1533.6207 -191.4479 M -1535.7421 -189.3265 L -1533.9743 -187.5588 M -1533.6207 -191.4479 L -1531.853 -189.6801" fill="none" stroke="#C9A227" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M -1524.5454 -184.0232 A 3.5 3.5 0 1 0 -1517.5454 -184.0232 A 3.5 3.5 0 1 0 -1524.5454 -184.0232" fill="none" stroke="#9B4733" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M -1518.5705 -186.4981 L -1513.6207 -191.4479 M -1515.7421 -189.3265 L -1513.9743 -187.5588 M -1513.6207 -191.4479 L -1511.853 -189.6801" fill="none" stroke="#9B4733" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="-1506.0454" y="-186.0232" font-family="'DM Sans', sans-serif" font-size="19" font-weight="500" fill="#FFFFFF" dominant-baseline="middle" text-anchor="start" letter-spacing="0.3px">collection_id</text>
+<text x="-1246.0454" y="-186.0232" font-family="'DM Sans', sans-serif" font-size="15" font-weight="400" fill="#AAAAAA" dominant-baseline="middle" text-anchor="end" letter-spacing="0.3px">integer</text>
+<path d="M -1551.5454 -288.5232 L -1242.5454 -288.5232 Q -1234.5454 -288.5232 -1234.5454 -280.5232 L -1234.5454 -169.5232 Q -1234.5454 -161.5232 -1242.5454 -161.5232 L -1551.5454 -161.5232 Q -1559.5454 -161.5232 -1559.5454 -169.5232 L -1559.5454 -280.5232 Q -1559.5454 -288.5232 -1551.5454 -288.5232 Z" fill="none" stroke="#333333" stroke-width="1"/>
+<path d="M 677 513 L 1097 513 Q 1105 513 1105 521 L 1105 735 Q 1105 743 1097 743 L 677 743 Q 669 743 669 735 L 669 521 Q 669 513 677 513 Z" fill="rgba(0,0,0,0.4)"/>
+<g clip-path="url(#clip8)">
+<rect x="667" y="511" width="436" height="230" fill="#282828"/>
+<rect x="667" y="511" width="436" height="44" fill="#141414"/>
+<rect x="667" y="554" width="436" height="1" fill="#000000" opacity="0.4"/>
+</g>
+<text x="681" y="534" font-family="'DM Sans', sans-serif" font-size="27" font-weight="600" fill="#E8ECF4" dominant-baseline="middle" text-anchor="start">Shipping_rules</text>
+<path d="M 682.5 582 A 3.5 3.5 0 1 0 689.5 582 A 3.5 3.5 0 1 0 682.5 582" fill="none" stroke="#C9A227" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 688.4749 579.5251 L 693.4246 574.5754 M 691.3033 576.6967 L 693.0711 578.4645 M 693.4246 574.5754 L 695.1924 576.3431" fill="none" stroke="#C9A227" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 705.5 575 L 708.5 575 L 708.5 578.5 L 712 578.5 L 712 581.5 L 708.5 581.5 L 708.5 585 L 705.5 585 L 705.5 581.5 L 702 581.5 L 702 578.5 L 705.5 578.5 Z" fill="#7AAF7E"/>
+<text x="721" y="580" font-family="'DM Sans', sans-serif" font-size="19" font-weight="500" fill="#FFFFFF" dominant-baseline="middle" text-anchor="start" letter-spacing="0.3px">id</text>
+<text x="1091" y="580" font-family="'DM Sans', sans-serif" font-size="15" font-weight="400" fill="#AAAAAA" dominant-baseline="middle" text-anchor="end" letter-spacing="0.3px">integer</text>
+<path d="M 687 608.5 L 692.5 614 L 687 619.5 L 681.5 614 Z" fill="#6B6B84"/>
+<text x="701" y="614" font-family="'DM Sans', sans-serif" font-size="19" font-weight="500" fill="#FFFFFF" dominant-baseline="middle" text-anchor="start" letter-spacing="0.3px">name</text>
+<text x="1091" y="614" font-family="'DM Sans', sans-serif" font-size="15" font-weight="400" fill="#AAAAAA" dominant-baseline="middle" text-anchor="end" letter-spacing="0.3px">varchar(100)</text>
+<path d="M 687 642.5 L 692.5 648 L 687 653.5 L 681.5 648 Z" fill="#6B6B84"/>
+<path d="M 706.716 643.428 L 703.95 646.195 L 702.368 646.195 L 706.716 641.838 L 712.878 648 L 706.716 654.162 L 702.35 649.796 L 703.941 649.796 L 706.716 652.572 L 711.288 648 L 706.716 643.428" fill="#B8B2AE"/>
+<path d="M 701.122 649.109 L 701.122 646.882 L 705.866 646.882 L 705.866 644.812 L 709.071 648 L 705.866 651.171 L 705.866 649.109 L 701.122 649.109" fill="#B8B2AE"/>
+<path d="M 701.68 647.432 L 701.68 648.559 L 706.425 648.559 L 706.425 649.796 L 708.22 648.018 L 708.22 647.982 L 706.425 646.178 L 706.425 647.432 L 701.68 647.432" fill="#B8B2AE"/>
+<text x="721" y="648" font-family="'DM Sans', sans-serif" font-size="19" font-weight="500" fill="#FFFFFF" dominant-baseline="middle" text-anchor="start" letter-spacing="0.3px">price</text>
+<text x="1091" y="648" font-family="'DM Sans', sans-serif" font-size="15" font-weight="400" fill="#AAAAAA" dominant-baseline="middle" text-anchor="end" letter-spacing="0.3px">decimal(10,2)</text>
+<path d="M 687 676.5 L 692.5 682 L 687 687.5 L 681.5 682 Z" fill="#6B6B84"/>
+<path d="M 706.716 677.428 L 703.95 680.195 L 702.368 680.195 L 706.716 675.838 L 712.878 682 L 706.716 688.162 L 702.35 683.796 L 703.941 683.796 L 706.716 686.572 L 711.288 682 L 706.716 677.428" fill="#B8B2AE"/>
+<path d="M 701.122 683.109 L 701.122 680.882 L 705.866 680.882 L 705.866 678.812 L 709.071 682 L 705.866 685.171 L 705.866 683.109 L 701.122 683.109" fill="#B8B2AE"/>
+<path d="M 701.68 681.432 L 701.68 682.559 L 706.425 682.559 L 706.425 683.796 L 708.22 682.018 L 708.22 681.982 L 706.425 680.178 L 706.425 681.432 L 701.68 681.432" fill="#B8B2AE"/>
+<text x="721" y="682" font-family="'DM Sans', sans-serif" font-size="19" font-weight="500" fill="#FFFFFF" dominant-baseline="middle" text-anchor="start" letter-spacing="0.3px">delivery_commission</text>
+<text x="1091" y="682" font-family="'DM Sans', sans-serif" font-size="15" font-weight="400" fill="#AAAAAA" dominant-baseline="middle" text-anchor="end" letter-spacing="0.3px">decimal(10,2)</text>
+<path d="M 687 710.5 L 692.5 716 L 687 721.5 L 681.5 716 Z" fill="#6B6B84"/>
+<path d="M 706.716 711.428 L 703.95 714.195 L 702.368 714.195 L 706.716 709.838 L 712.878 716 L 706.716 722.162 L 702.35 717.796 L 703.941 717.796 L 706.716 720.572 L 711.288 716 L 706.716 711.428" fill="#B8B2AE"/>
+<path d="M 701.122 717.109 L 701.122 714.882 L 705.866 714.882 L 705.866 712.812 L 709.071 716 L 705.866 719.171 L 705.866 717.109 L 701.122 717.109" fill="#B8B2AE"/>
+<path d="M 701.68 715.432 L 701.68 716.559 L 706.425 716.559 L 706.425 717.796 L 708.22 716.018 L 708.22 715.982 L 706.425 714.178 L 706.425 715.432 L 701.68 715.432" fill="#B8B2AE"/>
+<text x="721" y="716" font-family="'DM Sans', sans-serif" font-size="19" font-weight="500" fill="#FFFFFF" dominant-baseline="middle" text-anchor="start" letter-spacing="0.3px">free_shipping_threshold</text>
+<text x="1091" y="716" font-family="'DM Sans', sans-serif" font-size="15" font-weight="400" fill="#AAAAAA" dominant-baseline="middle" text-anchor="end" letter-spacing="0.3px">decimal(10,2)</text>
+<path d="M 675.5 511.5 L 1094.5 511.5 Q 1102.5 511.5 1102.5 519.5 L 1102.5 732.5 Q 1102.5 740.5 1094.5 740.5 L 675.5 740.5 Q 667.5 740.5 667.5 732.5 L 667.5 519.5 Q 667.5 511.5 675.5 511.5 Z" fill="none" stroke="#333333" stroke-width="1"/>
+<path d="M 268 467 L 545 467 Q 553 467 553 475 L 553 621 Q 553 629 545 629 L 268 629 Q 260 629 260 621 L 260 475 Q 260 467 268 467 Z" fill="rgba(0,0,0,0.4)"/>
+<g clip-path="url(#clip9)">
+<rect x="258" y="465" width="293" height="162" fill="#282828"/>
+<rect x="258" y="465" width="293" height="44" fill="#141414"/>
+<rect x="258" y="508" width="293" height="1" fill="#000000" opacity="0.4"/>
+</g>
+<text x="272" y="488" font-family="'DM Sans', sans-serif" font-size="27" font-weight="600" fill="#E8ECF4" dominant-baseline="middle" text-anchor="start">Cities</text>
+<path d="M 273.5 536 A 3.5 3.5 0 1 0 280.5 536 A 3.5 3.5 0 1 0 273.5 536" fill="none" stroke="#C9A227" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 279.4749 533.5251 L 284.4246 528.5754 M 282.3033 530.6967 L 284.0711 532.4645 M 284.4246 528.5754 L 286.1924 530.3431" fill="none" stroke="#C9A227" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 296.5 529 L 299.5 529 L 299.5 532.5 L 303 532.5 L 303 535.5 L 299.5 535.5 L 299.5 539 L 296.5 539 L 296.5 535.5 L 293 535.5 L 293 532.5 L 296.5 532.5 Z" fill="#7AAF7E"/>
+<text x="312" y="534" font-family="'DM Sans', sans-serif" font-size="19" font-weight="500" fill="#FFFFFF" dominant-baseline="middle" text-anchor="start" letter-spacing="0.3px">id</text>
+<text x="539" y="534" font-family="'DM Sans', sans-serif" font-size="15" font-weight="400" fill="#AAAAAA" dominant-baseline="middle" text-anchor="end" letter-spacing="0.3px">integer</text>
+<path d="M 278 562.5 L 283.5 568 L 278 573.5 L 272.5 568 Z" fill="#6B6B84"/>
+<text x="292" y="568" font-family="'DM Sans', sans-serif" font-size="19" font-weight="500" fill="#FFFFFF" dominant-baseline="middle" text-anchor="start" letter-spacing="0.3px">name</text>
+<text x="539" y="568" font-family="'DM Sans', sans-serif" font-size="15" font-weight="400" fill="#AAAAAA" dominant-baseline="middle" text-anchor="end" letter-spacing="0.3px">varchar(100)</text>
+<path d="M 273.5 604 A 3.5 3.5 0 1 0 280.5 604 A 3.5 3.5 0 1 0 273.5 604" fill="none" stroke="#9B4733" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 279.4749 601.5251 L 284.4246 596.5754 M 282.3033 598.6967 L 284.0711 600.4645 M 284.4246 596.5754 L 286.1924 598.3431" fill="none" stroke="#9B4733" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="292" y="602" font-family="'DM Sans', sans-serif" font-size="19" font-weight="500" fill="#FFFFFF" dominant-baseline="middle" text-anchor="start" letter-spacing="0.3px">shipping_rule_id</text>
+<text x="539" y="602" font-family="'DM Sans', sans-serif" font-size="15" font-weight="400" fill="#AAAAAA" dominant-baseline="middle" text-anchor="end" letter-spacing="0.3px">integer</text>
+<path d="M 266.5 465.5 L 542.5 465.5 Q 550.5 465.5 550.5 473.5 L 550.5 618.5 Q 550.5 626.5 542.5 626.5 L 266.5 626.5 Q 258.5 626.5 258.5 618.5 L 258.5 473.5 Q 258.5 465.5 266.5 465.5 Z" fill="none" stroke="#333333" stroke-width="1"/>
+<path d="M 70 62 L 342 62 Q 350 62 350 70 L 350 386 Q 350 394 342 394 L 70 394 Q 62 394 62 386 L 62 70 Q 62 62 70 62 Z" fill="rgba(0,0,0,0.4)"/>
+<g clip-path="url(#clip10)">
+<rect x="60" y="60" width="288" height="332" fill="#282828"/>
+<rect x="60" y="60" width="288" height="44" fill="#141414"/>
+<rect x="60" y="103" width="288" height="1" fill="#000000" opacity="0.4"/>
+</g>
+<text x="74" y="83" font-family="'DM Sans', sans-serif" font-size="27" font-weight="600" fill="#E8ECF4" dominant-baseline="middle" text-anchor="start">Users</text>
+<path d="M 75.5 131 A 3.5 3.5 0 1 0 82.5 131 A 3.5 3.5 0 1 0 75.5 131" fill="none" stroke="#C9A227" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 81.4749 128.5251 L 86.4246 123.5754 M 84.3033 125.6967 L 86.0711 127.4645 M 86.4246 123.5754 L 88.1924 125.3431" fill="none" stroke="#C9A227" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 98.5 124 L 101.5 124 L 101.5 127.5 L 105 127.5 L 105 130.5 L 101.5 130.5 L 101.5 134 L 98.5 134 L 98.5 130.5 L 95 130.5 L 95 127.5 L 98.5 127.5 Z" fill="#7AAF7E"/>
+<text x="114" y="129" font-family="'DM Sans', sans-serif" font-size="19" font-weight="500" fill="#FFFFFF" dominant-baseline="middle" text-anchor="start" letter-spacing="0.3px">id</text>
+<text x="336" y="129" font-family="'DM Sans', sans-serif" font-size="15" font-weight="400" fill="#AAAAAA" dominant-baseline="middle" text-anchor="end" letter-spacing="0.3px">integer</text>
+<path d="M 80 157.5 L 85.5 163 L 80 168.5 L 74.5 163 Z" fill="#6B6B84"/>
+<text x="94" y="163" font-family="'DM Sans', sans-serif" font-size="19" font-weight="500" fill="#FFFFFF" dominant-baseline="middle" text-anchor="start" letter-spacing="0.3px">first_name</text>
+<text x="336" y="163" font-family="'DM Sans', sans-serif" font-size="15" font-weight="400" fill="#AAAAAA" dominant-baseline="middle" text-anchor="end" letter-spacing="0.3px">varchar(100)</text>
+<path d="M 80 191.5 L 85.5 197 L 80 202.5 L 74.5 197 Z" fill="#6B6B84"/>
+<text x="94" y="197" font-family="'DM Sans', sans-serif" font-size="19" font-weight="500" fill="#FFFFFF" dominant-baseline="middle" text-anchor="start" letter-spacing="0.3px">last_name</text>
+<text x="336" y="197" font-family="'DM Sans', sans-serif" font-size="15" font-weight="400" fill="#AAAAAA" dominant-baseline="middle" text-anchor="end" letter-spacing="0.3px">varchar(100)</text>
+<path d="M 80 224.5 L 81.4142 229.5858 L 86.5 231 L 81.4142 232.4142 L 80 237.5 L 78.5858 232.4142 L 73.5 231 L 78.5858 229.5858 Z" fill="#4A9FBF"/>
+<path d="M 100 225.5 L 105.5 231 L 100 236.5 L 94.5 231 Z" fill="#6B6B84"/>
+<text x="114" y="231" font-family="'DM Sans', sans-serif" font-size="19" font-weight="500" fill="#FFFFFF" dominant-baseline="middle" text-anchor="start" letter-spacing="0.3px">email</text>
+<text x="336" y="231" font-family="'DM Sans', sans-serif" font-size="15" font-weight="400" fill="#AAAAAA" dominant-baseline="middle" text-anchor="end" letter-spacing="0.3px">varchar(255)</text>
+<path d="M 80 259.5 L 85.5 265 L 80 270.5 L 74.5 265 Z" fill="#6B6B84"/>
+<text x="94" y="265" font-family="'DM Sans', sans-serif" font-size="19" font-weight="500" fill="#FFFFFF" dominant-baseline="middle" text-anchor="start" letter-spacing="0.3px">password</text>
+<text x="336" y="265" font-family="'DM Sans', sans-serif" font-size="15" font-weight="400" fill="#AAAAAA" dominant-baseline="middle" text-anchor="end" letter-spacing="0.3px">varchar(255)</text>
+<path d="M 80 293.5 L 85.5 299 L 80 304.5 L 74.5 299 Z" fill="#6B6B84"/>
+<path d="M 99.716 294.428 L 96.95 297.195 L 95.368 297.195 L 99.716 292.838 L 105.878 299 L 99.716 305.162 L 95.35 300.796 L 96.941 300.796 L 99.716 303.572 L 104.288 299 L 99.716 294.428" fill="#B8B2AE"/>
+<path d="M 94.122 300.109 L 94.122 297.882 L 98.866 297.882 L 98.866 295.812 L 102.071 299 L 98.866 302.171 L 98.866 300.109 L 94.122 300.109" fill="#B8B2AE"/>
+<path d="M 94.68 298.432 L 94.68 299.559 L 99.425 299.559 L 99.425 300.796 L 101.22 299.018 L 101.22 298.982 L 99.425 297.178 L 99.425 298.432 L 94.68 298.432" fill="#B8B2AE"/>
+<text x="114" y="299" font-family="'DM Sans', sans-serif" font-size="19" font-weight="500" fill="#FFFFFF" dominant-baseline="middle" text-anchor="start" letter-spacing="0.3px">role</text>
+<text x="336" y="299" font-family="'DM Sans', sans-serif" font-size="15" font-weight="400" fill="#AAAAAA" dominant-baseline="middle" text-anchor="end" letter-spacing="0.3px">user_role</text>
+<path d="M 75.5 335 A 3.5 3.5 0 1 0 82.5 335 A 3.5 3.5 0 1 0 75.5 335" fill="none" stroke="#9B4733" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 81.4749 332.5251 L 86.4246 327.5754 M 84.3033 329.6967 L 86.0711 331.4645 M 86.4246 327.5754 L 88.1924 329.3431" fill="none" stroke="#9B4733" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="94" y="333" font-family="'DM Sans', sans-serif" font-size="19" font-weight="500" fill="#FFFFFF" dominant-baseline="middle" text-anchor="start" letter-spacing="0.3px">city_id</text>
+<text x="336" y="333" font-family="'DM Sans', sans-serif" font-size="15" font-weight="400" fill="#AAAAAA" dominant-baseline="middle" text-anchor="end" letter-spacing="0.3px">integer</text>
+<path d="M 79.716 362.428 L 76.95 365.195 L 75.368 365.195 L 79.716 360.838 L 85.878 367 L 79.716 373.162 L 75.35 368.796 L 76.941 368.796 L 79.716 371.572 L 84.288 367 L 79.716 362.428" fill="#B8B2AE"/>
+<path d="M 74.122 368.109 L 74.122 365.882 L 78.866 365.882 L 78.866 363.812 L 82.071 367 L 78.866 370.171 L 78.866 368.109 L 74.122 368.109" fill="#B8B2AE"/>
+<path d="M 74.68 366.432 L 74.68 367.559 L 79.425 367.559 L 79.425 368.796 L 81.22 367.018 L 81.22 366.982 L 79.425 365.178 L 79.425 366.432 L 74.68 366.432" fill="#B8B2AE"/>
+<text x="94" y="367" font-family="'DM Sans', sans-serif" font-size="19" font-weight="500" fill="#FFFFFF" dominant-baseline="middle" text-anchor="start" letter-spacing="0.3px">created_at</text>
+<text x="336" y="367" font-family="'DM Sans', sans-serif" font-size="15" font-weight="400" fill="#AAAAAA" dominant-baseline="middle" text-anchor="end" letter-spacing="0.3px">timestamp</text>
+<path d="M 68.5 60.5 L 339.5 60.5 Q 347.5 60.5 347.5 68.5 L 347.5 383.5 Q 347.5 391.5 339.5 391.5 L 68.5 391.5 Q 60.5 391.5 60.5 383.5 L 60.5 68.5 Q 60.5 60.5 68.5 60.5 Z" fill="none" stroke="#333333" stroke-width="1"/>
+<path d="M 593 28 L 939 28 Q 947 28 947 36 L 947 420 Q 947 428 939 428 L 593 428 Q 585 428 585 420 L 585 36 Q 585 28 593 28 Z" fill="rgba(0,0,0,0.4)"/>
+<g clip-path="url(#clip11)">
+<rect x="583" y="26" width="362" height="400" fill="#282828"/>
+<rect x="583" y="26" width="362" height="44" fill="#141414"/>
+<rect x="583" y="69" width="362" height="1" fill="#000000" opacity="0.4"/>
+</g>
+<text x="597" y="49" font-family="'DM Sans', sans-serif" font-size="27" font-weight="600" fill="#E8ECF4" dominant-baseline="middle" text-anchor="start">Orders</text>
+<path d="M 598.5 97 A 3.5 3.5 0 1 0 605.5 97 A 3.5 3.5 0 1 0 598.5 97" fill="none" stroke="#C9A227" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 604.4749 94.5251 L 609.4246 89.5754 M 607.3033 91.6967 L 609.0711 93.4645 M 609.4246 89.5754 L 611.1924 91.3431" fill="none" stroke="#C9A227" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 621.5 90 L 624.5 90 L 624.5 93.5 L 628 93.5 L 628 96.5 L 624.5 96.5 L 624.5 100 L 621.5 100 L 621.5 96.5 L 618 96.5 L 618 93.5 L 621.5 93.5 Z" fill="#7AAF7E"/>
+<text x="637" y="95" font-family="'DM Sans', sans-serif" font-size="19" font-weight="500" fill="#FFFFFF" dominant-baseline="middle" text-anchor="start" letter-spacing="0.3px">id</text>
+<text x="933" y="95" font-family="'DM Sans', sans-serif" font-size="15" font-weight="400" fill="#AAAAAA" dominant-baseline="middle" text-anchor="end" letter-spacing="0.3px">integer</text>
+<path d="M 598.5 131 A 3.5 3.5 0 1 0 605.5 131 A 3.5 3.5 0 1 0 598.5 131" fill="none" stroke="#9B4733" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 604.4749 128.5251 L 609.4246 123.5754 M 607.3033 125.6967 L 609.0711 127.4645 M 609.4246 123.5754 L 611.1924 125.3431" fill="none" stroke="#9B4733" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 623 123.5 L 628.5 129 L 623 134.5 L 617.5 129 Z" fill="#6B6B84"/>
+<text x="637" y="129" font-family="'DM Sans', sans-serif" font-size="19" font-weight="500" fill="#FFFFFF" dominant-baseline="middle" text-anchor="start" letter-spacing="0.3px">client_id</text>
+<text x="933" y="129" font-family="'DM Sans', sans-serif" font-size="15" font-weight="400" fill="#AAAAAA" dominant-baseline="middle" text-anchor="end" letter-spacing="0.3px">integer</text>
+<path d="M 598.5 165 A 3.5 3.5 0 1 0 605.5 165 A 3.5 3.5 0 1 0 598.5 165" fill="none" stroke="#9B4733" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 604.4749 162.5251 L 609.4246 157.5754 M 607.3033 159.6967 L 609.0711 161.4645 M 609.4246 157.5754 L 611.1924 159.3431" fill="none" stroke="#9B4733" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 623 157.5 L 628.5 163 L 623 168.5 L 617.5 163 Z" fill="#6B6B84"/>
+<text x="637" y="163" font-family="'DM Sans', sans-serif" font-size="19" font-weight="500" fill="#FFFFFF" dominant-baseline="middle" text-anchor="start" letter-spacing="0.3px">city_id</text>
+<text x="933" y="163" font-family="'DM Sans', sans-serif" font-size="15" font-weight="400" fill="#AAAAAA" dominant-baseline="middle" text-anchor="end" letter-spacing="0.3px">integer</text>
+<path d="M 603 191.5 L 608.5 197 L 603 202.5 L 597.5 197 Z" fill="#6B6B84"/>
+<text x="617" y="197" font-family="'DM Sans', sans-serif" font-size="19" font-weight="500" fill="#FFFFFF" dominant-baseline="middle" text-anchor="start" letter-spacing="0.3px">subtotal</text>
+<text x="933" y="197" font-family="'DM Sans', sans-serif" font-size="15" font-weight="400" fill="#AAAAAA" dominant-baseline="middle" text-anchor="end" letter-spacing="0.3px">decimal(10,2)</text>
+<path d="M 598.5 233 A 3.5 3.5 0 1 0 605.5 233 A 3.5 3.5 0 1 0 598.5 233" fill="none" stroke="#9B4733" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 604.4749 230.5251 L 609.4246 225.5754 M 607.3033 227.6967 L 609.0711 229.4645 M 609.4246 225.5754 L 611.1924 227.3431" fill="none" stroke="#9B4733" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="617" y="231" font-family="'DM Sans', sans-serif" font-size="19" font-weight="500" fill="#FFFFFF" dominant-baseline="middle" text-anchor="start" letter-spacing="0.3px">discount_id</text>
+<text x="933" y="231" font-family="'DM Sans', sans-serif" font-size="15" font-weight="400" fill="#AAAAAA" dominant-baseline="middle" text-anchor="end" letter-spacing="0.3px">integer</text>
+<path d="M 603 259.5 L 608.5 265 L 603 270.5 L 597.5 265 Z" fill="#6B6B84"/>
+<path d="M 622.716 260.428 L 619.95 263.195 L 618.368 263.195 L 622.716 258.838 L 628.878 265 L 622.716 271.162 L 618.35 266.796 L 619.941 266.796 L 622.716 269.572 L 627.288 265 L 622.716 260.428" fill="#B8B2AE"/>
+<path d="M 617.122 266.109 L 617.122 263.882 L 621.866 263.882 L 621.866 261.812 L 625.071 265 L 621.866 268.171 L 621.866 266.109 L 617.122 266.109" fill="#B8B2AE"/>
+<path d="M 617.68 264.432 L 617.68 265.559 L 622.425 265.559 L 622.425 266.796 L 624.22 265.018 L 624.22 264.982 L 622.425 263.178 L 622.425 264.432 L 617.68 264.432" fill="#B8B2AE"/>
+<text x="637" y="265" font-family="'DM Sans', sans-serif" font-size="19" font-weight="500" fill="#FFFFFF" dominant-baseline="middle" text-anchor="start" letter-spacing="0.3px">shipping_status</text>
+<text x="933" y="265" font-family="'DM Sans', sans-serif" font-size="15" font-weight="400" fill="#AAAAAA" dominant-baseline="middle" text-anchor="end" letter-spacing="0.3px">shipping_status</text>
+<path d="M 598.5 301 A 3.5 3.5 0 1 0 605.5 301 A 3.5 3.5 0 1 0 598.5 301" fill="none" stroke="#9B4733" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 604.4749 298.5251 L 609.4246 293.5754 M 607.3033 295.6967 L 609.0711 297.4645 M 609.4246 293.5754 L 611.1924 295.3431" fill="none" stroke="#9B4733" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="617" y="299" font-family="'DM Sans', sans-serif" font-size="19" font-weight="500" fill="#FFFFFF" dominant-baseline="middle" text-anchor="start" letter-spacing="0.3px">delivery_guy_id</text>
+<text x="933" y="299" font-family="'DM Sans', sans-serif" font-size="15" font-weight="400" fill="#AAAAAA" dominant-baseline="middle" text-anchor="end" letter-spacing="0.3px">integer</text>
+<path d="M 602.716 328.428 L 599.95 331.195 L 598.368 331.195 L 602.716 326.838 L 608.878 333 L 602.716 339.162 L 598.35 334.796 L 599.941 334.796 L 602.716 337.572 L 607.288 333 L 602.716 328.428" fill="#B8B2AE"/>
+<path d="M 597.122 334.109 L 597.122 331.882 L 601.866 331.882 L 601.866 329.812 L 605.071 333 L 601.866 336.171 L 601.866 334.109 L 597.122 334.109" fill="#B8B2AE"/>
+<path d="M 597.68 332.432 L 597.68 333.559 L 602.425 333.559 L 602.425 334.796 L 604.22 333.018 L 604.22 332.982 L 602.425 331.178 L 602.425 332.432 L 597.68 332.432" fill="#B8B2AE"/>
+<text x="617" y="333" font-family="'DM Sans', sans-serif" font-size="19" font-weight="500" fill="#FFFFFF" dominant-baseline="middle" text-anchor="start" letter-spacing="0.3px">created_at</text>
+<text x="933" y="333" font-family="'DM Sans', sans-serif" font-size="15" font-weight="400" fill="#AAAAAA" dominant-baseline="middle" text-anchor="end" letter-spacing="0.3px">timestamp</text>
+<text x="597" y="367" font-family="'DM Sans', sans-serif" font-size="19" font-weight="500" fill="#FFFFFF" dominant-baseline="middle" text-anchor="start" letter-spacing="0.3px">delivered_at</text>
+<text x="933" y="367" font-family="'DM Sans', sans-serif" font-size="15" font-weight="400" fill="#AAAAAA" dominant-baseline="middle" text-anchor="end" letter-spacing="0.3px">datetime</text>
+<text x="597" y="401" font-family="'DM Sans', sans-serif" font-size="19" font-weight="500" fill="#FFFFFF" dominant-baseline="middle" text-anchor="start" letter-spacing="0.3px">cancelled_at</text>
+<text x="933" y="401" font-family="'DM Sans', sans-serif" font-size="15" font-weight="400" fill="#AAAAAA" dominant-baseline="middle" text-anchor="end" letter-spacing="0.3px">datetime</text>
+<path d="M 591.5 26.5 L 936.5 26.5 Q 944.5 26.5 944.5 34.5 L 944.5 417.5 Q 944.5 425.5 936.5 425.5 L 591.5 425.5 Q 583.5 425.5 583.5 417.5 L 583.5 34.5 Q 583.5 26.5 591.5 26.5 Z" fill="none" stroke="#333333" stroke-width="1"/>
+<path d="M 34 -207 L 379 -207 Q 387 -207 387 -199 L 387 15 Q 387 23 379 23 L 34 23 Q 26 23 26 15 L 26 -199 Q 26 -207 34 -207 Z" fill="rgba(0,0,0,0.4)"/>
+<g clip-path="url(#clip12)">
+<rect x="24" y="-209" width="361" height="230" fill="#282828"/>
+<rect x="24" y="-209" width="361" height="44" fill="#141414"/>
+<rect x="24" y="-166" width="361" height="1" fill="#000000" opacity="0.4"/>
+</g>
+<text x="38" y="-186" font-family="'DM Sans', sans-serif" font-size="27" font-weight="600" fill="#E8ECF4" dominant-baseline="middle" text-anchor="start">Order_items</text>
+<path d="M 39.5 -138 A 3.5 3.5 0 1 0 46.5 -138 A 3.5 3.5 0 1 0 39.5 -138" fill="none" stroke="#C9A227" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 45.4749 -140.4749 L 50.4246 -145.4246 M 48.3033 -143.3033 L 50.0711 -141.5355 M 50.4246 -145.4246 L 52.1924 -143.6569" fill="none" stroke="#C9A227" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 62.5 -145 L 65.5 -145 L 65.5 -141.5 L 69 -141.5 L 69 -138.5 L 65.5 -138.5 L 65.5 -135 L 62.5 -135 L 62.5 -138.5 L 59 -138.5 L 59 -141.5 L 62.5 -141.5 Z" fill="#7AAF7E"/>
+<text x="78" y="-140" font-family="'DM Sans', sans-serif" font-size="19" font-weight="500" fill="#FFFFFF" dominant-baseline="middle" text-anchor="start" letter-spacing="0.3px">id</text>
+<text x="373" y="-140" font-family="'DM Sans', sans-serif" font-size="15" font-weight="400" fill="#AAAAAA" dominant-baseline="middle" text-anchor="end" letter-spacing="0.3px">integer</text>
+<path d="M 39.5 -104 A 3.5 3.5 0 1 0 46.5 -104 A 3.5 3.5 0 1 0 39.5 -104" fill="none" stroke="#9B4733" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 45.4749 -106.4749 L 50.4246 -111.4246 M 48.3033 -109.3033 L 50.0711 -107.5355 M 50.4246 -111.4246 L 52.1924 -109.6569" fill="none" stroke="#9B4733" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 64 -111.5 L 69.5 -106 L 64 -100.5 L 58.5 -106 Z" fill="#6B6B84"/>
+<text x="78" y="-106" font-family="'DM Sans', sans-serif" font-size="19" font-weight="500" fill="#FFFFFF" dominant-baseline="middle" text-anchor="start" letter-spacing="0.3px">order_id</text>
+<text x="373" y="-106" font-family="'DM Sans', sans-serif" font-size="15" font-weight="400" fill="#AAAAAA" dominant-baseline="middle" text-anchor="end" letter-spacing="0.3px">integer</text>
+<path d="M 39.5 -70 A 3.5 3.5 0 1 0 46.5 -70 A 3.5 3.5 0 1 0 39.5 -70" fill="none" stroke="#9B4733" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 45.4749 -72.4749 L 50.4246 -77.4246 M 48.3033 -75.3033 L 50.0711 -73.5355 M 50.4246 -77.4246 L 52.1924 -75.6569" fill="none" stroke="#9B4733" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 64 -77.5 L 69.5 -72 L 64 -66.5 L 58.5 -72 Z" fill="#6B6B84"/>
+<text x="78" y="-72" font-family="'DM Sans', sans-serif" font-size="19" font-weight="500" fill="#FFFFFF" dominant-baseline="middle" text-anchor="start" letter-spacing="0.3px">variant_id</text>
+<text x="373" y="-72" font-family="'DM Sans', sans-serif" font-size="15" font-weight="400" fill="#AAAAAA" dominant-baseline="middle" text-anchor="end" letter-spacing="0.3px">integer</text>
+<path d="M 44 -43.5 L 49.5 -38 L 44 -32.5 L 38.5 -38 Z" fill="#6B6B84"/>
+<path d="M 63.716 -42.572 L 60.95 -39.805 L 59.368 -39.805 L 63.716 -44.162 L 69.878 -38 L 63.716 -31.838 L 59.35 -36.204 L 60.941 -36.204 L 63.716 -33.428 L 68.288 -38 L 63.716 -42.572" fill="#B8B2AE"/>
+<path d="M 58.122 -36.891 L 58.122 -39.118 L 62.866 -39.118 L 62.866 -41.188 L 66.071 -38 L 62.866 -34.829 L 62.866 -36.891 L 58.122 -36.891" fill="#B8B2AE"/>
+<path d="M 58.68 -38.568 L 58.68 -37.441 L 63.425 -37.441 L 63.425 -36.204 L 65.22 -37.982 L 65.22 -38.018 L 63.425 -39.822 L 63.425 -38.568 L 58.68 -38.568" fill="#B8B2AE"/>
+<text x="78" y="-38" font-family="'DM Sans', sans-serif" font-size="19" font-weight="500" fill="#FFFFFF" dominant-baseline="middle" text-anchor="start" letter-spacing="0.3px">quantity</text>
+<text x="373" y="-38" font-family="'DM Sans', sans-serif" font-size="15" font-weight="400" fill="#AAAAAA" dominant-baseline="middle" text-anchor="end" letter-spacing="0.3px">integer</text>
+<path d="M 44 -9.5 L 49.5 -4 L 44 1.5 L 38.5 -4 Z" fill="#6B6B84"/>
+<text x="58" y="-4" font-family="'DM Sans', sans-serif" font-size="19" font-weight="500" fill="#FFFFFF" dominant-baseline="middle" text-anchor="start" letter-spacing="0.3px">price_at_purchase</text>
+<text x="373" y="-4" font-family="'DM Sans', sans-serif" font-size="15" font-weight="400" fill="#AAAAAA" dominant-baseline="middle" text-anchor="end" letter-spacing="0.3px">decimal(10,2)</text>
+<path d="M 32.5 -208.5 L 376.5 -208.5 Q 384.5 -208.5 384.5 -200.5 L 384.5 12.5 Q 384.5 20.5 376.5 20.5 L 32.5 20.5 Q 24.5 20.5 24.5 12.5 L 24.5 -200.5 Q 24.5 -208.5 32.5 -208.5 Z" fill="none" stroke="#333333" stroke-width="1"/>
+<path d="M -516 -321 L -191 -321 Q -183 -321 -183 -313 L -183 -31 Q -183 -23 -191 -23 L -516 -23 Q -524 -23 -524 -31 L -524 -313 Q -524 -321 -516 -321 Z" fill="rgba(0,0,0,0.4)"/>
+<g clip-path="url(#clip13)">
+<rect x="-526" y="-323" width="341" height="298" fill="#282828"/>
+<rect x="-526" y="-323" width="341" height="44" fill="#141414"/>
+<rect x="-526" y="-280" width="341" height="1" fill="#000000" opacity="0.4"/>
+</g>
+<text x="-512" y="-300" font-family="'DM Sans', sans-serif" font-size="27" font-weight="600" fill="#E8ECF4" dominant-baseline="middle" text-anchor="start">Reviews</text>
+<path d="M -510.5 -252 A 3.5 3.5 0 1 0 -503.5 -252 A 3.5 3.5 0 1 0 -510.5 -252" fill="none" stroke="#C9A227" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M -504.5251 -254.4749 L -499.5754 -259.4246 M -501.6967 -257.3033 L -499.9289 -255.5355 M -499.5754 -259.4246 L -497.8076 -257.6569" fill="none" stroke="#C9A227" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M -487.5 -259 L -484.5 -259 L -484.5 -255.5 L -481 -255.5 L -481 -252.5 L -484.5 -252.5 L -484.5 -249 L -487.5 -249 L -487.5 -252.5 L -491 -252.5 L -491 -255.5 L -487.5 -255.5 Z" fill="#7AAF7E"/>
+<text x="-472" y="-254" font-family="'DM Sans', sans-serif" font-size="19" font-weight="500" fill="#FFFFFF" dominant-baseline="middle" text-anchor="start" letter-spacing="0.3px">id</text>
+<text x="-197" y="-254" font-family="'DM Sans', sans-serif" font-size="15" font-weight="400" fill="#AAAAAA" dominant-baseline="middle" text-anchor="end" letter-spacing="0.3px">integer</text>
+<path d="M -510.5 -218 A 3.5 3.5 0 1 0 -503.5 -218 A 3.5 3.5 0 1 0 -510.5 -218" fill="none" stroke="#9B4733" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M -504.5251 -220.4749 L -499.5754 -225.4246 M -501.6967 -223.3033 L -499.9289 -221.5355 M -499.5754 -225.4246 L -497.8076 -223.6569" fill="none" stroke="#9B4733" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M -486 -225.5 L -480.5 -220 L -486 -214.5 L -491.5 -220 Z" fill="#6B6B84"/>
+<text x="-472" y="-220" font-family="'DM Sans', sans-serif" font-size="19" font-weight="500" fill="#FFFFFF" dominant-baseline="middle" text-anchor="start" letter-spacing="0.3px">user_id</text>
+<text x="-197" y="-220" font-family="'DM Sans', sans-serif" font-size="15" font-weight="400" fill="#AAAAAA" dominant-baseline="middle" text-anchor="end" letter-spacing="0.3px">integer</text>
+<path d="M -510.5 -184 A 3.5 3.5 0 1 0 -503.5 -184 A 3.5 3.5 0 1 0 -510.5 -184" fill="none" stroke="#9B4733" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M -504.5251 -186.4749 L -499.5754 -191.4246 M -501.6967 -189.3033 L -499.9289 -187.5355 M -499.5754 -191.4246 L -497.8076 -189.6569" fill="none" stroke="#9B4733" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M -486 -191.5 L -480.5 -186 L -486 -180.5 L -491.5 -186 Z" fill="#6B6B84"/>
+<text x="-472" y="-186" font-family="'DM Sans', sans-serif" font-size="19" font-weight="500" fill="#FFFFFF" dominant-baseline="middle" text-anchor="start" letter-spacing="0.3px">product_id</text>
+<text x="-197" y="-186" font-family="'DM Sans', sans-serif" font-size="15" font-weight="400" fill="#AAAAAA" dominant-baseline="middle" text-anchor="end" letter-spacing="0.3px">integer</text>
+<path d="M -509.8 -157.7 L -502.2 -157.7 Q -500.8 -157.7 -500.8 -156.3 L -500.8 -150.26 Q -500.8 -145.3 -506 -145.3 Q -511.2 -145.3 -511.2 -150.26 L -511.2 -156.3 Q -511.2 -157.7 -509.8 -157.7 Z" fill="#4A6FF5"/>
+<path d="M -486 -157.5 L -480.5 -152 L -486 -146.5 L -491.5 -152 Z" fill="#6B6B84"/>
+<text x="-472" y="-152" font-family="'DM Sans', sans-serif" font-size="19" font-weight="500" fill="#FFFFFF" dominant-baseline="middle" text-anchor="start" letter-spacing="0.3px">rating</text>
+<text x="-197" y="-152" font-family="'DM Sans', sans-serif" font-size="15" font-weight="400" fill="#AAAAAA" dominant-baseline="middle" text-anchor="end" letter-spacing="0.3px">tinyint</text>
+<text x="-512" y="-118" font-family="'DM Sans', sans-serif" font-size="19" font-weight="500" fill="#FFFFFF" dominant-baseline="middle" text-anchor="start" letter-spacing="0.3px">comment</text>
+<text x="-197" y="-118" font-family="'DM Sans', sans-serif" font-size="15" font-weight="400" fill="#AAAAAA" dominant-baseline="middle" text-anchor="end" letter-spacing="0.3px">text</text>
+<path d="M -506 -89.5 L -500.5 -84 L -506 -78.5 L -511.5 -84 Z" fill="#6B6B84"/>
+<path d="M -486.284 -88.572 L -489.05 -85.805 L -490.632 -85.805 L -486.284 -90.162 L -480.122 -84 L -486.284 -77.838 L -490.65 -82.204 L -489.059 -82.204 L -486.284 -79.428 L -481.712 -84 L -486.284 -88.572" fill="#B8B2AE"/>
+<path d="M -491.878 -82.891 L -491.878 -85.118 L -487.134 -85.118 L -487.134 -87.188 L -483.929 -84 L -487.134 -80.829 L -487.134 -82.891 L -491.878 -82.891" fill="#B8B2AE"/>
+<path d="M -491.32 -84.568 L -491.32 -83.441 L -486.575 -83.441 L -486.575 -82.204 L -484.78 -83.982 L -484.78 -84.018 L -486.575 -85.822 L -486.575 -84.568 L -491.32 -84.568" fill="#B8B2AE"/>
+<text x="-472" y="-84" font-family="'DM Sans', sans-serif" font-size="19" font-weight="500" fill="#FFFFFF" dominant-baseline="middle" text-anchor="start" letter-spacing="0.3px">verified_purchase</text>
+<text x="-197" y="-84" font-family="'DM Sans', sans-serif" font-size="15" font-weight="400" fill="#AAAAAA" dominant-baseline="middle" text-anchor="end" letter-spacing="0.3px">boolean</text>
+<path d="M -506.284 -54.572 L -509.05 -51.805 L -510.632 -51.805 L -506.284 -56.162 L -500.122 -50 L -506.284 -43.838 L -510.65 -48.204 L -509.059 -48.204 L -506.284 -45.428 L -501.712 -50 L -506.284 -54.572" fill="#B8B2AE"/>
+<path d="M -511.878 -48.891 L -511.878 -51.118 L -507.134 -51.118 L -507.134 -53.188 L -503.929 -50 L -507.134 -46.829 L -507.134 -48.891 L -511.878 -48.891" fill="#B8B2AE"/>
+<path d="M -511.32 -50.568 L -511.32 -49.441 L -506.575 -49.441 L -506.575 -48.204 L -504.78 -49.982 L -504.78 -50.018 L -506.575 -51.822 L -506.575 -50.568 L -511.32 -50.568" fill="#B8B2AE"/>
+<text x="-492" y="-50" font-family="'DM Sans', sans-serif" font-size="19" font-weight="500" fill="#FFFFFF" dominant-baseline="middle" text-anchor="start" letter-spacing="0.3px">created_at</text>
+<text x="-197" y="-50" font-family="'DM Sans', sans-serif" font-size="15" font-weight="400" fill="#AAAAAA" dominant-baseline="middle" text-anchor="end" letter-spacing="0.3px">timestamp</text>
+<path d="M -517.5 -322.5 L -193.5 -322.5 Q -185.5 -322.5 -185.5 -314.5 L -185.5 -33.5 Q -185.5 -25.5 -193.5 -25.5 L -517.5 -25.5 Q -525.5 -25.5 -525.5 -33.5 L -525.5 -314.5 Q -525.5 -322.5 -517.5 -322.5 Z" fill="none" stroke="#333333" stroke-width="1"/>
+<path d="M 1202 16 L 1451 16 Q 1459 16 1459 24 L 1459 272 Q 1459 280 1451 280 L 1202 280 Q 1194 280 1194 272 L 1194 24 Q 1194 16 1202 16 Z" fill="rgba(0,0,0,0.4)"/>
+<g clip-path="url(#clip14)">
+<rect x="1192" y="14" width="265" height="264" fill="#282828"/>
+<rect x="1192" y="14" width="265" height="44" fill="#141414"/>
+<rect x="1192" y="57" width="265" height="1" fill="#000000" opacity="0.4"/>
+</g>
+<text x="1206" y="37" font-family="'DM Sans', sans-serif" font-size="27" font-weight="600" fill="#E8ECF4" dominant-baseline="middle" text-anchor="start">Refunds</text>
+<path d="M 1207.5 85 A 3.5 3.5 0 1 0 1214.5 85 A 3.5 3.5 0 1 0 1207.5 85" fill="none" stroke="#C9A227" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 1213.4749 82.5251 L 1218.4246 77.5754 M 1216.3033 79.6967 L 1218.0711 81.4645 M 1218.4246 77.5754 L 1220.1924 79.3431" fill="none" stroke="#C9A227" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 1230.5 78 L 1233.5 78 L 1233.5 81.5 L 1237 81.5 L 1237 84.5 L 1233.5 84.5 L 1233.5 88 L 1230.5 88 L 1230.5 84.5 L 1227 84.5 L 1227 81.5 L 1230.5 81.5 Z" fill="#7AAF7E"/>
+<text x="1246" y="83" font-family="'DM Sans', sans-serif" font-size="19" font-weight="500" fill="#FFFFFF" dominant-baseline="middle" text-anchor="start" letter-spacing="0.3px">id</text>
+<text x="1445" y="83" font-family="'DM Sans', sans-serif" font-size="15" font-weight="400" fill="#AAAAAA" dominant-baseline="middle" text-anchor="end" letter-spacing="0.3px">integer</text>
+<path d="M 1207.5 119 A 3.5 3.5 0 1 0 1214.5 119 A 3.5 3.5 0 1 0 1207.5 119" fill="none" stroke="#9B4733" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 1213.4749 116.5251 L 1218.4246 111.5754 M 1216.3033 113.6967 L 1218.0711 115.4645 M 1218.4246 111.5754 L 1220.1924 113.3431" fill="none" stroke="#9B4733" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 1232 111.5 L 1237.5 117 L 1232 122.5 L 1226.5 117 Z" fill="#6B6B84"/>
+<text x="1246" y="117" font-family="'DM Sans', sans-serif" font-size="19" font-weight="500" fill="#FFFFFF" dominant-baseline="middle" text-anchor="start" letter-spacing="0.3px">order_id</text>
+<text x="1445" y="117" font-family="'DM Sans', sans-serif" font-size="15" font-weight="400" fill="#AAAAAA" dominant-baseline="middle" text-anchor="end" letter-spacing="0.3px">integer</text>
+<path d="M 1212 145.5 L 1217.5 151 L 1212 156.5 L 1206.5 151 Z" fill="#6B6B84"/>
+<text x="1226" y="151" font-family="'DM Sans', sans-serif" font-size="19" font-weight="500" fill="#FFFFFF" dominant-baseline="middle" text-anchor="start" letter-spacing="0.3px">amount</text>
+<text x="1445" y="151" font-family="'DM Sans', sans-serif" font-size="15" font-weight="400" fill="#AAAAAA" dominant-baseline="middle" text-anchor="end" letter-spacing="0.3px">decimal(10,2)</text>
+<text x="1206" y="185" font-family="'DM Sans', sans-serif" font-size="19" font-weight="500" fill="#FFFFFF" dominant-baseline="middle" text-anchor="start" letter-spacing="0.3px">reason</text>
+<text x="1445" y="185" font-family="'DM Sans', sans-serif" font-size="15" font-weight="400" fill="#AAAAAA" dominant-baseline="middle" text-anchor="end" letter-spacing="0.3px">text</text>
+<path d="M 1212 213.5 L 1217.5 219 L 1212 224.5 L 1206.5 219 Z" fill="#6B6B84"/>
+<path d="M 1231.716 214.428 L 1228.95 217.195 L 1227.368 217.195 L 1231.716 212.838 L 1237.878 219 L 1231.716 225.162 L 1227.35 220.796 L 1228.941 220.796 L 1231.716 223.572 L 1236.288 219 L 1231.716 214.428" fill="#B8B2AE"/>
+<path d="M 1226.122 220.109 L 1226.122 217.882 L 1230.866 217.882 L 1230.866 215.812 L 1234.071 219 L 1230.866 222.171 L 1230.866 220.109 L 1226.122 220.109" fill="#B8B2AE"/>
+<path d="M 1226.68 218.432 L 1226.68 219.559 L 1231.425 219.559 L 1231.425 220.796 L 1233.22 219.018 L 1233.22 218.982 L 1231.425 217.178 L 1231.425 218.432 L 1226.68 218.432" fill="#B8B2AE"/>
+<text x="1246" y="219" font-family="'DM Sans', sans-serif" font-size="19" font-weight="500" fill="#FFFFFF" dominant-baseline="middle" text-anchor="start" letter-spacing="0.3px">status</text>
+<text x="1445" y="219" font-family="'DM Sans', sans-serif" font-size="15" font-weight="400" fill="#AAAAAA" dominant-baseline="middle" text-anchor="end" letter-spacing="0.3px">refund_status</text>
+<path d="M 1211.716 248.428 L 1208.95 251.195 L 1207.368 251.195 L 1211.716 246.838 L 1217.878 253 L 1211.716 259.162 L 1207.35 254.796 L 1208.941 254.796 L 1211.716 257.572 L 1216.288 253 L 1211.716 248.428" fill="#B8B2AE"/>
+<path d="M 1206.122 254.109 L 1206.122 251.882 L 1210.866 251.882 L 1210.866 249.812 L 1214.071 253 L 1210.866 256.171 L 1210.866 254.109 L 1206.122 254.109" fill="#B8B2AE"/>
+<path d="M 1206.68 252.432 L 1206.68 253.559 L 1211.425 253.559 L 1211.425 254.796 L 1213.22 253.018 L 1213.22 252.982 L 1211.425 251.178 L 1211.425 252.432 L 1206.68 252.432" fill="#B8B2AE"/>
+<text x="1226" y="253" font-family="'DM Sans', sans-serif" font-size="19" font-weight="500" fill="#FFFFFF" dominant-baseline="middle" text-anchor="start" letter-spacing="0.3px">created_at</text>
+<text x="1445" y="253" font-family="'DM Sans', sans-serif" font-size="15" font-weight="400" fill="#AAAAAA" dominant-baseline="middle" text-anchor="end" letter-spacing="0.3px">timestamp</text>
+<path d="M 1200.5 14.5 L 1448.5 14.5 Q 1456.5 14.5 1456.5 22.5 L 1456.5 269.5 Q 1456.5 277.5 1448.5 277.5 L 1200.5 277.5 Q 1192.5 277.5 1192.5 269.5 L 1192.5 22.5 Q 1192.5 14.5 1200.5 14.5 Z" fill="none" stroke="#333333" stroke-width="1"/>
+<path d="M 1434 -247 L 1779 -247 Q 1787 -247 1787 -239 L 1787 -25 Q 1787 -17 1779 -17 L 1434 -17 Q 1426 -17 1426 -25 L 1426 -239 Q 1426 -247 1434 -247 Z" fill="rgba(0,0,0,0.4)"/>
+<g clip-path="url(#clip15)">
+<rect x="1424" y="-249" width="361" height="230" fill="#282828"/>
+<rect x="1424" y="-249" width="361" height="44" fill="#141414"/>
+<rect x="1424" y="-206" width="361" height="1" fill="#000000" opacity="0.4"/>
+</g>
+<text x="1438" y="-226" font-family="'DM Sans', sans-serif" font-size="27" font-weight="600" fill="#E8ECF4" dominant-baseline="middle" text-anchor="start">Refund_items</text>
+<path d="M 1439.5 -178 A 3.5 3.5 0 1 0 1446.5 -178 A 3.5 3.5 0 1 0 1439.5 -178" fill="none" stroke="#C9A227" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 1445.4749 -180.4749 L 1450.4246 -185.4246 M 1448.3033 -183.3033 L 1450.0711 -181.5355 M 1450.4246 -185.4246 L 1452.1924 -183.6569" fill="none" stroke="#C9A227" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 1462.5 -185 L 1465.5 -185 L 1465.5 -181.5 L 1469 -181.5 L 1469 -178.5 L 1465.5 -178.5 L 1465.5 -175 L 1462.5 -175 L 1462.5 -178.5 L 1459 -178.5 L 1459 -181.5 L 1462.5 -181.5 Z" fill="#7AAF7E"/>
+<text x="1478" y="-180" font-family="'DM Sans', sans-serif" font-size="19" font-weight="500" fill="#FFFFFF" dominant-baseline="middle" text-anchor="start" letter-spacing="0.3px">id</text>
+<text x="1773" y="-180" font-family="'DM Sans', sans-serif" font-size="15" font-weight="400" fill="#AAAAAA" dominant-baseline="middle" text-anchor="end" letter-spacing="0.3px">integer</text>
+<path d="M 1439.5 -144 A 3.5 3.5 0 1 0 1446.5 -144 A 3.5 3.5 0 1 0 1439.5 -144" fill="none" stroke="#9B4733" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 1445.4749 -146.4749 L 1450.4246 -151.4246 M 1448.3033 -149.3033 L 1450.0711 -147.5355 M 1450.4246 -151.4246 L 1452.1924 -149.6569" fill="none" stroke="#9B4733" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 1464 -151.5 L 1469.5 -146 L 1464 -140.5 L 1458.5 -146 Z" fill="#6B6B84"/>
+<text x="1478" y="-146" font-family="'DM Sans', sans-serif" font-size="19" font-weight="500" fill="#FFFFFF" dominant-baseline="middle" text-anchor="start" letter-spacing="0.3px">refund_id</text>
+<text x="1773" y="-146" font-family="'DM Sans', sans-serif" font-size="15" font-weight="400" fill="#AAAAAA" dominant-baseline="middle" text-anchor="end" letter-spacing="0.3px">integer</text>
+<path d="M 1439.5 -110 A 3.5 3.5 0 1 0 1446.5 -110 A 3.5 3.5 0 1 0 1439.5 -110" fill="none" stroke="#9B4733" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 1445.4749 -112.4749 L 1450.4246 -117.4246 M 1448.3033 -115.3033 L 1450.0711 -113.5355 M 1450.4246 -117.4246 L 1452.1924 -115.6569" fill="none" stroke="#9B4733" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 1464 -117.5 L 1469.5 -112 L 1464 -106.5 L 1458.5 -112 Z" fill="#6B6B84"/>
+<text x="1478" y="-112" font-family="'DM Sans', sans-serif" font-size="19" font-weight="500" fill="#FFFFFF" dominant-baseline="middle" text-anchor="start" letter-spacing="0.3px">variant_id</text>
+<text x="1773" y="-112" font-family="'DM Sans', sans-serif" font-size="15" font-weight="400" fill="#AAAAAA" dominant-baseline="middle" text-anchor="end" letter-spacing="0.3px">integer</text>
+<path d="M 1444 -83.5 L 1449.5 -78 L 1444 -72.5 L 1438.5 -78 Z" fill="#6B6B84"/>
+<path d="M 1463.716 -82.572 L 1460.95 -79.805 L 1459.368 -79.805 L 1463.716 -84.162 L 1469.878 -78 L 1463.716 -71.838 L 1459.35 -76.204 L 1460.941 -76.204 L 1463.716 -73.428 L 1468.288 -78 L 1463.716 -82.572" fill="#B8B2AE"/>
+<path d="M 1458.122 -76.891 L 1458.122 -79.118 L 1462.866 -79.118 L 1462.866 -81.188 L 1466.071 -78 L 1462.866 -74.829 L 1462.866 -76.891 L 1458.122 -76.891" fill="#B8B2AE"/>
+<path d="M 1458.68 -78.568 L 1458.68 -77.441 L 1463.425 -77.441 L 1463.425 -76.204 L 1465.22 -77.982 L 1465.22 -78.018 L 1463.425 -79.822 L 1463.425 -78.568 L 1458.68 -78.568" fill="#B8B2AE"/>
+<text x="1478" y="-78" font-family="'DM Sans', sans-serif" font-size="19" font-weight="500" fill="#FFFFFF" dominant-baseline="middle" text-anchor="start" letter-spacing="0.3px">quantity</text>
+<text x="1773" y="-78" font-family="'DM Sans', sans-serif" font-size="15" font-weight="400" fill="#AAAAAA" dominant-baseline="middle" text-anchor="end" letter-spacing="0.3px">integer</text>
+<path d="M 1444 -49.5 L 1449.5 -44 L 1444 -38.5 L 1438.5 -44 Z" fill="#6B6B84"/>
+<text x="1458" y="-44" font-family="'DM Sans', sans-serif" font-size="19" font-weight="500" fill="#FFFFFF" dominant-baseline="middle" text-anchor="start" letter-spacing="0.3px">price_at_purchase</text>
+<text x="1773" y="-44" font-family="'DM Sans', sans-serif" font-size="15" font-weight="400" fill="#AAAAAA" dominant-baseline="middle" text-anchor="end" letter-spacing="0.3px">decimal(10,2)</text>
+<path d="M 1432.5 -248.5 L 1776.5 -248.5 Q 1784.5 -248.5 1784.5 -240.5 L 1784.5 -27.5 Q 1784.5 -19.5 1776.5 -19.5 L 1432.5 -19.5 Q 1424.5 -19.5 1424.5 -27.5 L 1424.5 -240.5 Q 1424.5 -248.5 1432.5 -248.5 Z" fill="none" stroke="#333333" stroke-width="1"/>
+<path d="M 516 -384 L 856 -384 Q 864 -384 864 -376 L 864 -128 Q 864 -120 856 -120 L 516 -120 Q 508 -120 508 -128 L 508 -376 Q 508 -384 516 -384 Z" fill="rgba(0,0,0,0.4)"/>
+<g clip-path="url(#clip16)">
+<rect x="506" y="-386" width="356" height="264" fill="#282828"/>
+<rect x="506" y="-386" width="356" height="44" fill="#141414"/>
+<rect x="506" y="-343" width="356" height="1" fill="#000000" opacity="0.4"/>
+</g>
+<text x="520" y="-363" font-family="'DM Sans', sans-serif" font-size="27" font-weight="600" fill="#E8ECF4" dominant-baseline="middle" text-anchor="start">Audit_logs</text>
+<path d="M 521.5 -315 A 3.5 3.5 0 1 0 528.5 -315 A 3.5 3.5 0 1 0 521.5 -315" fill="none" stroke="#C9A227" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 527.4749 -317.4749 L 532.4246 -322.4246 M 530.3033 -320.3033 L 532.0711 -318.5355 M 532.4246 -322.4246 L 534.1924 -320.6569" fill="none" stroke="#C9A227" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 544.5 -322 L 547.5 -322 L 547.5 -318.5 L 551 -318.5 L 551 -315.5 L 547.5 -315.5 L 547.5 -312 L 544.5 -312 L 544.5 -315.5 L 541 -315.5 L 541 -318.5 L 544.5 -318.5 Z" fill="#7AAF7E"/>
+<text x="560" y="-317" font-family="'DM Sans', sans-serif" font-size="19" font-weight="500" fill="#FFFFFF" dominant-baseline="middle" text-anchor="start" letter-spacing="0.3px">id</text>
+<text x="850" y="-317" font-family="'DM Sans', sans-serif" font-size="15" font-weight="400" fill="#AAAAAA" dominant-baseline="middle" text-anchor="end" letter-spacing="0.3px">integer</text>
+<path d="M 521.5 -281 A 3.5 3.5 0 1 0 528.5 -281 A 3.5 3.5 0 1 0 521.5 -281" fill="none" stroke="#9B4733" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 527.4749 -283.4749 L 532.4246 -288.4246 M 530.3033 -286.3033 L 532.0711 -284.5355 M 532.4246 -288.4246 L 534.1924 -286.6569" fill="none" stroke="#9B4733" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 546 -288.5 L 551.5 -283 L 546 -277.5 L 540.5 -283 Z" fill="#6B6B84"/>
+<text x="560" y="-283" font-family="'DM Sans', sans-serif" font-size="19" font-weight="500" fill="#FFFFFF" dominant-baseline="middle" text-anchor="start" letter-spacing="0.3px">admin_id</text>
+<text x="850" y="-283" font-family="'DM Sans', sans-serif" font-size="15" font-weight="400" fill="#AAAAAA" dominant-baseline="middle" text-anchor="end" letter-spacing="0.3px">integer</text>
+<path d="M 526 -254.5 L 531.5 -249 L 526 -243.5 L 520.5 -249 Z" fill="#6B6B84"/>
+<text x="540" y="-249" font-family="'DM Sans', sans-serif" font-size="19" font-weight="500" fill="#FFFFFF" dominant-baseline="middle" text-anchor="start" letter-spacing="0.3px">action_performed</text>
+<text x="850" y="-249" font-family="'DM Sans', sans-serif" font-size="15" font-weight="400" fill="#AAAAAA" dominant-baseline="middle" text-anchor="end" letter-spacing="0.3px">varchar(255)</text>
+<path d="M 526 -220.5 L 531.5 -215 L 526 -209.5 L 520.5 -215 Z" fill="#6B6B84"/>
+<text x="540" y="-215" font-family="'DM Sans', sans-serif" font-size="19" font-weight="500" fill="#FFFFFF" dominant-baseline="middle" text-anchor="start" letter-spacing="0.3px">target_table</text>
+<text x="850" y="-215" font-family="'DM Sans', sans-serif" font-size="15" font-weight="400" fill="#AAAAAA" dominant-baseline="middle" text-anchor="end" letter-spacing="0.3px">varchar(100)</text>
+<path d="M 526 -186.5 L 531.5 -181 L 526 -175.5 L 520.5 -181 Z" fill="#6B6B84"/>
+<text x="540" y="-181" font-family="'DM Sans', sans-serif" font-size="19" font-weight="500" fill="#FFFFFF" dominant-baseline="middle" text-anchor="start" letter-spacing="0.3px">target_id</text>
+<text x="850" y="-181" font-family="'DM Sans', sans-serif" font-size="15" font-weight="400" fill="#AAAAAA" dominant-baseline="middle" text-anchor="end" letter-spacing="0.3px">varchar(50)</text>
+<path d="M 525.716 -151.572 L 522.95 -148.805 L 521.368 -148.805 L 525.716 -153.162 L 531.878 -147 L 525.716 -140.838 L 521.35 -145.204 L 522.941 -145.204 L 525.716 -142.428 L 530.288 -147 L 525.716 -151.572" fill="#B8B2AE"/>
+<path d="M 520.122 -145.891 L 520.122 -148.118 L 524.866 -148.118 L 524.866 -150.188 L 528.071 -147 L 524.866 -143.829 L 524.866 -145.891 L 520.122 -145.891" fill="#B8B2AE"/>
+<path d="M 520.68 -147.568 L 520.68 -146.441 L 525.425 -146.441 L 525.425 -145.204 L 527.22 -146.982 L 527.22 -147.018 L 525.425 -148.822 L 525.425 -147.568 L 520.68 -147.568" fill="#B8B2AE"/>
+<text x="540" y="-147" font-family="'DM Sans', sans-serif" font-size="19" font-weight="500" fill="#FFFFFF" dominant-baseline="middle" text-anchor="start" letter-spacing="0.3px">created_at</text>
+<text x="850" y="-147" font-family="'DM Sans', sans-serif" font-size="15" font-weight="400" fill="#AAAAAA" dominant-baseline="middle" text-anchor="end" letter-spacing="0.3px">timestamp</text>
+<path d="M 514.5 -385.5 L 853.5 -385.5 Q 861.5 -385.5 861.5 -377.5 L 861.5 -130.5 Q 861.5 -122.5 853.5 -122.5 L 514.5 -122.5 Q 506.5 -122.5 506.5 -130.5 L 506.5 -377.5 Q 506.5 -385.5 514.5 -385.5 Z" fill="none" stroke="#333333" stroke-width="1"/>
+<path d="M -314 496 L 6 496 Q 14 496 14 504 L 14 752 Q 14 760 6 760 L -314 760 Q -322 760 -322 752 L -322 504 Q -322 496 -314 496 Z" fill="rgba(0,0,0,0.4)"/>
+<g clip-path="url(#clip17)">
+<rect x="-324" y="494" width="336" height="264" fill="#282828"/>
+<rect x="-324" y="494" width="336" height="44" fill="#141414"/>
+<rect x="-324" y="537" width="336" height="1" fill="#000000" opacity="0.4"/>
+</g>
+<text x="-310" y="517" font-family="'DM Sans', sans-serif" font-size="27" font-weight="600" fill="#E8ECF4" dominant-baseline="middle" text-anchor="start">Inventory_logs</text>
+<path d="M -308.5 565 A 3.5 3.5 0 1 0 -301.5 565 A 3.5 3.5 0 1 0 -308.5 565" fill="none" stroke="#C9A227" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M -302.5251 562.5251 L -297.5754 557.5754 M -299.6967 559.6967 L -297.9289 561.4645 M -297.5754 557.5754 L -295.8076 559.3431" fill="none" stroke="#C9A227" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M -285.5 558 L -282.5 558 L -282.5 561.5 L -279 561.5 L -279 564.5 L -282.5 564.5 L -282.5 568 L -285.5 568 L -285.5 564.5 L -289 564.5 L -289 561.5 L -285.5 561.5 Z" fill="#7AAF7E"/>
+<text x="-270" y="563" font-family="'DM Sans', sans-serif" font-size="19" font-weight="500" fill="#FFFFFF" dominant-baseline="middle" text-anchor="start" letter-spacing="0.3px">id</text>
+<text x="0" y="563" font-family="'DM Sans', sans-serif" font-size="15" font-weight="400" fill="#AAAAAA" dominant-baseline="middle" text-anchor="end" letter-spacing="0.3px">integer</text>
+<path d="M -308.5 599 A 3.5 3.5 0 1 0 -301.5 599 A 3.5 3.5 0 1 0 -308.5 599" fill="none" stroke="#9B4733" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M -302.5251 596.5251 L -297.5754 591.5754 M -299.6967 593.6967 L -297.9289 595.4645 M -297.5754 591.5754 L -295.8076 593.3431" fill="none" stroke="#9B4733" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M -284 591.5 L -278.5 597 L -284 602.5 L -289.5 597 Z" fill="#6B6B84"/>
+<text x="-270" y="597" font-family="'DM Sans', sans-serif" font-size="19" font-weight="500" fill="#FFFFFF" dominant-baseline="middle" text-anchor="start" letter-spacing="0.3px">product_variant_id</text>
+<text x="0" y="597" font-family="'DM Sans', sans-serif" font-size="15" font-weight="400" fill="#AAAAAA" dominant-baseline="middle" text-anchor="end" letter-spacing="0.3px">integer</text>
+<path d="M -308.5 633 A 3.5 3.5 0 1 0 -301.5 633 A 3.5 3.5 0 1 0 -308.5 633" fill="none" stroke="#9B4733" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M -302.5251 630.5251 L -297.5754 625.5754 M -299.6967 627.6967 L -297.9289 629.4645 M -297.5754 625.5754 L -295.8076 627.3431" fill="none" stroke="#9B4733" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M -284 625.5 L -278.5 631 L -284 636.5 L -289.5 631 Z" fill="#6B6B84"/>
+<text x="-270" y="631" font-family="'DM Sans', sans-serif" font-size="19" font-weight="500" fill="#FFFFFF" dominant-baseline="middle" text-anchor="start" letter-spacing="0.3px">admin_id</text>
+<text x="0" y="631" font-family="'DM Sans', sans-serif" font-size="15" font-weight="400" fill="#AAAAAA" dominant-baseline="middle" text-anchor="end" letter-spacing="0.3px">integer</text>
+<path d="M -304 659.5 L -298.5 665 L -304 670.5 L -309.5 665 Z" fill="#6B6B84"/>
+<text x="-290" y="665" font-family="'DM Sans', sans-serif" font-size="19" font-weight="500" fill="#FFFFFF" dominant-baseline="middle" text-anchor="start" letter-spacing="0.3px">quantity_added</text>
+<text x="0" y="665" font-family="'DM Sans', sans-serif" font-size="15" font-weight="400" fill="#AAAAAA" dominant-baseline="middle" text-anchor="end" letter-spacing="0.3px">integer</text>
+<path d="M -304 693.5 L -298.5 699 L -304 704.5 L -309.5 699 Z" fill="#6B6B84"/>
+<text x="-290" y="699" font-family="'DM Sans', sans-serif" font-size="19" font-weight="500" fill="#FFFFFF" dominant-baseline="middle" text-anchor="start" letter-spacing="0.3px">unit_price</text>
+<text x="0" y="699" font-family="'DM Sans', sans-serif" font-size="15" font-weight="400" fill="#AAAAAA" dominant-baseline="middle" text-anchor="end" letter-spacing="0.3px">decimal(10,2)</text>
+<path d="M -304.284 728.428 L -307.05 731.195 L -308.632 731.195 L -304.284 726.838 L -298.122 733 L -304.284 739.162 L -308.65 734.796 L -307.059 734.796 L -304.284 737.572 L -299.712 733 L -304.284 728.428" fill="#B8B2AE"/>
+<path d="M -309.878 734.109 L -309.878 731.882 L -305.134 731.882 L -305.134 729.812 L -301.929 733 L -305.134 736.171 L -305.134 734.109 L -309.878 734.109" fill="#B8B2AE"/>
+<path d="M -309.32 732.432 L -309.32 733.559 L -304.575 733.559 L -304.575 734.796 L -302.78 733.018 L -302.78 732.982 L -304.575 731.178 L -304.575 732.432 L -309.32 732.432" fill="#B8B2AE"/>
+<text x="-290" y="733" font-family="'DM Sans', sans-serif" font-size="19" font-weight="500" fill="#FFFFFF" dominant-baseline="middle" text-anchor="start" letter-spacing="0.3px">restocked_at</text>
+<text x="0" y="733" font-family="'DM Sans', sans-serif" font-size="15" font-weight="400" fill="#AAAAAA" dominant-baseline="middle" text-anchor="end" letter-spacing="0.3px">timestamp</text>
+<path d="M -315.5 494.5 L 3.5 494.5 Q 11.5 494.5 11.5 502.5 L 11.5 749.5 Q 11.5 757.5 3.5 757.5 L -315.5 757.5 Q -323.5 757.5 -323.5 749.5 L -323.5 502.5 Q -323.5 494.5 -315.5 494.5 Z" fill="none" stroke="#333333" stroke-width="1"/>
+<path d="M -1595 662 L -1499 662 Q -1491 662 -1491 670 L -1491 807 Q -1491 815 -1499 815 L -1595 815 Q -1603 815 -1603 807 L -1603 670 Q -1603 662 -1595 662 Z" fill="rgba(0,0,0,0.4)"/>
+<g clip-path="url(#clip18)">
+<rect x="-1605" y="660" width="112" height="153" fill="#282828"/>
+<rect x="-1605" y="660" width="112" height="44" fill="#141414"/>
+<rect x="-1605" y="703" width="112" height="1" fill="#333333"/>
+</g>
+<text x="-1595" y="683" font-family="'DM Sans', sans-serif" font-size="23" font-weight="600" fill="#E8ECF4" dominant-baseline="middle" text-anchor="start">gender</text>
+<text x="-1591" y="727.5" font-family="'DM Sans', sans-serif" font-size="18" font-weight="400" fill="#FFFFFF" dominant-baseline="middle" text-anchor="start" letter-spacing="0.3px">mens</text>
+<text x="-1591" y="758.5" font-family="'DM Sans', sans-serif" font-size="18" font-weight="400" fill="#FFFFFF" dominant-baseline="middle" text-anchor="start" letter-spacing="0.3px">womens</text>
+<text x="-1591" y="789.5" font-family="'DM Sans', sans-serif" font-size="18" font-weight="400" fill="#FFFFFF" dominant-baseline="middle" text-anchor="start" letter-spacing="0.3px">unisex</text>
+<path d="M -1596.5 660.5 L -1501.5 660.5 Q -1493.5 660.5 -1493.5 668.5 L -1493.5 804.5 Q -1493.5 812.5 -1501.5 812.5 L -1596.5 812.5 Q -1604.5 812.5 -1604.5 804.5 L -1604.5 668.5 Q -1604.5 660.5 -1596.5 660.5 Z" fill="none" stroke="#333333" stroke-width="1"/>
+<path d="M -1790 662 L -1631 662 Q -1623 662 -1623 670 L -1623 776 Q -1623 784 -1631 784 L -1790 784 Q -1798 784 -1798 776 L -1798 670 Q -1798 662 -1790 662 Z" fill="rgba(0,0,0,0.4)"/>
+<g clip-path="url(#clip19)">
+<rect x="-1800" y="660" width="175" height="122" fill="#282828"/>
+<rect x="-1800" y="660" width="175" height="44" fill="#141414"/>
+<rect x="-1800" y="703" width="175" height="1" fill="#333333"/>
+</g>
+<text x="-1790" y="683" font-family="'DM Sans', sans-serif" font-size="23" font-weight="600" fill="#E8ECF4" dominant-baseline="middle" text-anchor="start">discount_type</text>
+<text x="-1786" y="727.5" font-family="'DM Sans', sans-serif" font-size="18" font-weight="400" fill="#FFFFFF" dominant-baseline="middle" text-anchor="start" letter-spacing="0.3px">fixed</text>
+<text x="-1786" y="758.5" font-family="'DM Sans', sans-serif" font-size="18" font-weight="400" fill="#FFFFFF" dominant-baseline="middle" text-anchor="start" letter-spacing="0.3px">percent</text>
+<path d="M -1791.5 660.5 L -1633.5 660.5 Q -1625.5 660.5 -1625.5 668.5 L -1625.5 773.5 Q -1625.5 781.5 -1633.5 781.5 L -1791.5 781.5 Q -1799.5 781.5 -1799.5 773.5 L -1799.5 668.5 Q -1799.5 660.5 -1791.5 660.5 Z" fill="none" stroke="#333333" stroke-width="1"/>
+<path d="M -1260 662 L -1081 662 Q -1073 662 -1073 670 L -1073 838 Q -1073 846 -1081 846 L -1260 846 Q -1268 846 -1268 838 L -1268 670 Q -1268 662 -1260 662 Z" fill="rgba(0,0,0,0.4)"/>
+<g clip-path="url(#clip20)">
+<rect x="-1270" y="660" width="195" height="184" fill="#282828"/>
+<rect x="-1270" y="660" width="195" height="44" fill="#141414"/>
+<rect x="-1270" y="703" width="195" height="1" fill="#333333"/>
+</g>
+<text x="-1260" y="683" font-family="'DM Sans', sans-serif" font-size="23" font-weight="600" fill="#E8ECF4" dominant-baseline="middle" text-anchor="start">shipping_status</text>
+<text x="-1256" y="727.5" font-family="'DM Sans', sans-serif" font-size="18" font-weight="400" fill="#FFFFFF" dominant-baseline="middle" text-anchor="start" letter-spacing="0.3px">pending</text>
+<text x="-1256" y="758.5" font-family="'DM Sans', sans-serif" font-size="18" font-weight="400" fill="#FFFFFF" dominant-baseline="middle" text-anchor="start" letter-spacing="0.3px">shipped</text>
+<text x="-1256" y="789.5" font-family="'DM Sans', sans-serif" font-size="18" font-weight="400" fill="#FFFFFF" dominant-baseline="middle" text-anchor="start" letter-spacing="0.3px">delivered</text>
+<text x="-1256" y="820.5" font-family="'DM Sans', sans-serif" font-size="18" font-weight="400" fill="#FFFFFF" dominant-baseline="middle" text-anchor="start" letter-spacing="0.3px">cancelled</text>
+<path d="M -1261.5 660.5 L -1083.5 660.5 Q -1075.5 660.5 -1075.5 668.5 L -1075.5 835.5 Q -1075.5 843.5 -1083.5 843.5 L -1261.5 843.5 Q -1269.5 843.5 -1269.5 835.5 L -1269.5 668.5 Q -1269.5 660.5 -1261.5 660.5 Z" fill="none" stroke="#333333" stroke-width="1"/>
+<path d="M -1045 662 L -923 662 Q -915 662 -915 670 L -915 807 Q -915 815 -923 815 L -1045 815 Q -1053 815 -1053 807 L -1053 670 Q -1053 662 -1045 662 Z" fill="rgba(0,0,0,0.4)"/>
+<g clip-path="url(#clip21)">
+<rect x="-1055" y="660" width="138" height="153" fill="#282828"/>
+<rect x="-1055" y="660" width="138" height="44" fill="#141414"/>
+<rect x="-1055" y="703" width="138" height="1" fill="#333333"/>
+</g>
+<text x="-1045" y="683" font-family="'DM Sans', sans-serif" font-size="23" font-weight="600" fill="#E8ECF4" dominant-baseline="middle" text-anchor="start">user_role</text>
+<text x="-1041" y="727.5" font-family="'DM Sans', sans-serif" font-size="18" font-weight="400" fill="#FFFFFF" dominant-baseline="middle" text-anchor="start" letter-spacing="0.3px">admin</text>
+<text x="-1041" y="758.5" font-family="'DM Sans', sans-serif" font-size="18" font-weight="400" fill="#FFFFFF" dominant-baseline="middle" text-anchor="start" letter-spacing="0.3px">delivery_guy</text>
+<text x="-1041" y="789.5" font-family="'DM Sans', sans-serif" font-size="18" font-weight="400" fill="#FFFFFF" dominant-baseline="middle" text-anchor="start" letter-spacing="0.3px">user</text>
+<path d="M -1046.5 660.5 L -925.5 660.5 Q -917.5 660.5 -917.5 668.5 L -917.5 804.5 Q -917.5 812.5 -925.5 812.5 L -1046.5 812.5 Q -1054.5 812.5 -1054.5 804.5 L -1054.5 668.5 Q -1054.5 660.5 -1046.5 660.5 Z" fill="none" stroke="#333333" stroke-width="1"/>
+<path d="M -1463 662 L -1296 662 Q -1288 662 -1288 670 L -1288 807 Q -1288 815 -1296 815 L -1463 815 Q -1471 815 -1471 807 L -1471 670 Q -1471 662 -1463 662 Z" fill="rgba(0,0,0,0.4)"/>
+<g clip-path="url(#clip22)">
+<rect x="-1473" y="660" width="183" height="153" fill="#282828"/>
+<rect x="-1473" y="660" width="183" height="44" fill="#141414"/>
+<rect x="-1473" y="703" width="183" height="1" fill="#333333"/>
+</g>
+<text x="-1463" y="683" font-family="'DM Sans', sans-serif" font-size="23" font-weight="600" fill="#E8ECF4" dominant-baseline="middle" text-anchor="start">refund_status</text>
+<text x="-1459" y="727.5" font-family="'DM Sans', sans-serif" font-size="18" font-weight="400" fill="#FFFFFF" dominant-baseline="middle" text-anchor="start" letter-spacing="0.3px">processing</text>
+<text x="-1459" y="758.5" font-family="'DM Sans', sans-serif" font-size="18" font-weight="400" fill="#FFFFFF" dominant-baseline="middle" text-anchor="start" letter-spacing="0.3px">approved</text>
+<text x="-1459" y="789.5" font-family="'DM Sans', sans-serif" font-size="18" font-weight="400" fill="#FFFFFF" dominant-baseline="middle" text-anchor="start" letter-spacing="0.3px">rejected</text>
+<path d="M -1464.5 660.5 L -1298.5 660.5 Q -1290.5 660.5 -1290.5 668.5 L -1290.5 804.5 Q -1290.5 812.5 -1298.5 812.5 L -1464.5 812.5 Q -1472.5 812.5 -1472.5 804.5 L -1472.5 668.5 Q -1472.5 660.5 -1464.5 660.5 Z" fill="none" stroke="#333333" stroke-width="1"/>
+<path d="M 1490 884 L 1515 884 M 1507.5 884 L 1540 864 M 1507.5 884 L 1540 884 M 1507.5 884 L 1540 904" fill="none" stroke="#4A6FF5" stroke-width="4.4" stroke-linecap="round"/>
+<text x="1580" y="887.75" font-family="'DM Sans', sans-serif" font-size="42.5" font-weight="700" fill="#E8ECF4" dominant-baseline="middle" text-anchor="start">VibeSchema</text>
+</svg>
