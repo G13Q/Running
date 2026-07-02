@@ -11,7 +11,7 @@
     <script type="module" src="../assets/js/shared/cart.js" defer></script>
     <style>
         .auth-page {
-            padding-top: 120px;
+            padding-top: 30px;
             min-height: 100vh;
             background: #f0eee9;
             display: flex;
