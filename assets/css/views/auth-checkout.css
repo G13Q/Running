@@ -79,7 +79,7 @@
 .auth-form button[type="submit"] {
   width: 100%;
   padding: 13px;
-  background: #e85d2c;
+  background: var(--accent-clr);
   color: #fff;
   border: none;
   border-radius: 25px;
@@ -93,7 +93,7 @@
 }
 
 .auth-form button[type="submit"]:hover {
-  background: #d64d1a;
+  background: var(--accent-hover);
 }
 
 .auth-form__error {
@@ -195,7 +195,7 @@
 .checkout-form__submit {
   width: 100%;
   padding: 14px;
-  background: #e85d2c;
+  background: var(--accent-clr);
   color: #fff;
   border: none;
   border-radius: 25px;
@@ -208,7 +208,7 @@
 }
 
 .checkout-form__submit:hover {
-  background: #d64d1a;
+  background: var(--accent-hover);
 }
 
 .checkout-page .cart-table {
@@ -305,7 +305,7 @@
 .account-logout {
   display: inline-block;
   padding: 10px 28px;
-  background: #e85d2c;
+  background: var(--accent-clr);
   color: #fff;
   border-radius: 25px;
   text-decoration: none;
@@ -316,7 +316,7 @@
 }
 
 .account-logout:hover {
-  background: #d64d1a;
+  background: var(--accent-hover);
 }
 
 .order-success {
