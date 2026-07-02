@@ -13,11 +13,11 @@
 
   <div class="filter-panel__body">
     <div class="filter-col filter-col--size">
-      <h3 class="filter-col__heading">Size</h3>
+      <h3 class="filter-col__heading">EU Sizes</h3>
       <p class="filter-col__desc">Select your size to narrow results.</p>
       <div class="filter-sizes">
-        <?php foreach (["S","M","L","XL","5","5.5","6","6.5","7","7.5","8","8.5","9","9.5","10","10.5","11","11.5","12","12.5","13","13.5","14","15"] as $s): ?>
-          <button class="filter-size" type="button" data-filter="size" data-value="<?= $s ?>"><?= $s ?></button>
+        <?php foreach (["36","37","38","39","40","41","42","43","44","45","46","47","48"] as $s): ?>
+          <button class="filter-size" type="button" data-filter="size" data-value="<?= $s ?>.0"><?= $s ?>.0</button>
         <?php endforeach; ?>
       </div>
     </div>
