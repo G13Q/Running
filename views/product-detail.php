@@ -72,7 +72,6 @@
 
     <main class="pdp-page">
       <div class="pdp-container">
-        <!-- Breadcrumbs -->
         <nav class="pdp-breadcrumb">
           <a href="?route=home">Home</a>
           <span>/</span>
@@ -89,7 +88,6 @@
         </nav>
 
         <div class="pdp-layout">
-          <!-- LEFT: Gallery -->
           <div class="pdp-gallery" data-gallery>
             <?php if ($badge): ?>
             <span class="card__badge card__badge--<?= str_replace(' ', '_', strtolower($badge)) ?>"><?= $badge ?></span>
@@ -118,13 +116,11 @@
             </div>
           </div>
 
-          <!-- RIGHT: Info -->
           <div class="pdp-info" data-product-id="<?= (int)($product["id"] ?? 0) ?>"
                data-color-images='<?= e(json_encode($colorImagesMap)) ?>'>
             <h1 class="pdp-title"><?= e($product["name"]) ?></h1>
             <div class="pdp-price">$<?= $displayPrice ?></div>
 
-            <!-- Color -->
             <div class="pdp-color-section">
               <p class="pdp-color-label">
                 COLOR
@@ -160,7 +156,6 @@
               </div>
             </div>
 
-            <!-- Sizes -->
             <div class="pdp-size-section">
               <div class="pdp-size-header">
                 <span>EU SIZES</span>
@@ -176,14 +171,12 @@
               </p>
             </div>
 
-            <!-- Add to Bag -->
             <button class="pdp-atb" data-atb disabled>SELECT A SIZE</button>
             <p class="pdp-shipping">Free Shipping on Orders over $100</p>
 
           </div>
         </div>
 
-        <!-- ── BREATHABLE BY NATURE ─────────────────────────────── -->
         <section class="pdp-tech-section">
           <h2 class="pdp-tech-section__heading">Breathable By Nature</h2>
           <div class="pdp-tech">
@@ -219,7 +212,6 @@
           </div>
         </section>
 
-        <!-- ── YOU MAY ALSO LIKE ────────────────────────────────── -->
         <section class="pdp-related-new">
           <h3 class="pdp-related-new__heading">You May Also Like</h3>
           <div class="collection-grid">
@@ -231,7 +223,6 @@
           </div>
         </section>
 
-        <!-- ── TESTIMONIALS ──────────────────────────────────── -->
         <section class="pdp-testimonials">
           <h2 class="pdp-testimonials__heading">What Our Customers Say</h2>
           <div class="pdp-testimonials__grid">
@@ -258,7 +249,6 @@
           </div>
         </section>
 
-        <!-- ── SUSTAINABILITY BANNER ────────────────────────────── -->
         <section class="pdp-sustainability">
           <div class="pdp-sus__banner">
             <div class="pdp-sus__image">

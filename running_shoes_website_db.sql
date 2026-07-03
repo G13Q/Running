@@ -1,7 +1,3 @@
--- ============================================================
--- Running Shoes E-Commerce Website — Database Schema
--- Database: runningdb
--- ============================================================
 
 CREATE DATABASE IF NOT EXISTS runningdb
   DEFAULT CHARACTER SET utf8mb4
@@ -9,19 +5,16 @@ CREATE DATABASE IF NOT EXISTS runningdb
 
 USE runningdb;
 
--- ── Brands ────────────────────────────────────────────────────
 CREATE TABLE Brands (
     id   INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(100) NOT NULL UNIQUE
 ) ENGINE=InnoDB;
 
--- ── Categories (material-based, manually supplied ID) ─────────
 CREATE TABLE Categories (
     id       INT PRIMARY KEY,
     material VARCHAR(100) NOT NULL
 ) ENGINE=InnoDB;
 
--- ── Products ──────────────────────────────────────────────────
 CREATE TABLE Products (
     id          INT AUTO_INCREMENT PRIMARY KEY,
     name        VARCHAR(255) NOT NULL,
@@ -36,7 +29,6 @@ CREATE TABLE Products (
     FOREIGN KEY (category_id) REFERENCES Categories(id) ON DELETE CASCADE
 ) ENGINE=InnoDB;
 
--- ── Product Images ────────────────────────────────────────────
 CREATE TABLE Product_img (
     id          INT AUTO_INCREMENT PRIMARY KEY,
     thumbnail   VARCHAR(500) DEFAULT NULL,
@@ -46,7 +38,6 @@ CREATE TABLE Product_img (
     pair_view   VARCHAR(500)
 ) ENGINE=InnoDB;
 
--- ── Discounts / Coupons ───────────────────────────────────────
 CREATE TABLE Discounts (
     id             INT AUTO_INCREMENT PRIMARY KEY,
     code           VARCHAR(50) UNIQUE,
@@ -58,7 +49,6 @@ CREATE TABLE Discounts (
     is_active      TINYINT(1) NOT NULL DEFAULT 1
 ) ENGINE=InnoDB;
 
--- ── Product Variants (size/color/SKU/stock) ───────────────────
 CREATE TABLE Product_variants (
     id                INT AUTO_INCREMENT PRIMARY KEY,
     product_id        INT NOT NULL,
@@ -77,7 +67,6 @@ CREATE TABLE Product_variants (
     FOREIGN KEY (discount_id)       REFERENCES Discounts(id)        ON DELETE SET NULL
 ) ENGINE=InnoDB;
 
--- ── Collections ───────────────────────────────────────────────
 CREATE TABLE Collections (
     id           INT AUTO_INCREMENT PRIMARY KEY,
     name         VARCHAR(200) NOT NULL,
@@ -88,7 +77,6 @@ CREATE TABLE Collections (
     release_date DATE DEFAULT NULL
 ) ENGINE=InnoDB;
 
--- ── Product <-> Collection pivot ──────────────────────────────
 CREATE TABLE Product_collections (
     product_id    INT NOT NULL,
     collection_id INT NOT NULL,
@@ -97,7 +85,6 @@ CREATE TABLE Product_collections (
     FOREIGN KEY (collection_id)  REFERENCES Collections(id) ON DELETE CASCADE
 ) ENGINE=InnoDB;
 
--- ── Shipping Rules ────────────────────────────────────────────
 CREATE TABLE Shipping_rules (
     id                      INT AUTO_INCREMENT PRIMARY KEY,
     name                    VARCHAR(100) NOT NULL,
@@ -106,7 +93,6 @@ CREATE TABLE Shipping_rules (
     free_shipping_threshold DECIMAL(10,2) NOT NULL DEFAULT 0.00
 ) ENGINE=InnoDB;
 
--- ── Cities ────────────────────────────────────────────────────
 CREATE TABLE Cities (
     id               INT AUTO_INCREMENT PRIMARY KEY,
     name             VARCHAR(100) NOT NULL,
@@ -114,7 +100,6 @@ CREATE TABLE Cities (
     FOREIGN KEY (shipping_rule_id) REFERENCES Shipping_rules(id) ON DELETE SET NULL
 ) ENGINE=InnoDB;
 
--- ── Users ─────────────────────────────────────────────────────
 CREATE TABLE Users (
     id         INT AUTO_INCREMENT PRIMARY KEY,
     first_name VARCHAR(100) NOT NULL,
@@ -127,7 +112,6 @@ CREATE TABLE Users (
     FOREIGN KEY (city_id) REFERENCES Cities(id) ON DELETE SET NULL
 ) ENGINE=InnoDB;
 
--- ── Orders ────────────────────────────────────────────────────
 CREATE TABLE Orders (
     id               INT AUTO_INCREMENT PRIMARY KEY,
     client_id        INT NOT NULL,
@@ -145,7 +129,6 @@ CREATE TABLE Orders (
     FOREIGN KEY (delivery_guy_id) REFERENCES Users(id) ON DELETE SET NULL
 ) ENGINE=InnoDB;
 
--- ── Order Line Items ──────────────────────────────────────────
 CREATE TABLE Order_items (
     id               INT AUTO_INCREMENT PRIMARY KEY,
     order_id         INT NOT NULL,
@@ -156,7 +139,6 @@ CREATE TABLE Order_items (
     FOREIGN KEY (variant_id) REFERENCES Product_variants(id) ON DELETE CASCADE
 ) ENGINE=InnoDB;
 
--- ── Reviews ───────────────────────────────────────────────────
 CREATE TABLE Reviews (
     id                INT AUTO_INCREMENT PRIMARY KEY,
     user_id           INT NOT NULL,
@@ -169,7 +151,6 @@ CREATE TABLE Reviews (
     FOREIGN KEY (product_id) REFERENCES Products(id) ON DELETE CASCADE
 ) ENGINE=InnoDB;
 
--- ── Refunds ───────────────────────────────────────────────────
 CREATE TABLE Refunds (
     id         INT AUTO_INCREMENT PRIMARY KEY,
     order_id   INT NOT NULL,
@@ -180,7 +161,6 @@ CREATE TABLE Refunds (
     FOREIGN KEY (order_id) REFERENCES Orders(id) ON DELETE CASCADE
 ) ENGINE=InnoDB;
 
--- ── Refund Line Items ─────────────────────────────────────────
 CREATE TABLE Refund_items (
     id               INT AUTO_INCREMENT PRIMARY KEY,
     refund_id        INT NOT NULL,
@@ -191,7 +171,6 @@ CREATE TABLE Refund_items (
     FOREIGN KEY (variant_id) REFERENCES Product_variants(id) ON DELETE CASCADE
 ) ENGINE=InnoDB;
 
--- ── Audit Logs (admin actions) ────────────────────────────────
 CREATE TABLE Audit_logs (
     id               INT AUTO_INCREMENT PRIMARY KEY,
     admin_id         INT NOT NULL,
@@ -202,7 +181,6 @@ CREATE TABLE Audit_logs (
     FOREIGN KEY (admin_id) REFERENCES Users(id) ON DELETE CASCADE
 ) ENGINE=InnoDB;
 
--- ── Inventory Logs (restock events) ───────────────────────────
 CREATE TABLE Inventory_logs (
     id                 INT AUTO_INCREMENT PRIMARY KEY,
     product_variant_id INT NOT NULL,

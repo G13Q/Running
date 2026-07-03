@@ -1,6 +1,4 @@
-/* ── Global Responsive ────────────────────────────────────── */
 
-/* Hamburger - hidden on desktop */
 .nav-hamburger {
   display: none;
   background: none;
@@ -138,14 +136,12 @@
   .footer-bottom-bottom { flex-direction: column; align-items: flex-start; gap: 12px; }
   .copyright { margin-right: 0; }
 
-  /* Cart page */
   .cart-page { padding: 40px 16px 80px; }
   .cart-table { font-size: 0.8rem; }
   .cart-table th { font-size: 0.65rem; padding: 10px 6px; }
   .cart-table td { padding: 10px 6px; }
   .cart-item-cell img { width: 50px; height: 50px; }
 
-  /* Product detail */
   .pdp-page { padding-top: 20px; }
   .pdp-container { padding: 0 16px 60px; }
   .pdp-layout { grid-template-columns: 1fr; gap: 24px; }
@@ -161,7 +157,6 @@
   .pdp-sustainability { display: none; }
   .pdp-related-new { padding: 20px 0; }
 
-  /* Collection grid pages */
   .collection-grid { grid-template-columns: repeat(2, 1fr) !important; gap: 10px !important; }
   .filter-panel { flex-direction: column; }
 }
@@ -218,13 +213,11 @@
   .social-icon { width: 38px; height: 38px; }
   .social-icon svg { width: 16px; height: 16px; }
 
-  /* Auth / Checkout */
   .auth-page, .checkout-page, .account-page { padding: 30px 12px 60px; }
   .auth-form { padding: 24px 16px; }
   .checkout-form__section { padding: 16px; }
 }
 
-/* ── Product Card Grid (shop-all, mens, womens, new-arrivals) ── */
 
 @media (max-width: 768px) {
   .collection-grid { grid-template-columns: repeat(2, 1fr) !important; gap: 10px !important; padding: 0 8px !important; }

@@ -62,9 +62,6 @@ function statusBadge(string $status): string
 <body class="bg-gray-50 font-sans">
     <div class="flex h-screen overflow-hidden">
 
-        <!-- ═══════════════════════════════════════════════════════════════ -->
-        <!-- SIDEBAR -->
-        <!-- ═══════════════════════════════════════════════════════════════ -->
         <aside class="w-64 bg-slate-900 text-white flex flex-col shadow-xl">
             <div class="p-6 border-b border-slate-700">
                 <h1 class="text-xl font-bold tracking-wide"><i class="fas fa-cube mr-2 text-indigo-400"></i>Admin Panel</h1>
@@ -106,9 +103,6 @@ function statusBadge(string $status): string
             </div>
         </aside>
 
-        <!-- ═══════════════════════════════════════════════════════════════ -->
-        <!-- MAIN CONTENT -->
-        <!-- ═══════════════════════════════════════════════════════════════ -->
         <main class="flex-1 overflow-y-auto">
             <header class="bg-white shadow-sm border-b px-8 py-4 flex justify-between items-center sticky top-0 z-10">
                 <h2 class="text-2xl font-semibold text-gray-800"><?= e(ucfirst(str_replace('-', ' ', $action))) ?></h2>
@@ -160,7 +154,6 @@ function statusBadge(string $status): string
                     </div>
 
                     <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                        <!-- Recent Orders -->
                         <div class="bg-white rounded-xl shadow">
                             <div class="px-6 py-4 border-b flex justify-between items-center">
                                 <h3 class="font-semibold text-lg">Recent Orders</h3>
@@ -199,7 +192,6 @@ function statusBadge(string $status): string
                             </div>
                         </div>
 
-                        <!-- Low Stock Alert -->
                         <div class="bg-white rounded-xl shadow">
                             <div class="px-6 py-4 border-b flex justify-between items-center">
                                 <h3 class="font-semibold text-lg text-red-600"><i class="fas fa-exclamation-triangle mr-2"></i>Low Stock Alerts</h3>
@@ -415,7 +407,6 @@ function statusBadge(string $status): string
                                         <td class="px-6 py-4 text-gray-500 text-sm"><?= formatDate($o['created_at'] ?? null) ?></td>
                                         <td class="px-6 py-4">
                                             <div class="flex gap-2">
-                                                <!-- Assign Delivery -->
                                                 <?php if (($o['shipping_status'] ?? '') === 'pending'): ?>
                                                     <form method="POST" action="?route=admin&action=order-assign" class="flex gap-1">
                                                         <input type="hidden" name="order_id" value="<?= $o['id'] ?>">
@@ -431,7 +422,6 @@ function statusBadge(string $status): string
                                                     </form>
                                                 <?php endif; ?>
 
-                                                <!-- Status Update -->
                                                 <form method="POST" action="?route=admin&action=order-status" class="flex gap-1">
                                                     <input type="hidden" name="order_id" value="<?= $o['id'] ?>">
                                                     <select name="status" class="text-sm border rounded px-2 py-1" onchange="this.form.submit()">
@@ -572,7 +562,6 @@ function statusBadge(string $status): string
                 <?php
                 elseif ($action === 'inventory'): ?>
                     <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-8">
-                        <!-- Restock Form -->
                         <div class="lg:col-span-1">
                             <div class="bg-white rounded-xl shadow p-6 sticky top-24">
                                 <h3 class="text-lg font-semibold mb-4"><i class="fas fa-plus-circle text-green-600 mr-2"></i>Restock Inventory</h3>
@@ -609,7 +598,6 @@ function statusBadge(string $status): string
                             </div>
                         </div>
 
-                        <!-- Inventory Table -->
                         <div class="lg:col-span-2">
                             <div class="bg-white rounded-xl shadow overflow-hidden">
                                 <div class="px-6 py-4 border-b">
@@ -991,7 +979,6 @@ function statusBadge(string $status): string
                                         <?php endif; ?>
                                     </div>
 
-                                    <!-- Add Product to Collection -->
                                     <div class="px-6 py-4 bg-gray-50 border-b">
                                         <form method="POST" class="flex gap-2">
                                             <input type="hidden" name="add_product" value="1">

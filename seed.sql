@@ -1,11 +1,6 @@
 /*M!999999\- enable the sandbox mode */ 
 USE runningdb;
 
--- MariaDB dump 10.19-12.2.2-MariaDB, for Linux (x86_64)
---
--- Host: localhost    Database: runningdb
--- ------------------------------------------------------
--- Server version	12.2.2-MariaDB
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -18,9 +13,6 @@ USE runningdb;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 /*M!100616 SET @OLD_NOTE_VERBOSITY=@@NOTE_VERBOSITY, NOTE_VERBOSITY=0 */;
 
---
--- Table structure for table `Audit_logs`
---
 
 DROP TABLE IF EXISTS `Audit_logs`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
@@ -38,9 +30,6 @@ CREATE TABLE `Audit_logs` (
 ) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
---
--- Dumping data for table `Audit_logs`
---
 
 SET @OLD_AUTOCOMMIT=@@AUTOCOMMIT, @@AUTOCOMMIT=0;
 LOCK TABLES `Audit_logs` WRITE;
@@ -55,9 +44,6 @@ UNLOCK TABLES;
 COMMIT;
 SET AUTOCOMMIT=@OLD_AUTOCOMMIT;
 
---
--- Table structure for table `Brands`
---
 
 DROP TABLE IF EXISTS `Brands`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
@@ -70,9 +56,6 @@ CREATE TABLE `Brands` (
 ) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
---
--- Dumping data for table `Brands`
---
 
 SET @OLD_AUTOCOMMIT=@@AUTOCOMMIT, @@AUTOCOMMIT=0;
 LOCK TABLES `Brands` WRITE;
@@ -83,9 +66,6 @@ UNLOCK TABLES;
 COMMIT;
 SET AUTOCOMMIT=@OLD_AUTOCOMMIT;
 
---
--- Table structure for table `Categories`
---
 
 DROP TABLE IF EXISTS `Categories`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
@@ -97,9 +77,6 @@ CREATE TABLE `Categories` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
---
--- Dumping data for table `Categories`
---
 
 SET @OLD_AUTOCOMMIT=@@AUTOCOMMIT, @@AUTOCOMMIT=0;
 LOCK TABLES `Categories` WRITE;
@@ -121,9 +98,6 @@ UNLOCK TABLES;
 COMMIT;
 SET AUTOCOMMIT=@OLD_AUTOCOMMIT;
 
---
--- Table structure for table `Cities`
---
 
 DROP TABLE IF EXISTS `Cities`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
@@ -138,9 +112,6 @@ CREATE TABLE `Cities` (
 ) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
---
--- Dumping data for table `Cities`
---
 
 SET @OLD_AUTOCOMMIT=@@AUTOCOMMIT, @@AUTOCOMMIT=0;
 LOCK TABLES `Cities` WRITE;
@@ -165,9 +136,6 @@ UNLOCK TABLES;
 COMMIT;
 SET AUTOCOMMIT=@OLD_AUTOCOMMIT;
 
---
--- Table structure for table `Collections`
---
 
 DROP TABLE IF EXISTS `Collections`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
@@ -184,9 +152,6 @@ CREATE TABLE `Collections` (
 ) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
---
--- Dumping data for table `Collections`
---
 
 SET @OLD_AUTOCOMMIT=@@AUTOCOMMIT, @@AUTOCOMMIT=0;
 LOCK TABLES `Collections` WRITE;
@@ -204,9 +169,6 @@ UNLOCK TABLES;
 COMMIT;
 SET AUTOCOMMIT=@OLD_AUTOCOMMIT;
 
---
--- Table structure for table `Discounts`
---
 
 DROP TABLE IF EXISTS `Discounts`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
@@ -225,9 +187,6 @@ CREATE TABLE `Discounts` (
 ) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
---
--- Dumping data for table `Discounts`
---
 
 SET @OLD_AUTOCOMMIT=@@AUTOCOMMIT, @@AUTOCOMMIT=0;
 LOCK TABLES `Discounts` WRITE;
@@ -243,9 +202,6 @@ UNLOCK TABLES;
 COMMIT;
 SET AUTOCOMMIT=@OLD_AUTOCOMMIT;
 
---
--- Table structure for table `Inventory_logs`
---
 
 DROP TABLE IF EXISTS `Inventory_logs`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
@@ -265,9 +221,6 @@ CREATE TABLE `Inventory_logs` (
 ) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
---
--- Dumping data for table `Inventory_logs`
---
 
 SET @OLD_AUTOCOMMIT=@@AUTOCOMMIT, @@AUTOCOMMIT=0;
 LOCK TABLES `Inventory_logs` WRITE;
@@ -279,9 +232,6 @@ UNLOCK TABLES;
 COMMIT;
 SET AUTOCOMMIT=@OLD_AUTOCOMMIT;
 
---
--- Table structure for table `Order_items`
---
 
 DROP TABLE IF EXISTS `Order_items`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
@@ -300,9 +250,6 @@ CREATE TABLE `Order_items` (
 ) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
---
--- Dumping data for table `Order_items`
---
 
 SET @OLD_AUTOCOMMIT=@@AUTOCOMMIT, @@AUTOCOMMIT=0;
 LOCK TABLES `Order_items` WRITE;
@@ -315,9 +262,6 @@ UNLOCK TABLES;
 COMMIT;
 SET AUTOCOMMIT=@OLD_AUTOCOMMIT;
 
---
--- Table structure for table `Orders`
---
 
 DROP TABLE IF EXISTS `Orders`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
@@ -345,9 +289,6 @@ CREATE TABLE `Orders` (
 ) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
---
--- Dumping data for table `Orders`
---
 
 SET @OLD_AUTOCOMMIT=@@AUTOCOMMIT, @@AUTOCOMMIT=0;
 LOCK TABLES `Orders` WRITE;
@@ -367,9 +308,6 @@ UNLOCK TABLES;
 COMMIT;
 SET AUTOCOMMIT=@OLD_AUTOCOMMIT;
 
---
--- Table structure for table `Product_collections`
---
 
 DROP TABLE IF EXISTS `Product_collections`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
@@ -384,9 +322,6 @@ CREATE TABLE `Product_collections` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
---
--- Dumping data for table `Product_collections`
---
 
 SET @OLD_AUTOCOMMIT=@@AUTOCOMMIT, @@AUTOCOMMIT=0;
 LOCK TABLES `Product_collections` WRITE;
@@ -503,9 +438,6 @@ UNLOCK TABLES;
 COMMIT;
 SET AUTOCOMMIT=@OLD_AUTOCOMMIT;
 
---
--- Table structure for table `Product_img`
---
 
 DROP TABLE IF EXISTS `Product_img`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
@@ -521,9 +453,6 @@ CREATE TABLE `Product_img` (
 ) ENGINE=InnoDB AUTO_INCREMENT=242 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
---
--- Dumping data for table `Product_img`
---
 
 SET @OLD_AUTOCOMMIT=@@AUTOCOMMIT, @@AUTOCOMMIT=0;
 LOCK TABLES `Product_img` WRITE;
@@ -760,9 +689,6 @@ UNLOCK TABLES;
 COMMIT;
 SET AUTOCOMMIT=@OLD_AUTOCOMMIT;
 
---
--- Table structure for table `Product_variants`
---
 
 DROP TABLE IF EXISTS `Product_variants`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
@@ -792,9 +718,6 @@ CREATE TABLE `Product_variants` (
 ) ENGINE=InnoDB AUTO_INCREMENT=2352 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
---
--- Dumping data for table `Product_variants`
---
 
 SET @OLD_AUTOCOMMIT=@@AUTOCOMMIT, @@AUTOCOMMIT=0;
 LOCK TABLES `Product_variants` WRITE;
@@ -3094,16 +3017,12 @@ INSERT INTO `Product_variants` (`id`, `product_id`, `womens_variant_id`, `size`,
 (2350,131,NULL,44.0,'Color 1','A131W100',24,241,77.00,5,NULL),
 (2351,131,NULL,45.0,'Color 1','A131W110',4,241,77.00,5,NULL);
 
--- Assign discount_id = 2 (SUMMER25, 25% off) to first variant of selected products
 UPDATE Product_variants SET discount_id = 2 WHERE id IN (59,95,161,200);
 /*!40000 ALTER TABLE `Product_variants` ENABLE KEYS */;
 UNLOCK TABLES;
 COMMIT;
 SET AUTOCOMMIT=@OLD_AUTOCOMMIT;
 
---
--- Table structure for table `Products`
---
 
 DROP TABLE IF EXISTS `Products`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
@@ -3125,9 +3044,6 @@ CREATE TABLE `Products` (
 ) ENGINE=InnoDB AUTO_INCREMENT=132 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
---
--- Dumping data for table `Products`
---
 
 SET @OLD_AUTOCOMMIT=@@AUTOCOMMIT, @@AUTOCOMMIT=0;
 LOCK TABLES `Products` WRITE;
@@ -3251,9 +3167,6 @@ UNLOCK TABLES;
 COMMIT;
 SET AUTOCOMMIT=@OLD_AUTOCOMMIT;
 
---
--- Table structure for table `Refund_items`
---
 
 DROP TABLE IF EXISTS `Refund_items`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
@@ -3272,9 +3185,6 @@ CREATE TABLE `Refund_items` (
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
---
--- Dumping data for table `Refund_items`
---
 
 SET @OLD_AUTOCOMMIT=@@AUTOCOMMIT, @@AUTOCOMMIT=0;
 LOCK TABLES `Refund_items` WRITE;
@@ -3285,9 +3195,6 @@ UNLOCK TABLES;
 COMMIT;
 SET AUTOCOMMIT=@OLD_AUTOCOMMIT;
 
---
--- Table structure for table `Refunds`
---
 
 DROP TABLE IF EXISTS `Refunds`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
@@ -3305,9 +3212,6 @@ CREATE TABLE `Refunds` (
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
---
--- Dumping data for table `Refunds`
---
 
 SET @OLD_AUTOCOMMIT=@@AUTOCOMMIT, @@AUTOCOMMIT=0;
 LOCK TABLES `Refunds` WRITE;
@@ -3318,9 +3222,6 @@ UNLOCK TABLES;
 COMMIT;
 SET AUTOCOMMIT=@OLD_AUTOCOMMIT;
 
---
--- Table structure for table `Reviews`
---
 
 DROP TABLE IF EXISTS `Reviews`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
@@ -3341,9 +3242,6 @@ CREATE TABLE `Reviews` (
 ) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
---
--- Dumping data for table `Reviews`
---
 
 SET @OLD_AUTOCOMMIT=@@AUTOCOMMIT, @@AUTOCOMMIT=0;
 LOCK TABLES `Reviews` WRITE;
@@ -3358,9 +3256,6 @@ UNLOCK TABLES;
 COMMIT;
 SET AUTOCOMMIT=@OLD_AUTOCOMMIT;
 
---
--- Table structure for table `Shipping_rules`
---
 
 DROP TABLE IF EXISTS `Shipping_rules`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
@@ -3375,9 +3270,6 @@ CREATE TABLE `Shipping_rules` (
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
---
--- Dumping data for table `Shipping_rules`
---
 
 SET @OLD_AUTOCOMMIT=@@AUTOCOMMIT, @@AUTOCOMMIT=0;
 LOCK TABLES `Shipping_rules` WRITE;
@@ -3390,9 +3282,6 @@ UNLOCK TABLES;
 COMMIT;
 SET AUTOCOMMIT=@OLD_AUTOCOMMIT;
 
---
--- Table structure for table `Users`
---
 
 DROP TABLE IF EXISTS `Users`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
@@ -3413,9 +3302,6 @@ CREATE TABLE `Users` (
 ) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
---
--- Dumping data for table `Users`
---
 
 SET @OLD_AUTOCOMMIT=@@AUTOCOMMIT, @@AUTOCOMMIT=0;
 LOCK TABLES `Users` WRITE;
@@ -3447,17 +3333,11 @@ SET AUTOCOMMIT=@OLD_AUTOCOMMIT;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*M!100616 SET NOTE_VERBOSITY=@OLD_NOTE_VERBOSITY */;
 
--- Dump completed on 2026-06-25 23:28:43
 
 
--- update the password hash
 UPDATE Users SET password = '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi';
 USE runningdb;
--- ============================================
--- Fix all 85 variants with size = 0.0
--- ============================================
 
--- Product 39 | Dark Grey | US Men's 3-14 (U030-U140) → EU 36-47
 UPDATE Product_variants SET size = 36.0 WHERE id = 59;
 UPDATE Product_variants SET size = 37.0 WHERE id = 60;
 UPDATE Product_variants SET size = 38.0 WHERE id = 61;
@@ -3471,107 +3351,90 @@ UPDATE Product_variants SET size = 45.0 WHERE id = 68;
 UPDATE Product_variants SET size = 46.0 WHERE id = 69;
 UPDATE Product_variants SET size = 47.0 WHERE id = 70;
 
--- Product 40 | Natural Grey Heather | US Kids 1-4 (U001-U004) → EU 32-35
 UPDATE Product_variants SET size = 32.0 WHERE id = 71;
 UPDATE Product_variants SET size = 33.0 WHERE id = 72;
 UPDATE Product_variants SET size = 34.0 WHERE id = 73;
 UPDATE Product_variants SET size = 35.0 WHERE id = 74;
 
--- Product 40 | Natural Black | US Kids 1-4 (O001-O004) → EU 32-35
 UPDATE Product_variants SET size = 32.0 WHERE id = 75;
 UPDATE Product_variants SET size = 33.0 WHERE id = 76;
 UPDATE Product_variants SET size = 34.0 WHERE id = 77;
 UPDATE Product_variants SET size = 35.0 WHERE id = 78;
 
--- Product 40 | Blizzard | US Kids 1-4 (T001-T004) → EU 32-35
 UPDATE Product_variants SET size = 32.0 WHERE id = 79;
 UPDATE Product_variants SET size = 33.0 WHERE id = 80;
 UPDATE Product_variants SET size = 34.0 WHERE id = 81;
 UPDATE Product_variants SET size = 35.0 WHERE id = 82;
 
--- Product 41 | Natural Black | US Kids 1-4 (L001-L004) → EU 32-35
 UPDATE Product_variants SET size = 32.0 WHERE id = 83;
 UPDATE Product_variants SET size = 33.0 WHERE id = 84;
 UPDATE Product_variants SET size = 34.0 WHERE id = 85;
 UPDATE Product_variants SET size = 35.0 WHERE id = 86;
 
--- Product 41 | Blizzard | US Kids 1-4 (R001-R004) → EU 32-35
 UPDATE Product_variants SET size = 32.0 WHERE id = 87;
 UPDATE Product_variants SET size = 33.0 WHERE id = 88;
 UPDATE Product_variants SET size = 34.0 WHERE id = 89;
 UPDATE Product_variants SET size = 35.0 WHERE id = 90;
 
--- Product 41 | Natural Grey Heather/Natural White | US Kids 1-4 (U001-U004) → EU 32-35
 UPDATE Product_variants SET size = 32.0 WHERE id = 91;
 UPDATE Product_variants SET size = 33.0 WHERE id = 92;
 UPDATE Product_variants SET size = 34.0 WHERE id = 93;
 UPDATE Product_variants SET size = 35.0 WHERE id = 94;
 
--- Product 42 | Deep Navy | US Kids 1-4 (U001-U004) → EU 32-35
 UPDATE Product_variants SET size = 32.0 WHERE id = 95;
 UPDATE Product_variants SET size = 33.0 WHERE id = 96;
 UPDATE Product_variants SET size = 34.0 WHERE id = 97;
 UPDATE Product_variants SET size = 35.0 WHERE id = 98;
 
--- Product 42 | Natural Black | US Kids 1-4 (P001-P004) → EU 32-35
 UPDATE Product_variants SET size = 32.0 WHERE id = 99;
 UPDATE Product_variants SET size = 33.0 WHERE id = 100;
 UPDATE Product_variants SET size = 34.0 WHERE id = 101;
 UPDATE Product_variants SET size = 35.0 WHERE id = 102;
 
--- Product 42 | Blizzard | US Kids 1-4 (U001-U004) → EU 32-35
 UPDATE Product_variants SET size = 32.0 WHERE id = 103;
 UPDATE Product_variants SET size = 33.0 WHERE id = 104;
 UPDATE Product_variants SET size = 34.0 WHERE id = 105;
 UPDATE Product_variants SET size = 35.0 WHERE id = 106;
 
--- Product 43 | Natural Grey Heather | US Kids 1-4 (U001-U004) → EU 32-35
 UPDATE Product_variants SET size = 32.0 WHERE id = 107;
 UPDATE Product_variants SET size = 33.0 WHERE id = 108;
 UPDATE Product_variants SET size = 34.0 WHERE id = 109;
 UPDATE Product_variants SET size = 35.0 WHERE id = 110;
 
--- Product 43 | Natural Black | US Kids 1-4 (U001-U004) → EU 32-35
 UPDATE Product_variants SET size = 32.0 WHERE id = 111;
 UPDATE Product_variants SET size = 33.0 WHERE id = 112;
 UPDATE Product_variants SET size = 34.0 WHERE id = 113;
 UPDATE Product_variants SET size = 35.0 WHERE id = 114;
 
--- Product 43 | Blizzard | US Kids 1-4 (U001-U004) → EU 32-35
 UPDATE Product_variants SET size = 32.0 WHERE id = 115;
 UPDATE Product_variants SET size = 33.0 WHERE id = 116;
 UPDATE Product_variants SET size = 34.0 WHERE id = 117;
 UPDATE Product_variants SET size = 35.0 WHERE id = 118;
 
--- Product 59 | True Black | US Men's 1-5 (M001-M005) → EU 34-38
 UPDATE Product_variants SET size = 34.0 WHERE id = 425;
 UPDATE Product_variants SET size = 35.0 WHERE id = 426;
 UPDATE Product_variants SET size = 36.0 WHERE id = 427;
 UPDATE Product_variants SET size = 37.0 WHERE id = 428;
 UPDATE Product_variants SET size = 38.0 WHERE id = 429;
 
--- Product 59 | Natural Grey Heather | US Men's 1-5 (M001-M005) → EU 34-38
 UPDATE Product_variants SET size = 34.0 WHERE id = 430;
 UPDATE Product_variants SET size = 35.0 WHERE id = 431;
 UPDATE Product_variants SET size = 36.0 WHERE id = 432;
 UPDATE Product_variants SET size = 37.0 WHERE id = 433;
 UPDATE Product_variants SET size = 38.0 WHERE id = 434;
 
--- Product 100 | True Black | US Women's 0-4 (W000-W004) → EU 31-35
 UPDATE Product_variants SET size = 31.0 WHERE id = 1517;
 UPDATE Product_variants SET size = 32.0 WHERE id = 1518;
 UPDATE Product_variants SET size = 33.0 WHERE id = 1519;
 UPDATE Product_variants SET size = 34.0 WHERE id = 1520;
 UPDATE Product_variants SET size = 35.0 WHERE id = 1521;
 
--- Product 100 | Natural Grey Heather | US Women's 0-4 (W000-W004) → EU 31-35
 UPDATE Product_variants SET size = 31.0 WHERE id = 1522;
 UPDATE Product_variants SET size = 32.0 WHERE id = 1523;
 UPDATE Product_variants SET size = 33.0 WHERE id = 1524;
 UPDATE Product_variants SET size = 34.0 WHERE id = 1525;
 UPDATE Product_variants SET size = 35.0 WHERE id = 1526;
 
--- Product 101 | Natural Grey Heather | US Women's 0-4 (W000-W004) → EU 31-35
 UPDATE Product_variants SET size = 31.0 WHERE id = 1527;
 UPDATE Product_variants SET size = 32.0 WHERE id = 1528;
 UPDATE Product_variants SET size = 33.0 WHERE id = 1529;

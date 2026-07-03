@@ -25,7 +25,6 @@ const refreshMenu = () => {
 $(".tab-content").hide();
 refreshMenu();
 
-// Hamburger toggle
 $(".nav-hamburger").on("click", () => {
   $("header nav ul").toggleClass("nav-open");
 });
@@ -36,7 +35,6 @@ $(document).on("click", (e) => {
   }
 });
 
-// Announcement slider
 const annSlides = $(".ann-slide");
 const annLeft = $(".ann-arrow--left");
 const annRight = $(".ann-arrow--right");

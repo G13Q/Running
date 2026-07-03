@@ -83,18 +83,8 @@
 
          </div>
 
-         <!-- <div class="menu-bar">
-          <ul>
-            <li>[Running]</li>
-            <li>MEN'S</li>
-            <li>WOMAN'S</li>
-            <li>NEW ARRIVALS</li>
-            <li>BESTSELLERS</li>
-          </ul>
-        </div>-->
      </nav>
  </header>
- <!-- cart------ -->
  <?php
  $navCart = $_SESSION["cart"] ?? [];
  $navCartCount = 0;
