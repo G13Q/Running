@@ -95,7 +95,6 @@ Every part of the shopping experience was crafted by hand:
 
 ### Design & UX
 
-- **GSAP animations** — hero reveals, carousel transitions, page micro-interactions
 - **Custom typography** — Satoshi, Chillax, Telma, Blackbird fonts
 - **Fully responsive** — mobile-adapted layout and navigation
 - **Product reviews** — star ratings, verified purchase badges
