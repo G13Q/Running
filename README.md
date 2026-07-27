@@ -46,7 +46,6 @@ Tor1 was built as a school project to design and implement a complete e-commerce
 
 Every part of the shopping experience was crafted by hand:
 
-- A **hero-driven homepage** with GSAP animations, category sections, and dynamic carousels
 - A **product catalog** with color swatches, size selection, and real-time stock awareness
 - A **shopping cart** that persists across sessions and updates quantities on the fly
 - A **checkout flow** with shipping rules, delivery assignment, and order management
@@ -124,14 +123,13 @@ Every part of the shopping experience was crafted by hand:
 
 - **PHP** 8+ with PDO MySQL extension
 - **MySQL** 8+ or **MariaDB**
-- **Composer** (for any PHP dependencies, if applicable)
 
 ### Installation
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/your-username/tor1.git
-cd tor1
+git clone git@github.com:G13Q/Running.git
+cd Running
 
 # 2. Create the database
 mysql -u root -p -e "CREATE DATABASE runningdb"
@@ -233,8 +231,6 @@ Accessible at `?route=admin&action=dashboard` after logging in with an admin acc
 - **Variant system** — each product has multiple color/size variants with individual stock and SKU tracking
 - **Discount engine** — supports percentage discounts and fixed price overrides at the variant level
 - **Seeded demo data** — ready to explore immediately with pre-populated products, users, and orders
-- **Custom frontend** — no CSS framework on the customer-facing pages; Tailwind CSS used exclusively for the admin panel
-- **GSAP animations** — homepage carousels, scroll-triggered reveals, and micro-interactions throughout
 
 ---
 
