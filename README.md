@@ -1,6 +1,6 @@
 # Tory — E-Commerce Shoes Store
 
-> **A full-featured running shoe store with product catalog, variant management, cart, checkout, and admin panel.**
+> **A full-featured shoes store with product catalog, variant management, cart, checkout, and admin panel.**
 
 [![PHP](https://img.shields.io/badge/PHP-8-777BB4?logo=php&logoColor=white)](https://php.net/)
 [![MySQL](https://img.shields.io/badge/MySQL-8-4479A1?logo=mysql&logoColor=white)](https://mysql.com/)
@@ -42,7 +42,7 @@
 
 ## The Story
 
-Tor1 was built as a school project to design and implement a complete e-commerce platform from the ground up — from database schema to pixel-perfect frontend.
+Tor1 was built as a school project to design and implement a complete e-commerce platform from the ground up — from database schema to frontend.
 
 Every part of the shopping experience was crafted by hand:
 
